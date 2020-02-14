@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>TOOL_YGent</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>10</dUnitPerRev>
+  <dMaxPos>600</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>BwdFwd</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>800</dAcceleration>
+  <dDeceleration>800</dDeceleration>
+  <dRunSpeed>300</dRunSpeed>
+  <dSlowSpeed>100</dSlowSpeed>
+  <dManSpeed>100</dManSpeed>
+  <dHomeVelFirst>50</dHomeVelFirst>
+  <dHomeVelLast>2</dHomeVelLast>
+  <dHomeAccFirst>500</dHomeAccFirst>
+  <dJogSpeed>100</dJogSpeed>
+  <dFstPos>5</dFstPos>
+  <dScdPos>0</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>50</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

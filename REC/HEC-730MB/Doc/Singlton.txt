@@ -1,0 +1,154 @@
+▶ 싱글턴 패턴
+
+http://blog.naver.com/2hyoin/220949312925
+
+해당클래스의 인스턴스가
+싱글턴 패턴은 해당 클래스의 인스턴스가 하나만 만들어지고, 그 인스턴스에 대한 전역 접근할 수 있게 하는 패턴.
+
+1.1) 고전적인 싱글턴 패턴
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+public class Singleton {
+    
+    private static Singleton uniqueInstance;
+    
+    private Singleton() {}
+ 
+    public static Singleton getInstance() {
+        if(uniqueInstance== null) {
+             uniqueInstance == new Singleton();
+        }
+        return uniqueInstance;
+    }
+}
+            
+Colored by Color Scripter
+cs
+-> 문제점
+두개의 쓰레드가 getInstnace()를 호출할때 발생하는 문제.
+
+1.2) 멀티테스킹 문제 해결한 싱글텐 패턴
+
+1) getInstace()를 동기화 시킴
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+public class Singleton {
+    
+    private static Singleton uniqueInstance;
+    
+    private Singleton() {}
+ 
+    public static synchronized Singleton getInstance() {
+        if(uniqueInstance== null) {
+             uniqueInstance == new Singleton();
+        }
+        return uniqueInstance;
+    }
+}
+            
+Colored by Color Scripter
+cs
+getInstance()에 synchronized키워드만 추가하면 한 스레드가 메소드 사용을 끝내기 전에 다른 스레드가
+이메소드를 동시에 실행할 수 없게 된다.
+
+2) 인스턴스를 필요할 때가 아닌 처음부터 만듬.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+public class Singleton {
+    
+    private static Singleton uniqueInstance = new Singleton();
+    
+    private Singleton() {}
+ 
+    public static Singleton getInstance() {
+       
+        
+        return uniqueInstance;
+    }
+}
+            
+Colored by Color Scripter
+cs
+애플리케이션이 항상 singleton의 인스턴스를 만들고 사용할 경우나 생성과 실행에 대한
+부하가 문제되지 않으면 처음부터 인스턴스를 만들어도 좋다.
+
+3) DCL(Double-Checking Locking)을 써서 getInstance()에서 동기화 되는 부분을 줄인다.
+인스턴스가 생성되었는지 확인후, 생성되지 않았을 때만 동기화를 시킴
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+public class Singleton {
+    
+    private static Singleton uniqueInstance;
+    
+    private Singleton() {}
+ 
+    public static Singleton getInstance() {
+        if(uniqueInstance== null) {
+             sychronized(Singleton.class) {
+                if(uniqueInstance == null) {
+                    uniqueInstance = new Singleton();
+                 }
+             }
+        }
+        return uniqueInstance;
+    }
+}
+            
+Colored by Color Scripter
+cs
+
+c.f ) 싱글턴 패턴
+1. https://brunch.co.kr/@oemilk/12 
+2. http://dreamlog.tistory.com/495
+[출처] 디자인 패턴 (싱글턴[Singleton] , 옵저버패턴[Observer pattern], |작성자 사자머리님

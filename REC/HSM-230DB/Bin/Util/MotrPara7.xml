@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>TOOL_ZPckr</sMotrName>
+  <iPulsePerRev>32768</iPulsePerRev>
+  <dUnitPerRev>4</dUnitPerRev>
+  <dMaxPos>40</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>14</iBreakOffAdd>
+  <iDirType>UpDown</iDirType>
+  <bUseBreak>true</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>300</dAcceleration>
+  <dDeceleration>300</dDeceleration>
+  <dRunSpeed>10</dRunSpeed>
+  <dSlowSpeed>5</dSlowSpeed>
+  <dManSpeed>5</dManSpeed>
+  <dHomeVelFirst>5</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>300</dHomeAccFirst>
+  <dJogSpeed>20</dJogSpeed>
+  <dFstPos>0</dFstPos>
+  <dScdPos>30</dScdPos>
+  <iRepeatDelay>3000</iRepeatDelay>
+  <dRepeatSpeed>10</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

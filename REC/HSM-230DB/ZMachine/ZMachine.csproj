@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46104932-7A3F-4428-BACD-7434A53B8A55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Machine</RootNamespace>
+    <AssemblyName>HSM-230DB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.1.1.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HR image1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Array.cs" />
+    <Compile Include="DataMan.cs" />
+    <Compile Include="EmbededExe.cs" />
+    <Compile Include="Form\FormDispCh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormDispCh.Designer.cs">
+      <DependentUpon>FormDispCh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormSubErr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSubErr.Designer.cs">
+      <DependentUpon>FormSubErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormVision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormVision.designer.cs">
+      <DependentUpon>FormVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pattern.cs" />
+    <Compile Include="SerialCom\RS232_3310g.cs" />
+    <Compile Include="Part\SM.cs" />
+    <Compile Include="Part\SubstrateStage.cs" />
+    <Compile Include="Part\WaferStage.cs" />
+    <Compile Include="SerialCom\RS232_LK_G5001.cs" />
+    <Compile Include="ManualMan.cs" />
+    <Compile Include="Part\Tool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SerialCom\RS232_KBS205.cs" />
+    <Compile Include="SerialCom\RS232_MC9.cs" />
+    <Compile Include="SerialCom\RS232_SuperSigmaCM2.cs" />
+    <Compile Include="SerialCom\RS485_TK4S.cs" />
+    <Compile Include="Sequence.cs" />
+    <Compile Include="Form\FormMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMaster.Designer.cs">
+      <DependentUpon>FormMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormOption.Designer.cs">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrameMotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrameMotr.Designer.cs">
+      <DependentUpon>FrameMotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrameOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrameOutput.Designer.cs">
+      <DependentUpon>FrameOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Part\Part.cs" />
+    <Compile Include="Form\FormSPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSPC.Designer.cs">
+      <DependentUpon>FormSPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SPCUnit.cs" />
+    <Compile Include="LotUnit.cs" />
+    <Compile Include="OptionMan.cs" />
+    <Compile Include="PstnMan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\FormLotOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLotOpen.Designer.cs">
+      <DependentUpon>FormLotOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormDeviceSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormDeviceSet.Designer.cs">
+      <DependentUpon>FormDeviceSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormDevice.Designer.cs">
+      <DependentUpon>FormDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormOperation.Designer.cs">
+      <DependentUpon>FormOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrameCylOneBt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrameCylOneBt.Designer.cs">
+      <DependentUpon>FrameCylOneBt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilDefine.cs" />
+    <Compile Include="UVWStage.cs" />
+    <Compile Include="VisnCom.cs" />
+    <EmbeddedResource Include="Form\FormDispCh.resx">
+      <DependentUpon>FormDispCh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormMaster.resx">
+      <DependentUpon>FormMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormOption.resx">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormLotOpen.resx">
+      <DependentUpon>FormLotOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormDevice.resx">
+      <DependentUpon>FormDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormDeviceSet.resx">
+      <DependentUpon>FormDeviceSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormOperation.resx">
+      <DependentUpon>FormOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormSPC.resx">
+      <DependentUpon>FormSPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormSubErr.resx">
+      <DependentUpon>FormSubErr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormVision.resx">
+      <DependentUpon>FormVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrameCylOneBt.resx">
+      <DependentUpon>FrameCylOneBt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrameMotr.resx">
+      <DependentUpon>FrameMotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrameOutput.resx">
+      <DependentUpon>FrameOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainTitle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oper.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Device.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Option.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPC.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Util.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{515f844e-994d-4c94-9e46-22f94026a3ff}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SML2\SML2.csproj">
+      <Project>{1a820ae0-7242-4398-b295-0963557f1f7a}</Project>
+      <Name>SML2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HR image1.ico" />
+    <Content Include="Resources\CCW.bmp" />
+    <Content Include="Resources\CW.bmp" />
+    <Content Include="Resources\DN.bmp" />
+    <Content Include="Resources\LEFT.bmp" />
+    <Content Include="Resources\MainTitleNoMark.jpg" />
+    <Content Include="Resources\RIGHT.bmp" />
+    <Content Include="Resources\Stop.png" />
+    <None Include="Resources\제목 없음-1.jpg" />
+    <None Include="Resources\Tray1.bmp" />
+    <None Include="Resources\Tray2.bmp" />
+    <Content Include="Resources\UP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

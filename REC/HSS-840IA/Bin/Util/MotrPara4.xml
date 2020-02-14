@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>USBC_XCnct</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>10</dUnitPerRev>
+  <dMaxPos>150</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>RightLeft</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>1000</dAcceleration>
+  <dDeceleration>1000</dDeceleration>
+  <dRunSpeed>80</dRunSpeed>
+  <dSlowSpeed>40</dSlowSpeed>
+  <dManSpeed>40</dManSpeed>
+  <dHomeVelFirst>20</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>200</dHomeAccFirst>
+  <dJogSpeed>30</dJogSpeed>
+  <dFstPos>10</dFstPos>
+  <dScdPos>120</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>60</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

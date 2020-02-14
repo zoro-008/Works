@@ -1,0 +1,1 @@
+http://logofdev.tistory.com/6 //GetValue , SetValue 이용한 저장 일반화.

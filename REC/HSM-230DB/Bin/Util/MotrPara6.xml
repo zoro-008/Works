@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>WSTG_ZEjtr</sMotrName>
+  <iPulsePerRev>32768</iPulsePerRev>
+  <dUnitPerRev>4</dUnitPerRev>
+  <dMaxPos>17.5</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>15</iBreakOffAdd>
+  <iDirType>DownUp</iDirType>
+  <bUseBreak>true</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>300</dAcceleration>
+  <dDeceleration>300</dDeceleration>
+  <dRunSpeed>10</dRunSpeed>
+  <dSlowSpeed>10</dSlowSpeed>
+  <dManSpeed>10</dManSpeed>
+  <dHomeVelFirst>5</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>50</dHomeAccFirst>
+  <dJogSpeed>10</dJogSpeed>
+  <dFstPos>5</dFstPos>
+  <dScdPos>17</dScdPos>
+  <iRepeatDelay>500</iRepeatDelay>
+  <dRepeatSpeed>30</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

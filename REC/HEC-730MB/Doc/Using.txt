@@ -1,0 +1,26 @@
+
+
+using : 반드시 Dispose()를 호출해서 소멸해야 하는 객체에서 몇 가지 값을 읽은 다음 자동 페기.
+
+using 은 using 지시자와 using 문 두가지로 사용된다. 여기서 언급할 내용은 using 문인다.
+이것을 사용하는 경우는 MSDN 에서도 나와있는것처럼 IDisposable 인터페이스 개체를
+올바르게 사용할수 있도록 해주는 편리한 구문이다.
+이말은 File 및 Font 처럼 컴퓨터 에서 관리되는 리소스들을 쓰고 나서 쉽게 자원을 되돌려
+줄수 있도록 기능을 제공해 준다는 것이다.
+Visual C++ 에서도 자원을 쓰고 나서 해제하는 코드를 마지막에 넣어주곤 했다.
+C# 에서도 마찬가지로 자원을 해제해 줘야 하는데 using 을 사용하지 않고
+해주는 소스와 using 을 사용한 해제 방법을 아래 소스에 표현하였다.
+ 
+사용하지 않았을 때 
+Font font1= new Font(“Arral”, 10.0f);
+if (font1 != null)
+   ((IDisposable)font1).Dispose();
+
+
+using 을 사용했을 때
+using(Font font1 = new Font(“Arral”, 10.0f), Font font2 = new Font(“Arral”, 10.0f))
+{
+   // 표현 
+}
+
+결국 멤버 객체중에 Close, Dispose메소드를 갖고 있는 경우 Dispose를 구현하라는 내용입니다. 

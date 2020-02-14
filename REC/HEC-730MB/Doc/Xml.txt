@@ -1,0 +1,20 @@
+
+
+XML구조.
+  [XmlRoot("AxisFile")]
+      [XmlArray("AxisTable")]
+	      [XmlArrayItem("Axis")] [XmlAttribute] [XmlAttribute]
+		      [XmlElement]
+			  [XmlElement]
+			  [XmlElement]
+			  [XmlElement]
+			  [XmlElement]
+			  [XmlElement]
+
+XmlRoot >> Class를 Xml의 Root로 정의
+XmlElement >> 접근제한자가 Public인 Field, Property를 Xml의 Element로 정의한다.
+XmlAttribute >> 접근제한자가 Public인 Field, Property를 Xml의 Attribute로 정의한다.
+XmlIgnore >> Xml 내용에 포함시키지 않는다.
+XmlArray >> Array, List등 배열인 항목을 Element로 정의한다.
+XmlArrayItem >> Array, List등 배열안의 리스트를 Element로 정의한다.
+항목에 null로 입력할 경우 XmlIgnore 처럼 Xml 내용에 포함되지 않는다.

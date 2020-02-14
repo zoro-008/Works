@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>SSTG_XRail</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>2</dUnitPerRev>
+  <dMaxPos>110</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>LeftRight</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>50</dAcceleration>
+  <dDeceleration>50</dDeceleration>
+  <dRunSpeed>8</dRunSpeed>
+  <dSlowSpeed>8</dSlowSpeed>
+  <dManSpeed>8</dManSpeed>
+  <dHomeVelFirst>8</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>50</dHomeAccFirst>
+  <dJogSpeed>8</dJogSpeed>
+  <dFstPos>5</dFstPos>
+  <dScdPos>0</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>200</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

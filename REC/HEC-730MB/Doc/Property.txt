@@ -1,0 +1,317 @@
+
+
+C# 언어에서는 다양한 이유로 프로퍼티의 사용을 장려한다. 지금까지도 타입(type)에서 public 데이터 변수를 사용하거나, 
+get/set류의 메서드를 직접 만들어서 사용하고 있다면 이제 그런 방 법을 사용하지 않는 것이 좋다. 
+프로퍼티는 우리가 만든 타입의 값을 외부에서 접근할 수 있도 록 하면서 동시에 객체지향에서 논의되는 캡슐화를 지원한다. 
+프로퍼티는 데이터 멤버처럼 접 근가능하면서 메서드의 형태로 구현되는 C# 언어의 요소이다. 
+
+고객의 이름, 특정 위치의 (x, y) 좌표, 지난 연도의 수입 등은 타입 내에서 데이터의 형태로 작 성하는 것이 가장 적절하다. 
+프로퍼티는 메서드의 이점을 가지면서도 마치 데이터에 직접 접근 하는 것과 같은 방법을 제공한다. 
+프로퍼티를 이용하여 작성된 타입을 사용하는 것은 public 변수를 접근하는 것과 동일한 방법으로 구현된다. 
+하지만 프로퍼티를 구현하는 것은 메서드를 구현하는 것과 유사하며, 
+실제 데이터 값을 얻어내거나 바꿀 때에 행동방식을 정의할 수 있다. 
+닷넷 프레임워크(.NET Framework)는 우리가 외부에서 접근 가능한 데이터에 대해서 프로퍼티 를 사용할 것이라 가정하고 있다. 
+실제로 닷넷 프레임워크에서 데이터 바인딩을 지원하는 클래 스들은 일반적인 public 데이터 멤버가 아니라 프로퍼티를 이용하여 
+타입의 값을 구현했을 때 만 정상적으로 동작한다. 
+웹 컨트롤이나 윈도우 폼 컨트롤과 같은 유저 인터페이스 컨트롤들은 객체의 프로퍼티와 밀접하게 연관되어 있다. 
+데이터 바인딩 메커니즘은 타입 내의 값에 접근하 기 위해서 Reflection을 이용하는데, 이때 프로퍼티로 구현된 값만을 찾는다.
+textBoxCity.DataBindings.Add("Text", address, "City");
+이 코드는 textBoxCity 컨트롤의 Text 프로퍼티와 address 객체의 City 프로퍼티를 바인딩한 다.
+[ITEM #38 참고] 이 코드는 City라는 이름의 public 멤버 변수에 대해서는 동작하지 않는다. 
+public 데이터 멤버를 사용하는 것은 좋은 방법이 아니기 때문에 프레임워크 클래스 라이브러 리 설계자는 이러한 방법을 제공하지 않았다. 
+그들은 우리가 좀 더 나은 객체지향적 기술을 사용 하기 바랬기 때문이다. 
+C++나 자바 개발자들은 불만이 있을 수도 있겠지만, 
+데이터 바인딩 코드 는 get/set류의 메서드 어떤 것도 찾지 않는다. 
+get/set류의 메서드 대신 프로퍼티를 사용하자. 
+
+데이터 바인딩은 화면상에 출력될 값을 포함하고 있는 객체에 대해서만 적용이 가능하다. 
+하지 만 이것이 프로퍼티가 UI 요소에 한해서만 사용될 수 있다는 의미는 아니다. 
+다른 요소에 대해 서도 프로퍼티는 훌륭히 사용될 수 있으며, 
+프로그램에 대하여 추가적인 요구사항이나 변경사항 을 반영하기도 쉽게 해준다. 
+프로그램 내에서 고객의 이름이 반드시 존재하도록 하고 싶다고 하 자. 
+만일Name이라는 public 프로퍼티를 사용하고 있다면 단지 한 군데 정도만 수정하면 된다.
+public class Customer
+{
+   private string _name;
+   public string Name
+   {
+      get
+      {
+         return _name;
+      }
+      set
+      {
+         if ((value == null) || (value.Length == 0))
+            throw new ArgumentException("Name cannot be blank",
+            "Name");
+         _name = value;
+      }
+   }
+}
+만일 public 데이터 멤버 형태로 고객의 이름을 저장하고 있었다면 
+코드 전체에서 customer 이름을 변경하는 부분을 모두 찾아내어 수정해야 하는데, 
+이는 많은 시간이 소모된다. 
+
+프로퍼티는 메서드의 형태로 구현되기 때문에 멀티쓰레드 지원기능 또한 손쉽게 추가될 수 있 다. 
+단순히 프로퍼티의 get과 set 메서드가 데이터에 대해서 동기적으로 접근할 수 있도록 수정 하면 된다.
+public string Name
+{
+   get
+   {
+      lock(this)
+      {
+         return _name;
+      }
+   }
+   set
+   {
+      lock(this)
+      {
+         _name = value;
+      }
+   }
+}
+프로퍼티는 메서드의 언어적인 특성을 모두 가지고 있다. 
+따라서 프로퍼티는 virtual로 지정이 가능하다.
+public class Customer
+{
+   private string _name;
+   public virtual string Name
+   {
+      get
+      {
+         return _name;
+      }
+      set
+      {
+         _name = value;
+      }
+   }
+}
+
+또한, 프로퍼티는 abstract 형태로 정의되거나 interface의 한 부분으로 정의될 수도 있다.
+public interface INameValuePair
+{
+   object Name
+   {
+      get;
+   }
+   object Value
+   {
+      get;
+      set;
+   }
+}
+
+마지막으로, interface를 const와 non-const 형태로 만들 수 있다.
+public interface INameValuePair
+{
+   object Name
+   {
+      get;
+   }
+   object Value
+   {
+      get;
+      set;
+   }
+}
+
+public interface INameValuePair
+{
+   object Value
+   {
+      get;
+      set;
+   }
+}
+
+// 사용예:
+public class Stuff : IConstNameValuePair, INameValuePair
+{
+   private string _name;
+   private object _value;
+   #region IConstNameValuePair Memebers
+
+   public object Name
+   {
+      get
+      {
+         return _name;
+      }
+   }
+
+   object IConstnameValuePair.Value
+   {
+      get
+      {
+         return _value;
+      }
+   }
+
+   #endregion
+
+   #region INameValuePair Memebers
+   public object Value
+   {
+      get
+      {
+         return _value;
+      }
+      set
+      {
+         _value = value;
+      }
+   }
+
+   #endregion
+}
+프로퍼티는 클래스 내부의 데이터를 가져오거나 수정할 수 있는 메서드의 확장으로 볼 수도 있 다. 
+따라서 메서드를 통해서 할 수 있는 모든 동작은 프로퍼티에서도 똑같이 수행 가능하다. 
+
+프로퍼티는 두 가지의 형태의 accessor를 가질 수 있다. C# 2.0에서는 get/set accessor 각각 에 대해서 접근 한정자를 지정할 수 있는데, 이를 통해서 프로퍼티의 형태로 노출한 데이터에 대해서 적절히 가시성을 조정할 수 있다.
+public class Customer
+{
+   private string _name;
+   public virtual string Name
+   {
+      get
+      {
+         return _name;
+      }
+      protected set
+      {
+         _name = value;
+      }
+   }
+}
+프로퍼티 문법은 단순 데이터 필드를 좀 더 확장해서 사용할 수 있도록 하는데, 특정 타입을 사 용할 때 배열과 같이 인덱스를 이용한다. 인덱서(indexer)라고도 하는 이 기능은 배열의 인덱스 를 넘겨받는 프로퍼티라고도 볼 수 있다. 이러한 기능은 하나의 프로퍼티를 이용하여 다수의 값 에 접근하고자 할 때 매우 유용하다.
+public int this [int index]
+{
+   get
+   {
+      return _theValues[index];
+   }
+   set
+   {
+      _theValues[index] = value;
+   }
+}
+
+int val = MyObject[i];
+인덱서는 하나의 값에 접근하는 프로퍼티와 동일한 특성을 갖는다. 인덱서는 메서드의 형태로 구현되고, 인덱서 내부에 값에 대한 검증이나 특정 계산 루틴을 포함시킬 수 있다. 또한 virtual 이나 abstract 형태로 만들어서 interface 내부에 선언하거나, 읽기 전용 또는 읽고 쓰기 가능 한 형태로 만들 수 있다. 숫자 인덱스를 사용하는 1차원 배열 형태의 인덱서는 데이터 바인딩에 서도 사용된다. 숫자가 아닌 인덱스를 사용할 경우에는 맵(map)이나 디렉토리(directory)와 같 은 자료구조의 표현도 가능하다.
+public Address this[string name]
+{
+   get
+   {
+      return _theValues[name];
+   }
+   set
+   {
+      _theValues[name] = value;
+   }
+}
+C# 언어에서의 다차원 배열 형태로 인덱서를 구성할 수도 있는데, 이 경우 각각의 차원에 대해 서 서로 다른 인덱스형을 지정할 수도 있다.
+public int this[int x, int y]
+{
+   get
+   {
+      return ComputeValue(x, y);
+   }
+}
+
+public int this[int x, string name]
+{
+   get
+   {
+      return ComputeValue(x, name);
+   }
+}
+인덱서는 임의로 이름을 지정할 수 없기 때문에 항상 this 키워드를 이용하여 선언된다. 그러므 로 모든 타입은 항상 한 개의 인덱서만을 포함시킬 수 있다. 
+
+이러한 프로퍼티들은 매우 유용하며 구조가 잘 정의되어 있기 때문에, 프로그램 개발시 다양한 개선 효과를 볼 수 있다. 하지만 최초 구현시에는 public 데이터 멤버로 선언하고 나중에 프로퍼 티의 이점이 필요한 시점에 프로퍼티를 사용하도록 코드를 작성하고 싶을 수도 있다. 매우 이치 에 맞는 듯 하지만 이것은 적절하지 않다. 다음의 클래스 선언을 보자.
+public class Customer
+{
+   public string Name;
+}
+이 클래스는 고객의 이름을 포함하는 Customer 클래스다. 고객의 이름을 얻거나 변경하기 위 해서 다음과 같은 코드를 사용한다.
+string name = customerOne.Name;
+customerOne.Name = "This Company, Inc";
+이것은 매우 간단하고 수월해 보인다. 아마도 이러한 코드를 작성한 개발자는 나중에 Name이 라는 public 멤버를 프로퍼티로 변경하면 이를 사용하는 코드는 아무런 변경 없이 동작이 가능 하다고 생각했을 것이다. 일면 맞는 말이다. 
+
+하지만 프로퍼티는 데이터 멤버와 유사해 보이기는 하지만 데이터와 완전히 동일하지는 않다. 단지 새로운 문법 구조를 사용하지 않기 위해서 데이터 멤버에 접근하는 방식과 유사한 방법을 사용하는 것뿐이다. 사실 프로퍼티에 접근하는 IL 코드는 데이터 멤버에 접근하는 IL 코드와 서 로 다른 코드를 만들어낸다.
+.field public string Name
+Name 필드로부터 값을 가져오는 코드는 다음과 같은 IL 코드를 만들어낸다.
+ldloc.0
+ldfld         string NameSpace.Customer::Name
+stloc.1
+Name 필드에 값을 저장하는 코드는 다음과 같은 IL 코드를 만들어낸다.
+ldloc.0
+ldstr         "This Company, Inc"
+stfld         string NameSpace.Customer::Name
+IL을 하루 종일 볼 것은 아니기 때문에 IL을 모른다고 너무 걱정하지 말자. 여기서는 데이터 멤 버에 접근하는 코드와 프로퍼티에 접근할 때의 코드가 서로 다르고, 이러한 차이점이 결국 이진 호환성을 깨뜨린다는 것만 알면 된다. 이번에는 프로퍼티를 사용하는 Customer 타입을 보자.
+public class Customer
+{
+   private string _name;
+   public string Name
+   {
+      get
+      {
+         return _name;
+     }
+      set
+      {
+         _name = value;
+      }
+   }
+}
+이 Customer 타입을 사용하는 코드는 앞에서 알아본 것과 완전히 동일하다.
+string name = customerOne.Name;
+customerOne.Name = "This Company, Inc";
+하지만 C# 컴파일러가 생성한 IL 코드는 완벽히 다르다. 다음에 나타난 Customer 타입에 대한 IL 코드를 보자.
+.property instance string Name( )
+{
+   .get instance string Customer::get_Name( )
+   .set instance void Customer::set_Name(string)
+} // Customer::Name 메서드의 끝
+.method public hidebysig specialname instance string
+   get_Name( ) cil managed
+{
+   // 코드 크기 12 (0xc)
+   .maxstack 1
+   .locals init ([0] string CS$1$0000)
+   IL_0000: nop
+   IL_0001: ldarg.0
+   IL_0002: ldfld string Customer::_name
+   IL_0007: stloc.0
+   IL_0008: br.s IL_000a
+   IL_000a: ldloc.0
+   IL_000b: ret
+} // Customer::get_Name 메서드의 끝
+   .method public hidebysig specialname instance void
+      set_Name(string 'value') cil managed
+{
+   // 코드 크기 9 (0x9)
+   .maxstack 8
+   IL_0000: nop
+   IL_0001: ldarg.0
+   IL_0002: ldarg.1
+   IL_0003: stfld string Customer::_name
+   IL_0008: ret
+} // Customer::set_Name 메서드의 끝
+가장 중요한 점은 IL 코드내에서 프로퍼티가 어떻게 표현되는가 하는 문제이다. 위에서 보듯이 .property 지시자에 의해서 프로퍼티가 선언된다. 그리고 이 프로퍼티에 접근할 수 있는 get/set accessor가 구현된다. 두 개의 메서드는 사용자가 직접적으로 메서드를 사용할 수 없 도록 hidebysig와 specialname으로 선언되어 있다. 직접적으로 이 메서드를 호출하는 코드 는 쓸 수 없지만 우리는 프로퍼티 접근 방식으로 이러한 메서드를 간접적으로 사용할 수 있다.
+// get
+IL_0007: ldloc.0
+IL_0008: callvirt instance string Customer::get_Name( )
+IL_000d: stloc.1
+// set
+IL_000e: ldloc.0
+IL_000f: ldstr "This Company, Inc"
+IL_0014: callvirt instance void Customer::set_Name(string)
+설사 우리가 동일한 형태의 코드를 사용해서 Customer 타입에 접근할지라도 Name이 데이터 멤버로 구현되었는지 아니면 프로퍼티로 구현되었는지에 따라 서로 다른 코드가 만들어진다. 프로퍼티나 데이터 멤버에 접근하는 코드를 만드는 것은 C# 컴파일러의 몫이므로 우리가 제어 할 수 있는 방법은 없다. 
+
+비록 프로퍼티와 데이터 멤버의 접근 코드가 소스차원에서는 완전히 동일하다 하더라도 이진 호환성을 가지지는 못한다. 따라서 데이터 멤버로 선언된 값을 나중에 프로퍼티로 변경하게 되 면, 모든 코드에 대해서 재컴파일을 반드시 수행해야 한다.‘ 4장, 이진 컴포넌트 작성’에서 이진 컴포넌트에 대해서 자세히 다루게 될 것이다. 하지만 데이터 멤버를 사용하는 코드를 프로퍼티 를 사용하도록 변경하면 이진 호환성을 잃어버린다는 것은 반드시 기억해야 한다. 이것은 애플 리케이션을 구성하는 어셈블리 중에 일부만을 개선하여 배포할 경우 복잡한 배포문제를 유발할 가능성이 있다. 
+
+프로퍼티에 대한 IL 코드를 살펴보면 프로퍼티를 사용할 때 수행성능에 좋지 않은 영향을 미칠 것 같다고 생각할 수도 있다. 프로퍼티에 대한 접근이 데이터 멤버의 접근보다 빠른 것은 아니 지만 그렇다고 현저히 느리지도 않다. JIT 컴파일러는 property accessor와 같은 몇몇의 메서 드 호출에 대해서 inline을 수행한다. 만일 JIT 컴파일러가 property accessor에 대해서 inline을 수행한다면, 데이터 멤버에 대한 접근과 프로퍼티에 대한 접근은 동일한 수행성능을 보일 것이다. 설사 inline이 수행되지 않는다 하더라도 실질적인 수행성능은 메서드 호출에 대 한 비용 정도로 아주 사소하다. 대부분의 상황에서 이러한 메서드 호출 비용은 측정하기 불가능 할 정도로 작다. 
+
+만일 public이나 protected 형태로 타입의 값을 노출해야 하는 경우라면 항상 프로퍼티를 사 용하자. 다수의 값에 대해서 순서대로 접근을 하거나 디렉토리 형태의 자료 구조를 표현할 때는 인덱서를 사용하자. 모든 데이터 멤버는 예외 없이 private로만 사용하는 것이 좋다. 이렇게 함 으로써 데이터 바인딩 지원이 가능해지며 추후에 메서드의 변경이 발생했을 때 좀 더 쉽게 코드 를 변경할 수 있다. 프로퍼티 형태를 지원하기 위해서 추가적으로 입력해야 하는 시간은 고작 1~2분 정도일 것이다. 하지만 나중에 프로퍼티를 사용하기 위해서 코드를 찾고 수정하려면 최 소한 몇 시간이 필요할 것이다. 현재의 짧은 시간을 절약하기 위해서 미래의 더 큰 시간을 낭비 하지 말자.

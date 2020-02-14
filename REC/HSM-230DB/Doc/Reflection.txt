@@ -1,0 +1,76 @@
+﻿[CSharp]53.리플렉션 을 이용해서 객체 생성하고 이용하기
+리플렉션 을 이용해서 객체 생성하고 이용하기::
+​
+우리는 이전 소설에서 리플렉션을 이용햇거 형식의 정보를 열어보는방법에대해 알아봈씁니다. 하지만 구슬이 서말이라도 꿰어야보배라했다고,이런 형식 정보를 백날 열어봐야 우리의 코드에서 활용할만한일이없다면 아무리 신기한기능이라도 그저 장식에 불과할겁니다.
+​
+그래서 저는 지금부터 리플렉션을 이용해서 특정형식의 인스턴스를 만들고,데이터를 할당하며,메소드를 호출하는 방법을 설명하려 합니다.이렇게 코드안에서 런타임특정 형식의 인스턴스를 만들수있게되면 우리는 조금더 프로그램이 동적 으로  동작할수있도록 구성할수있습니다.
+​
+리플렉션을 이용해서 동적으로 인스턴스를 만들기 위해서는 System.Activator  클래스의 도움이 필요합니다. 인스턴스를 만들고자 하는 형식의 Type 객체를 매개변수로 넘기면,Activator.CreateInstance() 메소드 는 입력받은 형식의 인스턴스를 생성하여 반환합니다.
+ ﻿﻿
+﻿object a = Activator.CreateInstance(typeof(int));
+​
+ 
+한편 일반화를 지원하는 버전의 CreateInstance() 메소드도있습니다. 가령 List<int>의 인스턴스를만들고싶다면 다음예제와 같이하면됩니다.
+ 
+​
+﻿List<int> list = Activator.CreateInstance<List<int>>();
+ 
+인스턴스생성만 동적으로 할수있는게 아닙니다. 객체의 프로퍼티 값을 할당하는 것도 동적으로할수있습니다. 혹시 PropertyInfo 클래스,기억하고있습니까? Type.GetProperties() 의 반환형식말입니다. 이 PropertyInfo 객체는 SetValue()와 GetValue()라는 메소드를 갖고있는데,GetValue() 를 호출하면 프로퍼티로 부터 값을 읽을수 있고,SetValue()를 호출하면 프로퍼티에 값을 할당할수도 있습니다.
+ 
+다음은 PropertyInfo.SetValue() 메소드를 이용하는 동적으로 프로퍼티에 값을 기록하고읽는예제입니다.
+ 
+ 
+class Profile
+{
+   public Name{get; set;}
+   public Phone{get; set;}
+}
+ 
+static void Main()
+{
+  Type type = typeof(Profile);
+  Object  profile = Activator.CreateInstance(type);
+  PropertyInfo name = type.PropertyInfo("Name");
+  PropertyInfo name = type.PropertyInfo('Phone");
+  name.SetValue(profile,"정우진",null);
+  phone.SetVlaue(profile,"01000000000",null);
+ 
+Console.WrteLine("{0},{1}",name.GetValue(profile,null),phone.GetValue(profile,null));
+}
+ 
+위 예제 코드에서 SetValue() 메소드와 GetValue() 메소드의 가장 마지막 매개변수가 궁금하지않습니까? PropertyInfo 클래스는 프로퍼티뿐 아니라 인덱서의 정보를 담을수도있는데,SetValue()와 GetValue()의 마지막 변수는 인덱서의 인덱스를 위해 사용됩니다.
+프로퍼니는 인덱서가 필요없으므로 앞의예제에서null로 할당한것이죠.
+ 
+자,이번에는리플렉션을 이용해서 메소드를 호출하는 방법을 알아보겠습니다.프로퍼티에 동적으로 값을 기록하고읽는요령을  터득한 사람들은 아마 메소드를호출하는 방법도 대강비슷하리라는점을 눈치챗을겁니다. 메소드의 정보를담는 MethodInfo 클래스를 호출하는것이 가능해집니다. 다음은MethodInfo 클래스를 이용해서 메소드를 동적으로 호출하는예제입니다.
+ 
+ 
+    class Profile
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+        public string Phone { get; set; }
+        public void Print()
+        {
+            Console.WriteLine("{0},{1}");
+        }
+        
+        
+    }
+ 
+ static void Main()
+        { 
+            Type type = typeof(Profile);
+            Profile profile = (Profile)Activator.CreateInstance(type);
+            MethodInfo method = type.GetMethod("Print");
+            method.Invoke(profile, null);
+        }
+ 
+[출처] [CSharp]53.리플렉션 을 이용해서 객체 생성하고 이용하기|작성자 Null
+
+
+
+
+http://csharp.net-tutorials.com/reflection/reflection-based-settings-class/

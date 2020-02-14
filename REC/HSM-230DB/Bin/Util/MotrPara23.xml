@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>TOOL_ZVisn</sMotrName>
+  <iPulsePerRev>5000</iPulsePerRev>
+  <dUnitPerRev>1</dUnitPerRev>
+  <dMaxPos>30</dMaxPos>
+  <dMinPos>-10</dMinPos>
+  <bExistEnc>false</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>UpDown</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>50</dAcceleration>
+  <dDeceleration>50</dDeceleration>
+  <dRunSpeed>8</dRunSpeed>
+  <dSlowSpeed>3</dSlowSpeed>
+  <dManSpeed>3</dManSpeed>
+  <dHomeVelFirst>2</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>10</dHomeAccFirst>
+  <dJogSpeed>2</dJogSpeed>
+  <dFstPos>5.6</dFstPos>
+  <dScdPos>1</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>5</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>
