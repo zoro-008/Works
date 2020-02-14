@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1BFE0F7-76E3-4BF2-9C2E-043695C05128}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VDll</RootNamespace>
+    <AssemblyName>VDll</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\bin\dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV.UI, Version=3.3.0.2824, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Dll\EmguCV_3302826\Emgu.CV.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=3.3.0.2824, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Dll\EmguCV_3302826\Emgu.CV.World.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenTK, Version=2.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.2.0.0\lib\net20\OpenTK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithm\CShapeMatch.cs" />
+    <Compile Include="Algorithm\CTempMatch.cs" />
+    <Compile Include="Algorithm\CPeak.cs" />
+    <Compile Include="Calibration\Calibration.cs" />
+    <Compile Include="Camera\CNeptune.cs" />
+    <Compile Include="Camera\CImgLoader.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CMultiObjectSelector.cs" />
+    <Compile Include="CVarTable.cs" />
+    <Compile Include="Calibration\FormCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calibration\FormCalibration.designer.cs">
+      <DependentUpon>FormCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPkg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPkg.Designer.cs">
+      <DependentUpon>FormPkg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfile.designer.cs">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecipe.Designer.cs">
+      <DependentUpon>FormRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormValue.Designer.cs">
+      <DependentUpon>FormValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Light\CDaekyum.cs" />
+    <Compile Include="FormTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrain.Designer.cs">
+      <DependentUpon>FormTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVision.Designer.cs">
+      <DependentUpon>FormVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GV.cs" />
+    <Compile Include="Camera\ICamera.cs" />
+    <Compile Include="Light\ILight.cs" />
+    <Compile Include="Camera\NeptuneC_Interface.cs" />
+    <Compile Include="CDynamic.cs" />
+    <Compile Include="Map\Hud.cs" />
+    <Compile Include="Map\Map.cs" />
+    <Compile Include="Map\Sight.cs" />
+    <Compile Include="Pakage\CTracker.cs" />
+    <Compile Include="Pakage\IPkg.cs" />
+    <Compile Include="Pakage\PCamera.cs" />
+    <Compile Include="Pakage\PDisplay.cs" />
+    <Compile Include="Pakage\PMatch.cs" />
+    <Compile Include="Pakage\PMorphology.cs" />
+    <Compile Include="Pakage\PRotation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Script\Constants.cs" />
+    <Compile Include="Script\Functions.cs" />
+    <Compile Include="Script\Interpreter.cs" />
+    <Compile Include="Script\Parser.cs" />
+    <Compile Include="Script\Utils.cs" />
+    <Compile Include="SVLDefine.cs" />
+    <Compile Include="Vision.cs" />
+    <Compile Include="VL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calibration\FormCalibration.resx">
+      <DependentUpon>FormCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPkg.resx">
+      <DependentUpon>FormPkg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfile.resx">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe.resx">
+      <DependentUpon>FormRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrain.resx">
+      <DependentUpon>FormTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormValue.resx">
+      <DependentUpon>FormValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVision.resx">
+      <DependentUpon>FormVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{515f844e-994d-4c94-9e46-22f94026a3ff}</Project>
+      <Name>Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Live.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sizes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom_Out.png" />
+    <None Include="Resources\Zoom_In.png" />
+    <None Include="Resources\Save_Picture.png" />
+    <None Include="Resources\Save_Parameter.png" />
+    <None Include="Resources\Open_Picture.png" />
+    <None Include="Resources\New_document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map_3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

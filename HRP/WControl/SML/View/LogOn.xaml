@@ -1,0 +1,167 @@
+﻿<Window x:Class="SML.View.LogOn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:SML.View"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" 
+        WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" 
+        Height="250" Width="500" IsVisibleChanged="Window_IsVisibleChanged" Title="Login">
+
+    <Grid Background="LightSteelBlue" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3.0*"/>
+                <RowDefinition Height="1.0*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Name="PassWordChange" Background="LightSteelBlue" Visibility="Hidden">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.0*"/>
+                    <RowDefinition Height="1.0*"/>
+                    <RowDefinition Height="1.0*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Stretch" Background="CadetBlue">
+                    <materialDesign:PackIcon Kind="PasswordReset" Height="32" Width="32" VerticalAlignment="Center" Margin="5 0 5 0" />
+                    <TextBlock x:Name="lbTitle" Margin="0,0,0,4"  VerticalAlignment="Center" Text="PASSWORD CHANGE" Foreground="White" FontSize="20"/>
+                </StackPanel>
+
+                <!--
+                <TextBlock   FontSize="20" Text="OLD PASSWORD" Foreground="White" VerticalAlignment="Center" Width="160" Margin="5 0 0 0"/>
+                <TextBlock   FontSize="20" Text="NEW PASSWORD"  Foreground="White" VerticalAlignment="Center" Width="160" Margin="5 0 0 0"/>
+                -->
+                <StackPanel Grid.Row="1" Grid.RowSpan="2" Orientation="Vertical" >
+                    <PasswordBox Name="tbOldPass" FontSize="20" Margin="10 20 150 0" materialDesign:HintAssist.Hint="Please enter your current password"/>
+                    <PasswordBox Name="tbNewPass" FontSize="20" Margin="10 15 150 0" materialDesign:HintAssist.Hint="Please enter a new password"/>
+                </StackPanel>
+                <Button      Grid.Row="1" Grid.RowSpan="2" x:Name="btEnter" BorderThickness="0" Background="DarkCyan" FontSize="16" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="365 20 10 15" Click="BtEnter_Click" Height="Auto" >
+                    <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                        <TextBlock Margin="0,0,0,3" VerticalAlignment="Center" Text="ENTER" Foreground="White" FontSize="20"/>
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+
+            <Grid Name="EDIT" Grid.Column="0" Background="LightSteelBlue" Visibility="Hidden">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.0*"/>
+                    <RowDefinition Height="1.0*"/>
+                    <RowDefinition Height="1.0*"/>
+                    <RowDefinition Height="1.0*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Background="CadetBlue">
+                    <materialDesign:PackIcon Kind="Lock" Height="32" Width="32" VerticalAlignment="Center" Margin="5 0 5 0" />
+                    <TextBlock Margin="0,0,0,4"  VerticalAlignment="Center" Text="EDIT" Foreground="White" FontSize="20"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                    <TextBlock   FontSize="16" Text="ID" VerticalAlignment="Center" Width="110" Margin="5"/>
+                    <TextBox Name="tbEditID" FontSize="16" Width="250" Margin="5"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                    <TextBlock   FontSize="16" Text="PASSWORD" VerticalAlignment="Center" Width="110" Margin="5"/>
+                    <PasswordBox Name="tbEditPW" FontSize="16" Width="250" Margin="5"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal" >
+                    <TextBlock   FontSize="16" Text="ACCESS LEVEL" VerticalAlignment="Center" Width="110" Margin="5"/>
+                    <ComboBox Name="cbEditLevel" FontSize="16" Width="250" Margin="5" VerticalContentAlignment="Center" IsEditable="False">
+                        <ComboBoxItem IsSelected="True">OPERATOR</ComboBoxItem>
+                        <ComboBoxItem                  >ENGINEER</ComboBoxItem>
+                        <ComboBoxItem                  >MASTER</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.RowSpan="3" Orientation="Vertical" Margin="380 0 0 0" >
+                    <Button x:Name="btEditNew" BorderThickness="0" Background="DarkCyan" FontSize="15" Margin="1 3 5 3" Click="BtEditNew_Click" >
+                        <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                            <TextBlock Margin="0,0,0,3" VerticalAlignment="Center" Text="NEW" Foreground="White" FontSize="15"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="btEditChange" BorderThickness="0" Background="DarkCyan" FontSize="15" Margin="1 0 5 3" Click="BtEditChange_Click">
+                        <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                            <TextBlock Margin="0,0,0,3" VerticalAlignment="Center" Text="CHANGE" Foreground="White" FontSize="15"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="btDelete" BorderThickness="0" Background="DarkCyan" FontSize="15" Margin="1 0 5 3" Click="BtDelete_Click">
+                        <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                            <TextBlock Margin="0,0,0,3" VerticalAlignment="Center" Text="DELETE" Foreground="White" FontSize="15"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="btDeleteAll" BorderThickness="0" Background="DarkCyan" FontSize="15" Margin="1 0 5 0" Click="BtDeleteAll_Click">
+                        <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                            <TextBlock Margin="0,0,0,3" VerticalAlignment="Center" Text="DELETE ALL" Foreground="White" FontSize="15"/>
+                        </StackPanel>
+                    </Button>
+
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Name="Login" Grid.Column="0" Background="LightSteelBlue" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.0*"/>
+                    <RowDefinition Height="1.0*"/>
+                    <RowDefinition Height="1.0*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Background="CadetBlue">
+                    <materialDesign:PackIcon Kind="Lock" Height="32" Width="32" VerticalAlignment="Center" Margin="5 0 5 0" />
+                    <TextBlock Margin="0,0,0,4"  VerticalAlignment="Center" Text="LOGIN" Foreground="White" FontSize="20"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.RowSpan="2" Orientation="Vertical" >
+                    <TextBox     Name="tbLoginId"       FontSize="18" Margin="15 25 170 10" materialDesign:HintAssist.Hint=" ID"       />
+                    <PasswordBox Name="tbLoginPassword" FontSize="18" Margin="15 10 170 25" materialDesign:HintAssist.Hint=" PASSWORD" />
+                </StackPanel>
+
+                <Button Grid.Row="1" Grid.RowSpan="2" x:Name="btLogOut" BorderThickness="0" Background="DarkCyan" FontSize="16" Margin="345 15 15 10" Click="BtLogOut_Click" Height="AUTO">
+                    <StackPanel Orientation="Vertical" >
+                        <materialDesign:PackIcon Kind="PersonCheckOutline" Height="32" Width="32" HorizontalAlignment="Center" />
+                        <TextBlock Name="tbLogout" Margin="0,0,0,0" Text="LOG OUT" Foreground="White" FontSize="20" />
+                    </StackPanel>
+                </Button>
+
+
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button  Grid.Column="0" x:Name="btEdit" BorderThickness="0" Background="DarkCyan" FontSize="16" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5 5 5 5" Click="BtEdit_Click" Height="Auto" >
+                    <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+
+                        <TextBlock Name="tbEdit" Margin="0,0,0,3" VerticalAlignment="Center" Text=" EDIT ID" Foreground="White" FontSize="20"/>
+                    </StackPanel>
+                </Button>
+                <Button  Grid.Column="1" x:Name="btChange" BorderThickness="0" Background="DarkCyan" FontSize="16" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5 5 5 5" Click="BtChange_Click" Height="Auto" >
+                    <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                        <TextBlock Name="tbChange" Margin="0,0,0,3" VerticalAlignment="Center" Text=" CHANGE" Foreground="White" FontSize="20"/>
+                    </StackPanel>
+                </Button>
+                <Button Grid.Column="2" x:Name="btEsc"  BorderThickness="0" Background="DarkCyan" FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5 5 5 5" Click="BtEsc_Click"  Height="Auto" >
+                    <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                        <TextBlock Name="tbEsc" Margin="0,0,0,3" VerticalAlignment="Center" Text=" ESC" Foreground="White" FontSize="20"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>

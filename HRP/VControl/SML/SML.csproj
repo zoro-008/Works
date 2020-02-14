@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A820AE0-7242-4398-B295-0963557F1F7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SML</RootNamespace>
+    <AssemblyName>SML</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\Dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\Bin\Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\Bin\Dll\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Bin\Dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\Bin\Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAioMan.cs" />
+    <Compile Include="CCylinderMan.cs" />
+    <Compile Include="CDioMan.cs" />
+    <Compile Include="CErrMan.cs" />
+    <Compile Include="CMotorMan.cs" />
+    <Compile Include="FormLogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogOn.Designer.cs">
+      <DependentUpon>FormLogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPassword.Designer.cs">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDllMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDllMain.Designer.cs">
+      <DependentUpon>FormDllMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormErr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormErr.Designer.cs">
+      <DependentUpon>FormErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MotionAXL%284033%29\AXA.cs" />
+    <Compile Include="MotionAXL%284033%29\AXD.cs" />
+    <Compile Include="MotionAXL%284033%29\AXHS.cs" />
+    <Compile Include="MotionAXL%284033%29\AXL.cs" />
+    <Compile Include="MotionAXL%284033%29\AXM.cs" />
+    <Compile Include="MotionAXL%284033%29\CAio.cs" />
+    <Compile Include="MotionAXL%284033%29\CDio.cs" />
+    <Compile Include="MotionAXL%284033%29\CMotor.cs" />
+    <Compile Include="MotionNMC2%2820141104%29\CDio.cs" />
+    <Compile Include="MotionNMC2%2820141104%29\CModule.cs" />
+    <Compile Include="MotionNMC2%2820141104%29\CMotor.cs" />
+    <Compile Include="MotionNMC2%2820141104%29\nmc2.cs" />
+    <Compile Include="Motion_Interface\IAio.cs" />
+    <Compile Include="Motion_Interface\IDio.cs" />
+    <Compile Include="Motion_Interface\IMotor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SML.cs" />
+    <Compile Include="SMLDefine.cs" />
+    <Compile Include="CTowerLampMan.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormDllMain.ko.resx">
+      <DependentUpon>FormDllMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDllMain.zh-Hans.resx">
+      <DependentUpon>FormDllMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormErr.ko.resx">
+      <DependentUpon>FormErr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormErr.zh-Hans.resx">
+      <DependentUpon>FormErr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogOn.ko.resx">
+      <DependentUpon>FormLogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogOn.resx">
+      <DependentUpon>FormLogOn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogOn.zh-Hans.resx">
+      <DependentUpon>FormLogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.ko.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDllMain.resx">
+      <DependentUpon>FormDllMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormErr.resx">
+      <DependentUpon>FormErr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.zh-Hans.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{515f844e-994d-4c94-9e46-22f94026a3ff}</Project>
+      <Name>Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Back.png" />
+    <Content Include="Resources\Cancel.png" />
+    <None Include="Resources\CCW.png" />
+    <Content Include="Resources\Clear.png" />
+    <Content Include="Resources\Color.png" />
+    <Content Include="Resources\Color_balance.png" />
+    <None Include="Resources\CW.png" />
+    <Content Include="Resources\Diagram.png" />
+    <None Include="Resources\Up.png" />
+    <None Include="Resources\Dn.png" />
+    <None Include="Resources\Edit.png" />
+    <Content Include="Resources\Error.png" />
+    <Content Include="Resources\Exit.png" />
+    <Content Include="Resources\Forward.png" />
+    <Content Include="Resources\Home.png" />
+    <None Include="Resources\New_image.png" />
+    <None Include="Resources\Left.png" />
+    <None Include="Resources\Left-right.png" />
+    <Content Include="Resources\Lock.png" />
+    <None Include="Resources\onebit_18.png" />
+    <None Include="Resources\Ok.png" />
+    <Content Include="Resources\Open_file.png" />
+    <None Include="Resources\Person.png" />
+    <Content Include="Resources\Play.png" />
+    <None Include="Resources\Pole.bmp" />
+    <Content Include="Resources\Refresh.png" />
+    <Content Include="Resources\Registration.png" />
+    <Content Include="Resources\Rename.png" />
+    <None Include="Resources\Right.png" />
+    <Content Include="Resources\Save.png" />
+    <Content Include="Resources\Stop.png" />
+    <Content Include="Resources\TitleBar.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

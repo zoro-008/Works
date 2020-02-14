@@ -1,0 +1,101 @@
+﻿<Window x:Name="FormError" x:Class="SML.View.Error"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:SML.View"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" 
+        WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" 
+        d:DesignHeight="693" d:DesignWidth="500" Width="500" Height="800" Title="Error" Topmost="True">
+    <Grid Background="Black">
+        <GroupBox Grid.Column="0" Header="ERROR" Style="{DynamicResource MaterialDesignCardGroupBox}" Margin="1" Padding="4">
+            <GroupBox.HeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Height="35" Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Error" Height="32" Width="32" VerticalAlignment="Center" />
+                        <TextBlock Margin="8,-2,0,0" VerticalAlignment="Center" Style="{StaticResource MaterialDesignSubheadingTextBlock}" Text="{Binding}" TextAlignment="Center" FontSize="25"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GroupBox.HeaderTemplate>
+
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2.0*"/>                    
+                    <RowDefinition Height="2.0*"/>
+                    <RowDefinition Height="8.0*"/>
+                    <RowDefinition Height="2.0*"/>
+                    <RowDefinition Height="5.0*"/>
+                    <RowDefinition Height="2.0*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.0*"/>
+                        <RowDefinition Height="1.0*"/>
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Row="0" Background="DarkCyan" Grid.ColumnSpan="2" >
+                        <TextBlock Text="NAME" TextAlignment="Center" Foreground="White" FontSize="20" VerticalAlignment="Center"/>
+                    </DockPanel>
+                    <TextBox x:Name="Name" Grid.Row="1" Background="AliceBlue" VerticalContentAlignment="Center" IsReadOnly="True" />
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.0*"/>
+                        <RowDefinition Height="1.0*"/>
+                    </Grid.RowDefinitions>
+                    <DockPanel Grid.Row="0" Background="DarkCyan" Grid.ColumnSpan="2">
+                        <TextBlock Text="ENUM" TextAlignment="Center" Foreground="White" FontSize="20" VerticalAlignment="Center"/>
+                    </DockPanel>
+                    <TextBox x:Name="Enum" Grid.Row="1" Background="AliceBlue" VerticalContentAlignment="Center" IsReadOnly="True"/>
+                </Grid>
+
+                <Grid x:Name="Picture" Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="6*"/>
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Row="0" Background="DarkCyan" >
+                        <TextBlock Text="ERROR PICTURE" TextAlignment="Center" Foreground="White" FontSize="20" VerticalAlignment="Center"/>
+                    </DockPanel>
+
+                    <MediaElement x:Name="pbErr" Grid.Row="1" MediaEnded="pbErr_MediaEnded" Stretch="Uniform" />
+                    <Canvas x:Name="Tracker" Grid.Row="1" />
+                    <!-- Width="480" Height="224"/>-->
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.0*"/>
+                        <RowDefinition Height="1.0*"/>
+                    </Grid.RowDefinitions>
+                    <DockPanel Background="DarkCyan" >
+                        <TextBlock Text="MESSAGE" TextAlignment="Center" Foreground="White" FontSize="20" VerticalAlignment="Center"/>
+                    </DockPanel>
+                    <TextBox x:Name="Msg" Grid.Row="1" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" VerticalContentAlignment="Center" IsReadOnly="True"/>
+                </Grid>
+
+                <Grid Grid.Row="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.0*"/>
+                        <RowDefinition Height="4.0*"/>
+                    </Grid.RowDefinitions>
+                    <DockPanel Background="DarkCyan" >
+                        <TextBlock Text="ACTION" TextAlignment="Center" Foreground="White" FontSize="20" VerticalAlignment="Center"/>
+                    </DockPanel>
+                    <TextBox x:Name="Action" Grid.Row="1" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" VerticalContentAlignment="Top" Padding="0" Text="ewerqhgjfj&#xD;&#xA;fghjfj&#xD;&#xA;dsfgs&#xD;&#xA;sdfgsgfs&#xD;&#xA;sfdgsfdg&#xD;&#xA;sdfgsdfg&#xD;&#xA;sddfgsd" 
+                             IsReadOnly="True" VerticalScrollBarVisibility="Auto" Height="185" />
+                </Grid>
+                <Button x:Name="btClose" Grid.Row="5" Background="DarkCyan" Height="Auto" Click="BtClose_Click_1" BorderThickness="0">
+                    <TextBlock Text="CLOSE" Foreground="White" FontSize="30"/>
+                </Button>
+
+            </Grid>
+        </GroupBox>
+
+
+    </Grid>
+</Window>

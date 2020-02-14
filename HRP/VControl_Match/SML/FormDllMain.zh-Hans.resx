@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>视频位置</value>
+  </data>
+  <data name="btOpenImg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbErrImg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbInfo.Text" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="label75.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label75.Text" xml:space="preserve">
+    <value>错误级别</value>
+  </data>
+  <data name="rbError.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbError.Text" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="lbErrNo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbErrNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 29</value>
+  </data>
+  <data name="lbErrNo.Text" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="lbErrNo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btErrApply.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btErrApply.Text" xml:space="preserve">
+    <value> 使用</value>
+  </data>
+  <data name="lbErrEnum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbErrEnum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 29</value>
+  </data>
+  <data name="lbErrEnum.Text" xml:space="preserve">
+    <value>节目号码</value>
+  </data>
+  <data name="lbErrEnum.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btSaveErr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btSaveErr.Text" xml:space="preserve">
+    <value> 储存</value>
+  </data>
+  <data name="lbErrName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbErrName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 29</value>
+  </data>
+  <data name="lbErrName.Text" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="lbErrName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lbErrAction.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbErrAction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 29</value>
+  </data>
+  <data name="lbErrAction.Text" xml:space="preserve">
+    <value>措施</value>
+  </data>
+  <data name="lbErrAction.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="tpError.Text" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="lbNotLog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbNotLog.Text" xml:space="preserve">
+    <value>不要记录</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="cbNotLog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btSaveIO.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btSaveIO.Text" xml:space="preserve">
+    <value> 储存</value>
+  </data>
+  <data name="btDioApply.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btDioApply.Text" xml:space="preserve">
+    <value> 使用</value>
+  </data>
+  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>直接模式</value>
+  </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>测试模式</value>
+  </data>
+  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>翻转</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>节目号码</value>
+  </data>
+  <data name="cbDioDirect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbDioTestMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="cbDioInv.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>OFF 延迟时间</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>ON 延迟时间</value>
+  </data>
+  <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="label55.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label55.Text" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="btAoSet.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAZhJREFUOE+V
+        0lsoQ3EcB/D/KCkrtyeskC1hj3KJJS+kPLiVKJciIRLjYWSltBjKk9yWpxVFeVAya0VLe9G0NuQyh22N
+        WZpsbTT7Ovjz4nZ86tfpfH+/3/+cU4f8xbnWr/aZhnGvl3ofDAOwrXTiSt2hoe3fuTWTPSGPEnCVAe4c
+        3OtKcaSo2qXt352Nt+X5mWnA2whcFuLpoAaHsgZuy6fS6jC3dnQPwS4Er3LxbK3EiaLJSNt/cyzJpcAs
+        Qp5yhFzVuNO2g1F1wDrTPKgRxI/Qse+51ufFAe8igFoEjiXwW0qA62zAloaH5QiwB9TT0a8Motgo31m3
+        ByjGk5l8FozkbVlfkDBFR7/nUJIWtvBaN3P8x+fTSOD8fXmVEBUd+5mpKJb3et0m0aLbjXz2M/gfr73w
+        NsCVuU44BKQCJgJDboySxtwYJSki73Em+/RIOGS8LRpzZ6kQsL+eEPYJckIj7sxlSXF+ZxYCNj62CD+D
+        xtwxfYkyIB374vBeGnHHyJNb3boM2McSNmn0Pxe9ifuMNGmH3nJEyAtnBd8N6x06rAAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="btAoSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btAoSet.Text" xml:space="preserve">
+    <value> 产出</value>
+  </data>
+  <data name="label73.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label73.Text" xml:space="preserve">
+    <value>OUTPUT 属性</value>
+  </data>
+  <data name="label58.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label58.Text" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="label61.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label61.Text" xml:space="preserve">
+    <value>测试模式</value>
+  </data>
+  <data name="label64.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label64.Text" xml:space="preserve">
+    <value>节目号码</value>
+  </data>
+  <data name="label69.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label69.Text" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="label71.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label71.Text" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="label72.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label72.Text" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="label59.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>INPUT 属性</value>
+  </data>
+  <data name="btSaveAIO.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btSaveAIO.Text" xml:space="preserve">
+    <value> 储存</value>
+  </data>
+  <data name="btAioApply.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btAioApply.Text" xml:space="preserve">
+    <value> 使用</value>
+  </data>
+  <data name="label62.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label62.Text" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="label65.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label65.Text" xml:space="preserve">
+    <value>节目号码</value>
+  </data>
+  <data name="label66.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label66.Text" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="label67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label67.Text" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="label70.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label70.Text" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="label68.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label68.Text" xml:space="preserve">
+    <value>OUTPUT 列表</value>
+  </data>
+  <data name="label57.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label57.Text" xml:space="preserve">
+    <value>INPUT 列表</value>
+  </data>
+  <data name="lbTwl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 21</value>
+  </data>
+  <data name="lbTwl5.Text" xml:space="preserve">
+    <value>声音</value>
+  </data>
+  <data name="lbTwl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 21</value>
+  </data>
+  <data name="lbTwl4.Text" xml:space="preserve">
+    <value>绿色</value>
+  </data>
+  <data name="lbTwl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 21</value>
+  </data>
+  <data name="lbTwl3.Text" xml:space="preserve">
+    <value>黄色</value>
+  </data>
+  <data name="lbTwl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 21</value>
+  </data>
+  <data name="lbTwl2.Text" xml:space="preserve">
+    <value>红</value>
+  </data>
+  <data name="lbTwl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="lbTwl1.Text" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>红 OUTPUT 地址</value>
+  </data>
+  <data name="btSaveTLamp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btSaveTLamp.Text" xml:space="preserve">
+    <value> 储存</value>
+  </data>
+  <data name="btTLampApply.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btTLampApply.Text" xml:space="preserve">
+    <value> 使用</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>黄 OUTPUT 地址</value>
+  </data>
+  <data name="label56.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label56.Text" xml:space="preserve">
+    <value>声音 模式</value>
+  </data>
+  <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>测试模式</value>
+  </data>
+  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>绿 OUTPUT 地址</value>
+  </data>
+  <data name="cbTLTestMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>塔灯</value>
+  </data>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>声音 OUTPUT 地址</value>
+  </data>
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>绿 模式</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>红 模式</value>
+  </data>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>黄 模式</value>
+  </data>
+  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>状态 列表</value>
+  </data>
+  <data name="tpTowerLamp.Text" xml:space="preserve">
+    <value>塔灯</value>
+  </data>
+  <data name="btActrReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label74.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label74.Text" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="lbAlarm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label63.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label63.Text" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lbFwdStat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btActrStop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btActrStop.Text" xml:space="preserve">
+    <value> 停止</value>
+  </data>
+  <data name="lbBwdStat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label43.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>测试</value>
+  </data>
+  <data name="btActrRpt.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABbVJREFUWEft
+        l1lQFFcYhdswKkRlX0RkAAcYFAEXEFEQRUBkEaIICKLsCDgCCsq+xrgEd0TFoEbFBY0hYhVJiBJkF0WR
+        5CGxEtfKY16Sig86nvy3e1oWiYXCS6o8Vaen+96p+c5/+3bfudwH/b8kzZxKx4/IY/jrwZJmzKGjhMy+
+        M8qSZjhxZlkP6IyFmMS3DZZZ9p+cvr8/nemTRzGENHOBRJb/DwFAV6vI0/j2waJ+ybTcvzktl2S6GqUQ
+        BFeXl7yIL7wFVYBisj3fN1jUn1J6Gxo2RUpOc/5GajEgjyCECr5pZy+OXXosBthHnsX3Dxb17zzxG1K2
+        94ghFNT6niH6wUuP/ozDFx8NK0Bp5QMklXQhofguhSikEM7vEUIFTyV4ccVPyDlwDweqHw4jQBYKK35F
+        VE4bonM7EJN/BxrygncMIcJ39aKgvBfb9nYjs6wbe07/jrGyvP+0RJZDEzAHuYd+QcTWFoRlNCM8sxVr
+        s7ugYZ2v5CbNG0YIFTyN4HkH7yOj7A627L6DtJ23sb/6GfaefYayM0/x+emn2HXqKXaceILtVU9Qevwx
+        io89QhG5oOIhQjY3YVVqE4IUjVhJnyEZnVC3yqEQjm8J0Q+evb8Hm3cJYMVnXdj46S0kl95CYnEnEgo6
+        EJvfjqjcNqzLauWrXZPZjNAtN7E6vYmAP2JFyg0EJF+Hb2IDfBIa4Jd4HYGKVqjLtiq5ibOHCEFwDZuS
+        F+m72ZDfQ+oOAZxC4KSSTh4cT+CYvDYBnN0HDkm/icCNjfCKbcDCiHo4BV+DXcDXkPtchsyrBuaLL0Dq
+        fg4WS2rgEtaAceabldwE+34hBPhLBs8ouwvF9j5wQlEH4gsZmCqmicXA4ZktVG0zlidch2vEt3AIqoPl
+        sisw86iBdMlFSAlo6n4epovOYapbNaa6noXJwjMwWXAaUtdqOK6sxzhThZL72FYVwizrj+C0JoL38MO8
+        gQ0zgeP4ituxnqDiUK+gSt3Wfge7wKswX3qZt5nHJYIS2J3AKqgInOLyJYznn4Sx80lMnneCXAXzRecx
+        3bManF74XxTAk+MMVy9Tlxe/ZM8te34ZOLpfxRHbWuC74QacQ+thvbwW5p5fqcD9KmZgVaU8VAQ6VcHI
+        8TiM5lbCcE4lTJxPwcGvDhLj+FfcWKMfKEAcmdOmd3eSurxIGU8hYvI6EckqJrB/ciOcw+phSWALrysq
+        +CUBzoPPE5gqFqtlYBWUAQ1mH4XBrCPQd6iAsWMVZvrUQmIYRXD9VuKWkb1ZADYbDdhrk70+Ywu7aXK1
+        wn3995jhf5UH98GpcppM/aseAJ7LwMcEqP1h6NmVQ2/mIRjNrsQM+g2JQeQrTqLL4HvIfmRDMq8BIQIU
+        7ZD7XYOFtwC3IHhQei8CU+8jQNED3+R78EnshlfcbXhEd8F9XSfcIjqwcE0bXEJbeaiu7UHoTN8PA/sj
+        kHtchppeOMG1B8PVyK/1OoS6vFC5JLYZ1r51FECo3DuhHZxJGrgpCnDGyeCMEsAZxoLTj6IJFQlONxyc
+        Tijsfa/xYG2bfdCfWQHrxTVQ0w17xam9HS5KFcJZoW5doFwcfRNWPt/AjO67Z1wbwTextaCOfJzM1oSB
+        1gqGrfdVaMv3QM+2HJaLLkJNJ4TgWsOCi+oLYZWvdI9qgiXdhqWxrUL1AjyYzBakgdb8hB6xWujNKIfM
+        7QLUtIMJrvlOcFFCCFpAxlvmKl0jG+ER0yIMvVDt0KvhpEDYLK2FzHVkcFGqEI6K8bJtSqeVdcMKIJ33
+        xajARQkhJs5RqJlues5NTmIB9pKHDqAZhDFaQS9U95w95yOCi1KFcEjmjOKe03kJ2YF1vCHNgIecRK+S
+        znaTfckjhotiIfS5CXZJ9BlGtmKNb2i8mQsd2b9mL/KowUUJIYS/5NqsYQix/QLbN+iQ2fdHXexH37bz
+        YTsm1jf0zumD3hDH/QsLHFdjdvzFCgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btActrRpt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btActrRpt.Text" xml:space="preserve">
+    <value> 重复</value>
+  </data>
+  <data name="btSaveCyl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btSaveCyl.Text" xml:space="preserve">
+    <value> 储存</value>
+  </data>
+  <data name="label60.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 21</value>
+  </data>
+  <data name="label60.Text" xml:space="preserve">
+    <value>重复 延迟时间</value>
+  </data>
+  <data name="btCylApply.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btCylApply.Text" xml:space="preserve">
+    <value> 使用</value>
+  </data>
+  <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>方向(BWD,FWD)</value>
+  </data>
+  <data name="cbActrSync.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbActrSync.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 25</value>
+  </data>
+  <data name="cbActrSync.Text" xml:space="preserve">
+    <value>同步</value>
+  </data>
+  <data name="label42.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="label50.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>BWD 超时</value>
+  </data>
+  <data name="label41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>节目号码</value>
+  </data>
+  <data name="label51.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label51.Text" xml:space="preserve">
+    <value>FWD 超时</value>
+  </data>
+  <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="label49.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>BWD ON 延迟时间</value>
+  </data>
+  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="label48.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>FWD ON 延迟时间</value>
+  </data>
+  <data name="label44.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label47.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label45.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label46.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="tpCylinder.Text" xml:space="preserve">
+    <value>汽缸</value>
+  </data>
+  <data name="btSaveMotr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btSaveMotr.Text" xml:space="preserve">
+    <value> 储存</value>
+  </data>
+  <data name="btServoOffAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btServoOnAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btServoOff.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btServoOn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>行动</value>
+  </data>
+  <data name="btAllStop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btClearPos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btStop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btJogP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btJogN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btRepeat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAA11JREFUSEvt
+        VX1IU1EcfbNiVmaUEWVZYSK1mqGUWFmhRSFW9klmH0IplFCg+FVJ9g2aLRYu8RN1ESuwFEsxlVVUSjqc
+        G67hHFPZc0zFD2YyEzv9ni6o7JUR9FcHfrx374Nzzj2/e+9j/uOv4XlZVe14nQS3o2W836aEpSnNisAc
+        AxzDSfA4q8TcfY8UjuGfwStNpym1jCH+dS+vgChNi/WFnXANU2gcU1ODV4aerbCO4XkvEKTo5BXwvqbG
+        phIrRPdNcAmRs47pX2OVxMBWdH/G024grmUUW+Sd8Ehu5C1fuRlrc9vhkd6KmTvzfy0ikhnZSiuRW4lc
+        8wnn1XZUkZjKBtQPAG/6gFpaVSWJl3eNIUM3hNW5HViZacQSqQGuqc2YsS1rssiaPLPQv5g1V1iAMiKP
+        145SjeCcyo7EJjtim4YQUzeIU68GcaymFwcrexBSZkGgwgxvmRHL7rbBLe0DXG60YFp8IwRBOWYmQCIc
+        J19X3LVga4kFGnL5gAUSdKNIavmEuGY7YhqHcfrdRxx/ZcP+qn6EUlOCKbtNCgv8iswQZbXD854Ri27r
+        4XpdB2GKFswFNQSXNGCCc8BslC5gRAVd0NsBmQlIJPJkqnH35Dy6/iMi39oQXjuAfVV92FXeg62PrfAn
+        Jz75HeTehKUSA+bf+oBZV7Vw4siTmyC4SM8rOjD+EjDiQnNYpLIfNf0TAvFack/Zn2kYRhS5j3g5iAMv
+        +hD6jNw/sZJ7Fr6FZqzJMmHFvTYsTNdjzrUWTL/UDIYj50Q48r2PwATcDRuPSSRrF3O7pZyaF6seQYzD
+        /ck3NhypGcCeyj7sLOtBILnfIGchzptorPudVsy7qYNzqhaCJNUEORdPEMUTIBGPk38FbU/3gAITSmkX
+        xZD7yHc2RChtOFTbj93VA9hBK9hMe97vYRdW53diuawDbhl6uFA00ygSLnsmRUMNzuXI3R2032PlLZ27
+        f3YbittHcOLtEMKJ2EfaCtdoJW8JUykOzjmtYPr2Qgg2Sn9O/i08r6jZTN0wDlNjxFI970l2ia6FgOJx
+        insPYVD21E7yV3hcaGALDMPYnGvkFXCOIoEEFZyDf3OC+bAktk7jl05N48Hs8HLMDin6s4vuRyw+q+S9
+        8+eEyv/uf/Af/wAM8wXwlVtK68q6+QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btRepeat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btStop2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btGo2ndPos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btGo1stPos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>重复操作</value>
+  </data>
+  <data name="lbY5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbY4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbY3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbY2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbY1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbX5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbX4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbX3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbX2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbX1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbX.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbTrgPos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbEncPos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbCmdPos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label54.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label53.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label52.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbStop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbInpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbServo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbHomeDone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBreakOff.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbAlram.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbDirP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbDirN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbZPhase.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbLimitP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbLimitN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>扩展属性</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 21</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>电机选择</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="tpMotor.Text" xml:space="preserve">
+    <value>马达</value>
+  </data>
+  <data name="ilBtnImg.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABa
+        DAAAAk1TRnQBSQFMAgEBBgEAASgBAQEoAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wEAB/ABuwGsAbQN8AGs
+        AbQH8CAAB/ACsgG0DfABrAGyAbQG8CAABfABuwOyAa0BvAvwAbQBrAKyAdUBvATwIAAE8AGzAawEsgGs
+        Aa0I8AG1AawEsgGsAbME8CAAA/ABCQGzAdQCsgPTAbIBrQG7BfABrQGyA9MCsgHaAbMBtAPwIAAF8AGz
+        AeEBsgLbAtQB2gGtBPABtAGyAtQC2wGyAdsBswG7BPAgAAbwAbQC2wKzAtoBswG7AvABvAGsAtoBswG6
+        AbMB2wG0AbwF8CAAB/ABtAHcAbQB3QGzAtoBiwLwAbQD2gG0AfABtAGsB/AgAAHyAQkBuwK6AQkC8gG1
+        AQkB8gGzAdoB2wHHAvIBtAHbAdoB1AEJAfIBtAPyAbsBugK7AfIgAAH0AdwC2wHaAdwF9AG0AtsBrAL0
+        AbQC2wGzAQkF9AHUAtsB2gH0IAAB9AHcA9sB3AT0AfMBswLbAccC9AG1A9sBtQX0AdoC2wHaAfQgAAH0
+        ARkD2wHaARkC9AHzAawD2wG0AvQBCQGzAtsBswEZA/QBswPbAdwB9CAAAvQB2wLcBNsBswHbAdwB4QGz
+        Af8D9AGtAdsB3AHbAbME2wHcAeEB2wH/AfQgAAP0AdsB4QLcA+EB3AHhAboBtQX0AbMB4QLcA+EB3AHh
+        AtwC9CAAA/QBGQHbAdwE4QHcAbQBtQb0AQkBtAHbBOEB3AHbAdwD9CAABfQBGQOzAa0BtAH/CfQBCQGt
+        A7MB3AH/BPQgAAfxAbMBrA7xAbQBrAEJCvEIrAvxArMBCQzxAawB1AGsDvEBtAGyAawK8QGsAdsC1APT
+        AawK8QGsAbMB2wGsC/EC1AHaAawO8QG0AdQBsgGsAQkI8QHNAdsD1ALTAawJ8QKzAdsB0wGyAawBCQjx
+        Ac0B1AHbAdQBrA7xAbQBsgHTAbIBrAjxAc0B3AHaBNQBrAjxAawBswHbAdoC0wGyAawH8QHUAdoC2wHU
+        A7MBrQWsBLMDrAPTAbIBrAEJBvEB0wHcAdoE1AGtB/ECswHbAdoC1ALTAbIBrAEJBPEBzQHbAdwC2wLa
+        BNQC0wGsAa0C2wTaAdQE0wGyAawG8QHTAdwB2wHaA9QBswbxAawBswEZAdsC2gHUA9MBsgGsA/EB1AHb
+        AtwD2wLaA9QC0wGsAbMD2wXaAdQD0wGyAawBCQTxAdMBCQHbA9oB1AGzBfECswLhAtsC2gHUA9MBsgGs
+        AQkB0wHcARkC3ATbAdoE1AHTAawBswXbBNoC1ALTAdsBswHTAdQB0wHNAdQB3APbAtoBswSsAa0BswHh
+        ARkD2wPaAtMBsgHUAbIBrAHbAdoCGQLcA9sC2gTUAawBswHbAdwF2wPaAdQB2gHbArMB2wHUAdwBCQHc
+        BdsB2gLUAdoC1AEJA9wBswEZAtsC2gHUAawEtAH0AdsB0wIZAtwE2wLaAtQBrAHUAeEC3AbbAtoB2wGz
+        AawC9AHbAawCGQLcBtsB1AGsBfQBswEZAtsD2gGsBvQB2wHUAhkB3AHbAdwBCQPcAtsBrAHUBxkE2wKz
+        BPQB2wHUAhkC3ATbAtQG9AGzARkD2wLaAawH9AHbAc0CGQHcAdQD0wLNAqwD1AWzAdsB4QEZAbMBrAb0
+        AdsBzQIZBNwB2gHNB/QBswEZA9sC2gGzCPQB2wHUARkBCQHNDvQB3AEZAeECswj0AdsB1AIZAtwB2wHU
+        CPQBswEZAdwD2wHaAbMJ9AHbAawB3AHTDvQB3AHhAbMBrAr0AdsB0wIZAdsBzQn0AdQBGQLcA9sBswr0
+        AdsC1A70AdwBswG0DPQB2wHaAdwB1Ar0AdQBGQHhBNsBswv0AdsB0w70AQkBrQ70AdsB0wv0A9QDswGt
+        AawE9AFCAU0BPgcAAT4DAAEoAwABQAMAASADAAEBAQABAQYAAQEWAAP//wACAAs=
+</value>
+  </data>
+</root>

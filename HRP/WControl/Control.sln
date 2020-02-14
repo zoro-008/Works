@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{515F844E-994D-4C94-9E46-22F94026A3FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMachine", "ZMachine\ZMachine.csproj", "{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SML", "SML\SML.csproj", "{1A820AE0-7242-4398-B295-0963557F1F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{D496B753-C30E-45B8-9984-E99BF033014A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{A53EE43B-767A-40A9-9928-B7F9422748B0}"
+	ProjectSection(SolutionItems) = preProject
+		Doc\ReadMe.txt = Doc\ReadMe.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Debug|x64.ActiveCfg = Debug|x64
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Debug|x64.Build.0 = Debug|x64
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Debug|x86.ActiveCfg = Debug|x86
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Debug|x86.Build.0 = Debug|x86
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Release|x64.ActiveCfg = Release|x64
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Release|x64.Build.0 = Release|x64
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Release|x86.ActiveCfg = Release|x86
+		{515F844E-994D-4C94-9E46-22F94026A3FF}.Release|x86.Build.0 = Release|x86
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Debug|x64.ActiveCfg = Debug|x64
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Debug|x64.Build.0 = Debug|x64
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Debug|x86.ActiveCfg = Debug|x86
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Debug|x86.Build.0 = Debug|x86
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Release|x64.ActiveCfg = Release|x64
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Release|x64.Build.0 = Release|x64
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Release|x86.ActiveCfg = Release|x86
+		{F91F2160-B9FA-4BF2-8876-89E6F2E0540C}.Release|x86.Build.0 = Release|x86
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Debug|x64.ActiveCfg = Debug|x64
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Debug|x64.Build.0 = Debug|x64
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Debug|x86.ActiveCfg = Debug|x86
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Debug|x86.Build.0 = Debug|x86
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Release|x64.ActiveCfg = Release|x64
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Release|x64.Build.0 = Release|x64
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Release|x86.ActiveCfg = Release|x86
+		{1A820AE0-7242-4398-B295-0963557F1F7A}.Release|x86.Build.0 = Release|x86
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Debug|x64.ActiveCfg = Debug|x64
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Debug|x86.ActiveCfg = Debug|x86
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Release|x64.ActiveCfg = Release|x64
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Release|x64.Build.0 = Release|x64
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Release|x86.ActiveCfg = Release|x86
+		{D496B753-C30E-45B8-9984-E99BF033014A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EDD304B-3900-4C92-AEA2-363FBE65E586}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://flea80.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\Common.csproj
+		SccProjectName1 = Common
+		SccLocalPath1 = Common
+		SccProjectUniqueName2 = ZMachine\\ZMachine.csproj
+		SccProjectName2 = ZMachine
+		SccLocalPath2 = ZMachine
+		SccProjectUniqueName3 = SML\\SML.csproj
+		SccProjectName3 = SML
+		SccLocalPath3 = SML
+		SccProjectUniqueName4 = Installer\\Installer.csproj
+		SccProjectName4 = Installer
+		SccLocalPath4 = Installer
+	EndGlobalSection
+EndGlobal

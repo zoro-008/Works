@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPServer01", "TCPServer01\TCPServer01.csproj", "{B7CEDE88-5807-4960-80A7-A16EF4BEEB78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7CEDE88-5807-4960-80A7-A16EF4BEEB78}.Debug|x86.ActiveCfg = Debug|x86
+		{B7CEDE88-5807-4960-80A7-A16EF4BEEB78}.Debug|x86.Build.0 = Debug|x86
+		{B7CEDE88-5807-4960-80A7-A16EF4BEEB78}.Release|x86.ActiveCfg = Release|x86
+		{B7CEDE88-5807-4960-80A7-A16EF4BEEB78}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFCA9E0E-393A-4B71-850F-8D30DA2F7EFA}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://flea80.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TCPServer01\\TCPServer01.csproj
+		SccProjectName1 = TCPServer01
+		SccLocalPath1 = TCPServer01
+	EndGlobalSection
+EndGlobal

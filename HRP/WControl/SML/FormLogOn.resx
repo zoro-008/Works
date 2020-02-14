@@ -1,0 +1,1078 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btEnter.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btEnter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 11pt</value>
+  </data>
+  <data name="btEnter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="btEnter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 90</value>
+  </data>
+  <data name="btEnter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 35</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btEnter.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btEnter.Text" xml:space="preserve">
+    <value> ENTER</value>
+  </data>
+  <data name="btEnter.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btEnter.Name" xml:space="preserve">
+    <value>btEnter</value>
+  </data>
+  <data name="&gt;&gt;btEnter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btEnter.Parent" xml:space="preserve">
+    <value>pnChange</value>
+  </data>
+  <data name="&gt;&gt;btEnter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 10pt, style=Bold</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 63</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pnChange</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 10pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 32</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Old Password</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pnChange</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tbNewPass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt</value>
+  </data>
+  <data name="tbNewPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 59</value>
+  </data>
+  <data name="tbNewPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 22</value>
+  </data>
+  <data name="tbNewPass.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tbNewPass.Name" xml:space="preserve">
+    <value>tbNewPass</value>
+  </data>
+  <data name="&gt;&gt;tbNewPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbNewPass.Parent" xml:space="preserve">
+    <value>pnChange</value>
+  </data>
+  <data name="&gt;&gt;tbNewPass.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tbOldPass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt</value>
+  </data>
+  <data name="tbOldPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 28</value>
+  </data>
+  <data name="tbOldPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 22</value>
+  </data>
+  <data name="tbOldPass.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbOldPass.Name" xml:space="preserve">
+    <value>tbOldPass</value>
+  </data>
+  <data name="&gt;&gt;tbOldPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbOldPass.Parent" xml:space="preserve">
+    <value>pnChange</value>
+  </data>
+  <data name="&gt;&gt;tbOldPass.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt, style=Bold</value>
+  </data>
+  <data name="label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIYAAAEAAP///zQ2Ojk7QM9iHS4wNDw9Qj6g2jI0OPq3RicpLRMUFy+U0ywuMjEzN/mm
+        Nvu+Sy0wNPqfLmJjaD0+Qzk6QIWGixMfKv3ekTg6P0FBRjo8QTAxNvnTmRocH/zThCIjJxMTF2G76ENG
+        TPmlMQwMDyEkKBARFB0fI0RFTZmZniAiJzc4Pdbg5jc5Pf/BSiUpMzEzOf38/CMqMzk6Px4gI2VjUz0/
+        RDY4PURFTIXR8/zdjw0dKkFCR+yIIEBBR6F8dO+aRj5ARURES//xmzQ3Osbk9vq2Q0JESZqbn6PT7vbW
+        hxgZHAsMD/zSmPq1QSouNrygav/unfLy8//omHzQ9GNlajg7QDY4PPvLbevr6/u+bVex42BdUv6sNist
+        Mf/IT2BhZ/vhlYyPkvujMXN2eP3djyAjJyotMTc6QK+baRERFERFS/u+SRISFfmlNDEzNlRVWgAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQB
+        AAAAACwAAAAAEAAQAAAIygABCBSYI8WIIUg0DFwosIeQG1fSDKDBcKABAxsG2OgCRUCRigAixJgBg4oY
+        KWoagIyQIcoSMzswEEEDkoCTD1naQIAAhkDNDk+OJBj6wifIICTePHjgxSjIBlvISJDgA4gCkCq0BAhw
+        4MDWClcXYikzRkaLKjqmBGDzIyyAAkkuWgggwogVFhQocAAhsMCEAQPCBOCiJA4OwANq9J0gQMAXrgfO
+        NBbggklfAQgcoAjAgMEKBwgQwPEwcIGbEyVMXODRZE2IBQsEBgQAOw==
+</value>
+  </data>
+  <data name="label1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 23</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>   PASSWORD Change</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnChange</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pnChange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 4</value>
+  </data>
+  <data name="pnChange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 129</value>
+  </data>
+  <data name="pnChange.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pnChange.Name" xml:space="preserve">
+    <value>pnChange</value>
+  </data>
+  <data name="&gt;&gt;pnChange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnChange.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnChange.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbEditLevel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="cbEditLevel.Items" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="cbEditLevel.Items1" xml:space="preserve">
+    <value>Engineer</value>
+  </data>
+  <data name="cbEditLevel.Items2" xml:space="preserve">
+    <value>Master</value>
+  </data>
+  <data name="cbEditLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 80</value>
+  </data>
+  <data name="cbEditLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 23</value>
+  </data>
+  <data name="cbEditLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cbEditLevel.Name" xml:space="preserve">
+    <value>cbEditLevel</value>
+  </data>
+  <data name="&gt;&gt;cbEditLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbEditLevel.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;cbEditLevel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btDeleteAll.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btDeleteAll.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="btDeleteAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 101</value>
+  </data>
+  <data name="btDeleteAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="btDeleteAll.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btDeleteAll.Text" xml:space="preserve">
+    <value>Delete All ID</value>
+  </data>
+  <data name="&gt;&gt;btDeleteAll.Name" xml:space="preserve">
+    <value>btDeleteAll</value>
+  </data>
+  <data name="&gt;&gt;btDeleteAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btDeleteAll.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;btDeleteAll.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 12pt, style=Bold</value>
+  </data>
+  <data name="label4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAjdJREFUOE+N
+        0V9IU3EUwPE9FfgmKFoQFEEJRQ9Bpj1UVBSk9j8sAhGmc0vLB3uqh8g/YTEUFFtakQgt0Tl1Vy2xf4Sp
+        VGbFWhFZrrWa5C3jblqSfTuz25PX7MDhwu/+fp9zzu9nMoqK8uqOLqV7urmpXXM1tk6Vl9rf6b/mD2dD
+        8xh6THyfRAuHGdciOGouoW+ZO+Twq+jB8XGNqspacrJtXyVHPUonz70+jhzOfqtvNY4rV12+KNDR0UOu
+        7VSsvmwyW44Ho0B+fuG/u7jmbB3+C+hLM2EtOPny0eAQWbnzAyPBUMgI8P0X0F+VQUBJY7gumUBdCkHH
+        ej5WrGG0dBmfixaiWkxEShKNEbdlUyD42CkD3IGxEnhjgyeH4O4OaEuF+iSojIPOzaj21bORFnOK3z9Q
+        C5EeGDovB49Be6bkAfDsga50aNkIPemop5fMBty5qf73Axdhqhu8dug9ATeyQBHEnQGurdCwVjrYhnrG
+        CMgRoF+ASQWenpVJZAT3Pqku2blbMEHatkhnB1FLl88B9AkwIcBQmQBWAeRgu7QfBbp3CSZd3MtELTYE
+        UgSogbAHBovhluUPoOyV6vvhtuTNndCXhVq2cq5LvAw/78OLKqlUKHNLVXeaXJ68hEe+jRtmEMM7UAq3
+        f/jkbYLpeqkicyvr4Poqeb6lcCEBHIuhehG0JvPl3IrZQDTaspO+PTga/6M3L1F7aE3QBvPitWeWWM1n
+        jtFe58RoI+YFWqgo7pe+XcJk+g3ZAsbeTrl4ygAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label4.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 23</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>   Edit</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tbEditID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="tbEditID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 31</value>
+  </data>
+  <data name="tbEditID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 16</value>
+  </data>
+  <data name="tbEditID.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbEditID.Name" xml:space="preserve">
+    <value>tbEditID</value>
+  </data>
+  <data name="&gt;&gt;tbEditID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbEditID.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;tbEditID.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tbEditPW.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="tbEditPW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 55</value>
+  </data>
+  <data name="tbEditPW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 16</value>
+  </data>
+  <data name="tbEditPW.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tbEditPW.Name" xml:space="preserve">
+    <value>tbEditPW</value>
+  </data>
+  <data name="&gt;&gt;tbEditPW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbEditPW.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;tbEditPW.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 83</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 15</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Access Level</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 58</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 15</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btEditNew.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btEditNew.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="btEditNew.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 25</value>
+  </data>
+  <data name="btEditNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="btEditNew.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btEditNew.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="&gt;&gt;btEditNew.Name" xml:space="preserve">
+    <value>btEditNew</value>
+  </data>
+  <data name="&gt;&gt;btEditNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btEditNew.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;btEditNew.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 34</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 15</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btEditChange.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btEditChange.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="btEditChange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 51</value>
+  </data>
+  <data name="btEditChange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="btEditChange.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btEditChange.Text" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="&gt;&gt;btEditChange.Name" xml:space="preserve">
+    <value>btEditChange</value>
+  </data>
+  <data name="&gt;&gt;btEditChange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btEditChange.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;btEditChange.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btDelete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btDelete.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="btDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 76</value>
+  </data>
+  <data name="btDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="btDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;btDelete.Name" xml:space="preserve">
+    <value>btDelete</value>
+  </data>
+  <data name="&gt;&gt;btDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btDelete.Parent" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;btDelete.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pnEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 190</value>
+  </data>
+  <data name="pnEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 129</value>
+  </data>
+  <data name="pnEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;pnEdit.Name" xml:space="preserve">
+    <value>pnEdit</value>
+  </data>
+  <data name="&gt;&gt;pnEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnEdit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnEdit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btLogIn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btLogIn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 14pt</value>
+  </data>
+  <data name="btLogIn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btLogIn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 32</value>
+  </data>
+  <data name="btLogIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 67</value>
+  </data>
+  <data name="btLogIn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btLogIn.Text" xml:space="preserve">
+    <value> LOG OUT</value>
+  </data>
+  <data name="btLogIn.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btLogIn.Name" xml:space="preserve">
+    <value>btLogIn</value>
+  </data>
+  <data name="&gt;&gt;btLogIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btLogIn.Parent" xml:space="preserve">
+    <value>pnInput</value>
+  </data>
+  <data name="&gt;&gt;btLogIn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 13pt</value>
+  </data>
+  <data name="tbID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 34</value>
+  </data>
+  <data name="tbID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 24</value>
+  </data>
+  <data name="tbID.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tbID.Text" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;tbID.Name" xml:space="preserve">
+    <value>tbID</value>
+  </data>
+  <data name="&gt;&gt;tbID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbID.Parent" xml:space="preserve">
+    <value>pnInput</value>
+  </data>
+  <data name="&gt;&gt;tbID.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tbPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 13pt</value>
+  </data>
+  <data name="tbPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 68</value>
+  </data>
+  <data name="tbPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 24</value>
+  </data>
+  <data name="tbPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tbPassword.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;tbPassword.Name" xml:space="preserve">
+    <value>tbPassword</value>
+  </data>
+  <data name="&gt;&gt;tbPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPassword.Parent" xml:space="preserve">
+    <value>pnInput</value>
+  </data>
+  <data name="&gt;&gt;tbPassword.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbLogOn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lbLogOn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt</value>
+  </data>
+  <data name="lbLogOn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAjdJREFUOE+N
+        0V9IU3EUwPE9FfgmKFoQFEEJRQ9Bpj1UVBSk9j8sAhGmc0vLB3uqh8g/YTEUFFtakQgt0Tl1Vy2xf4Sp
+        VGbFWhFZrrWa5C3jblqSfTuz25PX7MDhwu/+fp9zzu9nMoqK8uqOLqV7urmpXXM1tk6Vl9rf6b/mD2dD
+        8xh6THyfRAuHGdciOGouoW+ZO+Twq+jB8XGNqspacrJtXyVHPUonz70+jhzOfqtvNY4rV12+KNDR0UOu
+        7VSsvmwyW44Ho0B+fuG/u7jmbB3+C+hLM2EtOPny0eAQWbnzAyPBUMgI8P0X0F+VQUBJY7gumUBdCkHH
+        ej5WrGG0dBmfixaiWkxEShKNEbdlUyD42CkD3IGxEnhjgyeH4O4OaEuF+iSojIPOzaj21bORFnOK3z9Q
+        C5EeGDovB49Be6bkAfDsga50aNkIPemop5fMBty5qf73Axdhqhu8dug9ATeyQBHEnQGurdCwVjrYhnrG
+        CMgRoF+ASQWenpVJZAT3Pqku2blbMEHatkhnB1FLl88B9AkwIcBQmQBWAeRgu7QfBbp3CSZd3MtELTYE
+        UgSogbAHBovhluUPoOyV6vvhtuTNndCXhVq2cq5LvAw/78OLKqlUKHNLVXeaXJ68hEe+jRtmEMM7UAq3
+        f/jkbYLpeqkicyvr4Poqeb6lcCEBHIuhehG0JvPl3IrZQDTaspO+PTga/6M3L1F7aE3QBvPitWeWWM1n
+        jtFe58RoI+YFWqgo7pe+XcJk+g3ZAsbeTrl4ygAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="lbLogOn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lbLogOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lbLogOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 23</value>
+  </data>
+  <data name="lbLogOn.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbLogOn.Text" xml:space="preserve">
+    <value>   Login</value>
+  </data>
+  <data name="lbLogOn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lbLogOn.Name" xml:space="preserve">
+    <value>lbLogOn</value>
+  </data>
+  <data name="&gt;&gt;lbLogOn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbLogOn.Parent" xml:space="preserve">
+    <value>pnInput</value>
+  </data>
+  <data name="&gt;&gt;lbLogOn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 190</value>
+  </data>
+  <data name="pnInput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 129</value>
+  </data>
+  <data name="pnInput.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;pnInput.Name" xml:space="preserve">
+    <value>pnInput</value>
+  </data>
+  <data name="&gt;&gt;pnInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnInput.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnInput.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="tmUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="btEsc.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btEsc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 11pt</value>
+  </data>
+  <data name="btEsc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AdgSVKgKOGm7AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btEsc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 135</value>
+  </data>
+  <data name="btEsc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 43</value>
+  </data>
+  <data name="btEsc.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btEsc.Text" xml:space="preserve">
+    <value> ESC</value>
+  </data>
+  <data name="btEsc.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btEsc.Name" xml:space="preserve">
+    <value>btEsc</value>
+  </data>
+  <data name="&gt;&gt;btEsc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btEsc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btEsc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btChangePW.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btChangePW.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 11pt</value>
+  </data>
+  <data name="btChangePW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 135</value>
+  </data>
+  <data name="btChangePW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 43</value>
+  </data>
+  <data name="btChangePW.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btChangePW.Text" xml:space="preserve">
+    <value> CHANGE</value>
+  </data>
+  <data name="btChangePW.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btChangePW.Name" xml:space="preserve">
+    <value>btChangePW</value>
+  </data>
+  <data name="&gt;&gt;btChangePW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btChangePW.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btChangePW.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btEdit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btEdit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 11pt</value>
+  </data>
+  <data name="btEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABANJREFUWEe9
+        l21MU1ccxoFCmxaUVtyMzvo2tIBQStQEaAPNtgwMtTDHYBSYYoIviRvrxkq1sZQ3xZlMaPEVoS0tKzMT
+        kiUMJosZm5lsFWawqTp0W7Ys++6HxTDsf8+pwIft6z0+yS+E+5zk13Puub2nMc8zra2tovqTA1+Unhr5
+        dUOOPheXVjxrnkOY/FCn5xvDZ48oyzVDKUevzkskktcWa/45crJ/Ys/VXyjTOUNSywStfLMzIpLI7Is1
+        n2RnZ2fiT/zRU1fGDEMPozNPahyjF4zWp4q1m39Ax+8DaDSadhCqqNn3/fDELbrY56WioiIaHR2lVSmr
+        b2LIJ6AkOljoQNygUqlqDzS2jRuH5qLLLmv6mhRljohi3eYfMYTJDWANGy9osOz1GRkZH9R/2HKtFHJ1
+        z09Ruezt7ohi/dYghnQBI2DyOCBc1Gp1JvDWNRwf3Pvp/eWZyyq6Igqlism7QSlYC0RAuGDZRZj9yP7D
+        73sq/HejG47JpVU9Ebky7TaGMHkZYPJ4IGwgt71+pP3bat8d0nQHKalpgqRYdvnG7TOomfwNsA5wkX+s
+        q7NPVw2FaaeLya+T1HQ+It+UxeROsBcIL4c4DUs/kl97LFgZuEc7nIvyKldEviXnDoa4AJO/BISfORJv
+        sPZ6ywP3Kcd5OyqXmC5Q8ss7mLwHlIP1bBwQPkU2f39Z4AFpXNPRey6u7qXk1F2zqJj8LcBPXtjk9xgC
+        P1OWc5pkluskrjpPydvy7qI6B5hcCfjItR/53CWBueVHTYSZr8h4JYzqAqgEGwAfeX6j9+LuwMPlb7hY
+        02VK0uyZQ3UJmMBGwGnm5r4zTL70So2t7qPEXZW/oboC3gFbQAIQPgXmy/ZiP+754rLH1rhJllf7O6p+
+        cABsBWIgfBpOnO497b5GeV03n8n3eUmWv/8PVG5QD1RAAoQPjlImn8+3MDAwQKZ3j5Oopp+k2jom94CD
+        IA3wkbe0tFT6/f6F4eFhslgspNfrn65UFz9C1QfYzLnKyyH/Z3x8nGw2GxUWFi4kJibeQsW+ZNiG2wa4
+        yY1MPjk5SXa7nQoKCualUul3qM4A9j5nzzmfDQd5yeDg4HwwGKTm5mbS6XRPcHy+gaoTFIMXgbCHiaVA
+        rsWGezI7O0ttbW2k1Wr/FovFX6FqB6+C1UDYY9RSMNsU7PQ/Q6EQdXR0UG5u7uOEhIQvUTmAHqwCfOQs
+        Ho/nRjgcJofDQXjH/xUXF/c5Lh8DOiAHsYBP3G73CTZzq9VK6enpIXYJvAd2Avb7jZ8c93z71NTUvNls
+        fqxUKsdwiZ1i6kA6kAF+chZsNp/RaDyL+92Ef22APWabAJ/H7L9JTU1lx2T2U3k3yAEpgM/r9H+JifkX
+        YtGh4z/urSAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 135</value>
+  </data>
+  <data name="btEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 43</value>
+  </data>
+  <data name="btEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btEdit.Text" xml:space="preserve">
+    <value> EDIT ID</value>
+  </data>
+  <data name="btEdit.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btEdit.Name" xml:space="preserve">
+    <value>btEdit</value>
+  </data>
+  <data name="&gt;&gt;btEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btEdit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btEdit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>834, 402</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormLogOn</value>
+  </data>
+  <data name="&gt;&gt;tmUpdate.Name" xml:space="preserve">
+    <value>tmUpdate</value>
+  </data>
+  <data name="&gt;&gt;tmUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormLogOn</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

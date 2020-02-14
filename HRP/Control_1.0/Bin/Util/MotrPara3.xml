@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>LODR_XPicker</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>5</dUnitPerRev>
+  <dMaxPos>50</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>LeftRight</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>1000</dAcceleration>
+  <dDeceleration>1000</dDeceleration>
+  <dRunSpeed>120</dRunSpeed>
+  <dSlowSpeed>50</dSlowSpeed>
+  <dManSpeed>80</dManSpeed>
+  <dHomeVelFirst>20</dHomeVelFirst>
+  <dHomeVelLast>2</dHomeVelLast>
+  <dHomeAccFirst>500</dHomeAccFirst>
+  <dJogSpeed>30</dJogSpeed>
+  <dFstPos>100</dFstPos>
+  <dScdPos>700</dScdPos>
+  <iRepeatDelay>200</iRepeatDelay>
+  <dRepeatSpeed>300</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

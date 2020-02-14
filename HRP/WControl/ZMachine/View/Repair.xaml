@@ -1,0 +1,58 @@
+﻿<Window x:Class="Machine.View.Repair"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Machine.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" Topmost="True" AllowsTransparency="True"
+        Title="Repair" Height="172" Width="663" >
+    <Grid Background="LightSteelBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.ColumnSpan="3" Grid.Row="0" Orientation="Horizontal" Background="DarkCyan">
+            <materialDesign:PackIcon Kind="ProgressSpanner" Height="32" Width="32" VerticalAlignment="Center" Margin="5 0 5 0" />
+            <TextBlock x:Name="lbTitle" Margin="0,0,0,2" VerticalAlignment="Center" Text="REPAIR" Foreground="White" FontSize="20"/>
+        </StackPanel>
+
+        <Border Grid.ColumnSpan="3" Grid.Row="1" BorderBrush="DarkCyan" BorderThickness="1" Width="645" Height="78" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                
+                <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1" Width="95" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5 0 0 0">
+                    <TextBlock Text="PURPOSE" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <TextBox Name="tbPurpose"  Grid.Column="0" Grid.Row="1" Margin="5" FontSize="15"/>
+            </Grid>
+        </Border>
+
+        <CheckBox Name="cbUnderRepair" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Margin="10 0 0 0">
+            UNDER REPAIR
+        </CheckBox>
+        <Button Name="btApply" Grid.Column="1" Grid.Row="2" Margin="20 5 15 5" Background="DarkCyan" BorderThickness="0" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" Click="BtApply_Click">
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Check" Height="32" Width="32" VerticalAlignment="Center" Margin="0 0 5 0" />
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center" Text="APPLY" Foreground="White" FontSize="20"/>
+            </StackPanel>
+        </Button>
+        <Button Name="btClose" Grid.Column="2" Grid.Row="2" Margin="15 5 20 5" Background="DarkCyan" BorderThickness="0" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" Click="BtClose_Click">
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="CloseOctagon" Height="32" Width="32" VerticalAlignment="Center" Margin="0 0 5 0" />
+                <TextBlock Margin="0,0,0,0" VerticalAlignment="Center" Text="CLOSE" Foreground="White" FontSize="20"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

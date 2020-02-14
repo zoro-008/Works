@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="Machine.View.MotorPosView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Machine.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="230" d:DesignWidth="800"
+             IsVisibleChanged="UserControl_IsVisibleChanged"
+             >
+    <!--
+    <UserControl.Resources>
+        <local:MotorPosConverter x:Key="converter" />
+    </UserControl.Resources>
+    -->
+    
+
+
+
+
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" /> <ColumnDefinition Width="6*" /> <ColumnDefinition Width="3*" /> <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" /> <ColumnDefinition Width="*" /> <ColumnDefinition Width="*" /> <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" /> <ColumnDefinition Width="*" /> <ColumnDefinition Width="*" /> <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="3*" /> <ColumnDefinition Width="3*" /> 
+            </Grid.ColumnDefinitions>
+
+            <Border BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock x:Name="tbAxisNo" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Axis 13" />
+            </Border>
+            <Border Grid.Column="1" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock x:Name="tbAxisName" HorizontalAlignment="Center" VerticalAlignment="Center" Text="[13] Loader M/Z Z" />
+            </Border>
+            <Border Grid.Column="2" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock x:Name="tbAxisPos" HorizontalAlignment="Center" VerticalAlignment="Center" Text="123.123" />
+            </Border>
+            <Border x:Name="tbStat1" Grid.Column="3" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="-L" />
+            </Border>
+            <Border x:Name="tbStat2" Grid.Column="4" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="O" />
+            </Border>
+            <Border x:Name="tbStat3" Grid.Column="5" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="+L" />
+            </Border>
+            <Border x:Name="tbStat4" Grid.Column="6" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="H" />
+            </Border>
+            <Border x:Name="tbStat5" Grid.Column="7" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="ALM" />
+            </Border>
+            <Border x:Name="tbStat6" Grid.Column="8" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="STP" />
+            </Border>
+            <Border x:Name="tbStat7" Grid.Column="9" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="INP" />
+            </Border>
+            <Border x:Name="tbStat8" Grid.Column="10" BorderThickness="1" BorderBrush="Black" Margin="1,1,1,1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="SVR" />
+            </Border>
+
+            <Button x:Name="BtServoOn"  FontSize="12" Grid.Column="11" Content="Servo On"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="AUTO" Margin="1,1,1,1" Click="BtServoOn_Click" />
+            <Button x:Name="BtServoOff" FontSize="12" Grid.Column="12" Content="Servo Off" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="AUTO" Margin="1,1,1,1" Click="BtServoOff_Click"/>
+            <Button x:Name="BtHome"     FontSize="12" Grid.Column="13" Content="Home"      VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="AUTO" Margin="1,1,1,1" Click="BtHome_Click"/>
+
+        </Grid>
+
+        
+        <Grid Grid.Row="1">
+            <ListView x:Name="listView" Loaded="ListView_Loaded" >
+
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding sName      }"/>
+                        <GridViewColumn Header="Position" Width="Auto" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding dPos, Converter={local:MotorPosConverter}}" MinWidth="100"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="GO" Width="80" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="BtGo" Click="BtGo_Click" Content="GO"  Tag="{Binding uPstnNo}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="INPUT" Width="100" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="BtInput" Click="BtInput_Click" Content="INPUT" Tag="{Binding uPstnNo}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Min" Width="100" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding dMin, Converter={local:MotorPosConverter}, ConverterParameter=MinMax}" Tag="{Binding iAxis}" MinWidth="50" GotFocus="TextBox_GotFocus"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Max" Width="100" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding dMax, Converter={local:MotorPosConverter}, ConverterParameter=MinMax}" MinWidth="50"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Speed (%)"    Width="100" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding iSpeed, Converter={local:MotorPosConverter}, ConverterParameter=SpeedVal}" MinWidth="50"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+    </Grid>
+</UserControl>
