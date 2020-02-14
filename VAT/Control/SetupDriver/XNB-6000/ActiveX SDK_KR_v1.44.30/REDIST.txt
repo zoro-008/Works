@@ -1,0 +1,8 @@
+List of Redistributable files for the Hanwha Techwin XNS ActiveX Software Development Kit
+
+Sample files
+----------------------------
+
+If you obtained  as a stand alone product, the default location of the files are listed below.
+
+C:\Program Files (x86)\Samsung\XnsActiveXSDK\Bin

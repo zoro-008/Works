@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>TBLE_TTable</sMotrName>
+  <iPulsePerRev>360000</iPulsePerRev>
+  <dUnitPerRev>360</dUnitPerRev>
+  <dMaxPos>30000000</dMaxPos>
+  <dMinPos>-300000</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>CwCcw</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>1500</dAcceleration>
+  <dDeceleration>1500</dDeceleration>
+  <dRunSpeed>150</dRunSpeed>
+  <dSlowSpeed>30</dSlowSpeed>
+  <dManSpeed>50</dManSpeed>
+  <dHomeVelFirst>5</dHomeVelFirst>
+  <dHomeVelLast>2</dHomeVelLast>
+  <dHomeAccFirst>50</dHomeAccFirst>
+  <dJogSpeed>50</dJogSpeed>
+  <dFstPos>360</dFstPos>
+  <dScdPos>359.999</dScdPos>
+  <iRepeatDelay>500</iRepeatDelay>
+  <dRepeatSpeed>500</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

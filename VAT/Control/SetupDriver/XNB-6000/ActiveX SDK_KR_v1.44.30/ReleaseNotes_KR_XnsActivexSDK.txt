@@ -1,0 +1,838 @@
++-----------------------------------------------------------------------------
+|  XNS ACTIVEX SDK 릴리즈 노트
++------------------------------------------------------------------------------
+이 문서는 SDK 기능 추가, 개선, 버그 수정, 변경 내역 등의 이력을 보여 줍니다.
+
++-----------------------------------------------------------------------------
+|  시스템 요구사항
++-----------------------------------------------------------------------------
+A. 지원 OS
+  - Windows Vista with Service Pack 2 or later (all editions except Starter Edition)
+  - Windows 7
+  - Windows Server 2003 with Service Pack 2 or later (all editions)
+  - Windows Server 2003 R2 or later (all editions)
+  - Windows Server 2008 with Service Pack 2 or later
+  - Windows Server 2008 R2
+  - Windows XP with Service Pack 3 (all editions except Starter Edition)
+B. NET Framework Client Profile 4.0
+C. Microsoft Visual C++ 2010 Redistributable Package (x86)
+D. 최소 하드웨어 사양
+  - Pentimum 1GHz 이상
+  - RAM 512MB 이상
+  - 600 MB 하드디스크 공간
+
++-----------------------------------------------------------------------------
+|  지원제품
++-----------------------------------------------------------------------------
+A. Network camera/encoder
+  - 아래 모델을 제외한 모든 network camera/encoder 제품은 통합 모델명인‘Samsung Network Camera/Encoder’사용
+    SNB-1000, SNB-2000, SNB-3000, SND-3080, SND-3080C, SND-3080F, SND-3080CF, SNV-3080, 
+    SNC-B2315, SNC-B2331, SNC-B2335, SNC-B5368, SNC-B5395, SNC-C6225, SNC-C7225, SNC-C7478, 
+    SNC-M300, SNV-3370, SNP-3370TH, SNP-3301, SNP-3301H, SNC-550, SNC-570, SNC-1300, SND-460V, 
+    SND-560, SNP-1000A, SNP-3300A, SNP-3350, SNP-3750, SNS-100, SNS-400, SNT-1010
+  
+B. DVR
+    아래 모델을 제외한 모든 DVR 제품은 통합 모델명인‘Samsung DVR’사용
+    SHR-504X, SHR-604X, SVR-1670, SVR-1640A, SVR-1650E, SVR-950E, SVR-450, SVR-470, SVR-480, 
+    SRD-480D, SVR-940, SVR-945, SVR-960, SVR-960C, SVR-1645, SVR-1660, SVR-1660C, SVR-1680, 
+    SVR-1680C, SVR-3200
+
+C. NVR
+    아래 모델을 제외한 모든 NVR 제품은 통합 모델명인‘Samsung NVR’사용
+    SNR-3200, SNR-6400, SRN-3250, SRN-6450
+    NET-i ware (SNS-SF064, SNS-SF032, SNS-SF016, SNS-SF008, SNS-SF004)
+
+
++-----------------------------------------------------------------------------
+|  인스톨 방법
++-----------------------------------------------------------------------------
+설치 파일이 있는 폴더로 이동하여 setup.exe 파일을 실행합니다.
+XNS ActiveX SDK는 STEP 사이트(https://www.samsungsecuritypartner.com/) 
+다운로드센터에서 다운로드 할 수 있습니다.
+
+
++-----------------------------------------------------------------------------
+|  릴리즈 정보
++-----------------------------------------------------------------------------
+
+v1.44.30 (2017-10-19)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - N/A
+
+C. 변경
+    - 디지털서명 갱신
+
+v1.44.20 (2017-08-01)
+-----------------------------------------------------------------------
+A. 신규 기능
+   - N/A
+    	    
+B. 문제점 수정
+    - 샘플프로그램 버그 수정
+	1. GetContolStatus()
+  	 1) DVR 비디오로스 상태값 
+         2) DVR 저장상태값 
+    
+C. 변경
+    - SDK API 문서 업데이트
+          : 신규 API 설명 추가
+
+v1.44.00 (2016-07-29)
+-----------------------------------------------------------------------
+A. 신규 기능
+	- API/EVENT 추가
+	  : SearchTextCalendar(), SearchText(), CancelSearchText(), OpenText(), CloseText(), GetControlLinkStatus(),
+	    OnTextOccur(), OnSearchTextCalendar(), OnSearchTextList(), OnEndSearchText()
+    	    
+B. 문제점 수정
+    - 샘플프로그램 버그 수정
+
+C. 변경
+    - SDK API 문서 업데이트
+	  : 신규 API 설명 추가
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2016-07-29 Baseline
+
+
+v1.43.20 (2016-03-25)
+-----------------------------------------------------------------------
+A. 신규 기능
+	- GetVideoControlID() API 추가
+    	    
+B. 문제점 수정
+    - 샘플프로그램 접속정보 설정 관련 버그 수정
+
+C. 변경
+    - SDK API 문서 업데이트
+	  : GetVideoProfile() API 설명 추가
+	  :	멀티프로파일 지원하는 DVR/NVR의 Control Module 구조 설명 추가
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2016-03-25 Baseline
+	
+v1.43.00 (2016-01-07)
+-----------------------------------------------------------------------
+A. 신규 기능
+	- SetAspectRatio() API 추가
+    - WPF SingleLive 샘플프로그램 추가
+	- Javascript PTZ 샘플프로그램 추가
+    	    
+B. 문제점 수정
+    - ffmpeg crash 문제 수정
+	- SaveSnapshot(JPEG) 문제 수정
+	- G726 오디오 문제 수정
+	- H.264 지연 문제 수정
+	- SetTalk OSD 문제 수정
+	- WindowControl 포함한 다이얼로그 추가 생성 후 닫을 시 메모리릭 문제 수정
+	- SaveSnapshotWithString() API 정상 동작하도록 수정
+
+C. 변경
+    - SDK API 문서 업데이트
+	  : SetAspectRatio() API, DEP trouble shooting, Device Model Name 설명 추가
+	  :	Supported Device List 수정
+	- SDK PG 문서 업데이트
+	  : 지원 모델 리스트 수정
+	  : WPF 샘플프로그램 구현 방법 추가
+	- 카메라 OpenMedia() 호출 시, 2번 프로파일 열도록 샘플프로그램 수정
+    -  XnsDecoder.dll, D3DX9_43.dll 등 dll 추가
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2016-01-07 Baseline
+    - XMedia3.dll 업데이트
+	
+v1.42.50 (2015-08-24)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - PTZ 카메라 좌표 관련 API 추가
+      : SetPtzPosNormalize(), GetPtzPosNormalize(), OnGetPtzPosNormalize() 
+    	    
+B. 문제점 수정
+    - AAC codec 문제 수정
+    - SearchDay() 문제 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2015-08-24 Baseline
+    - XMedia3.dll 업데이트
+    - mc_dec_hevc.dll 추가
+    - SDK API 문서 업데이트
+
+v1.42.40 (2015-03-31)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - MetaData 샘플프로그램 추가
+    	    
+B. 문제점 수정
+    - SendAudio2 API Crash 문제 수정
+    - Sunapi sp 일부 장비 Multicast 안되는 문제 수정
+    - Hallway view 설정시 영상 깨짐 문제 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2015-03-31 Baseline
+
+v1.42.30 (2015-03-06)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - SUNAPI 프로토콜 사용시, 특정 상황에서 User 계정 접속실패 문제점 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2015-03-06 Baseline
+
+v1.42.20 (2015-02-26)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - SUNAPI 일부 crash 문제 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2015-02-27 Baseline
+
+v1.42.10 (2015-01-12)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - N/A
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2015-01-12 Baseline
+    - 디코더 성능 개선
+
+v1.42.00 (2014-12-19)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - SaveSnapshot() 기능이 간헐적으로 실패하는 문제점 수정
+
+C. 변경
+    - SUNAPI SP 지원
+      : 샘플 프로그램 수정(C#)
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2014-12-19 Baseline
+
+v1.41.90 (2014-12-15)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - 스냅샷 저장시 디바이스 정보 포함하는 기능 추가
+      : XnsSdkDevice::SaveSnapshotWithString()
+    	    
+B. 문제점 수정
+    - 윈도우컨트롤 리사이즈시 성능 저하 문제 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2014-12-15 Baseline
+    - SDK API 문서 업데이트
+
+v1.41.80 (2014-12-01)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - Windows XP에서 디코더 문제점 수정
+    - Windows7 에서 영상 깜빡임 문제 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2014-12-01 Baseline
+    - SDK API 문서 업데이트
+
+v1.41.70 (2014-11-13)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - 이벤트 추가
+      : XnsSdkDevice::OnTrackingEventChanged() 
+      : XnsSdkDevice::OnFaceDetectionEventChanged() 
+      : XnsSdkDevice::OnAudioDetectionEventChanged() 
+      : XnsSdkDevice::OnAMDEventChanged() 
+      : XnsSdkDevice::OnSystemEventChanged() 
+    - SUNAPI SP 지원
+      : XnsSdkDevice::SetConnectionInfo2()
+      : XnsSdkDevice::OnDeviceDetected3()
+      : 샘플 프로그램 수정(C++)
+    	    
+B. 문제점 수정
+    - N/A
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2014-12-01 Baseline
+
+v1.41.40 (2014-10-06)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - OpenMediaEx() 오류 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2014-10-06 Baseline
+
+v1.41.30 (2014-09-30)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - N/A
+
+C. 변경
+    - 디코더 교체
+
+
+v1.41.20 (2014-08-30)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+    	    
+B. 문제점 수정
+    - DVR, NVR에서 일부 password 사용시 접속 불가 문제점 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2014-08-30 Baseline
+
+
+v1.41.10 (2014-08-13)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SEC 백업시 비밀번호 설정하는 API 추가
+	  : XnsSdkDevice::StartSecBackup()
+    	    
+B. 문제점 수정
+    - NVR에서 SetListen() API 동작하지 않는 오류 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2014-08-13 Baseline
+    - x64용 RegXnsSDK_64bit.bat 추가
+    - SEC 백업뷰어 v2.0.5.5 업데이트
+    - SDK API 문서 업데이트
+    - 보안 문제점 개선(ZDI)
+
+
+v1.41.00 (2014-03-28)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - REC 파일을 AVI 파일로 변환하는 API 추가
+	  : XnsSdkDevice::ConvertRec2Avi(), StopRec2Avi()
+    - 간편한 talk API 추가
+	  : XnsSdkDevice::SendAudioData2(), StopAudioData2()
+	- AVI REC 녹화시간/파일용량 설정 API 추가
+	  : XnsSdkDevice::GetAviOptionSize(), SetAviOptionSize(), GetAviOptionPeriod(), SetAviOptionPeriod()
+	- MultiChannel VC++ 샘플 프로그램 추가
+        - C# ListenTalk 샘플 프로그램 추가
+	- C# VideoLawData 샘플 프로그램 추가
+    	    
+B. 문제점 수정
+    - SVR-1650E 모델 xns.xml 오류 수정
+	- AVI Recording시에 H264 key frame 오류 수정
+	- AVI REC timestamp overflow 문제점 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2014-03-28 Baseline
+	- AVI recording 성능 개선
+	- AVI file 30fps에서 60fps로 확장.
+	- REC 백업파일 1GB마다 생성되도록 변경.
+	- SDK API 문서 업데이트
+
+
+v1.40.30 (2013-08-30)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+      
+B. 문제점 수정
+    - ListenTalk VC++ 샘플 버그 수정
+    - OnNewMedia 영상 딜레이 문제점 수정
+    - NIW STEP-FORWARD 연속 수행시 동작하지 않는 문제점 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2013-08-30 Baseline
+	- H264 디코딩 성능 개선
+	- AVI recording 성능 개선
+	- OnNewMedia 전달시, OnVideo 호출 시간을 함께 전달하도록 수정
+	- OpenStream() 영상 수신시에 10초간 영상 없으면 VLOSS 이미지 출력하도록 수정.
+
+
+v1.40.20 (2013-06-18)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - CommandLine VC++ 샘플 프로그램 추가
+    - LocalRecording VC++ 샘플 프로그램에 Avi recording 추가
+      
+B. 문제점 수정
+    - SetImageFlip() API 버그 수정
+	- OnNewMedia 이벤트 버그 수정
+	- StartAviLocalRecording() API 버그 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2013-06-18 Baseline
+    - makeSEC.dll 업데이트
+
+
+v1.40.10 (2013-04-24)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - 사용자 정의 OSD 관련 API 추가
+      : XnsSdkWindow::SetCustomOSD(), SetCustomOSDOnOff()
+    - 영상반전 API 추가
+      : XnsSdkWindow::SetImageFlip()
+    - Video pixel format 확인 API 추가
+      : XnsSdkWindow::GetVideoPixelFormat()
+      
+B. 문제점 수정
+    - OSD 출력시, 날짜 정보 표시되지 않는 문제점 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2013-04-24 Baseline
+    - SDK API 문서 업데이트
+
+
+v1.40.00 (2013-04-01)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - 네트워크 카메라의 비디오 정보를 얻어오는 함수 추가
+      : XnsSdkDevice::GetVideoResolution(), GetVideoFrameRate(), 
+        GetVideoQuality(), GetVideoInfo(), GetVideoCodec()
+    - 저장장치의 녹화 시작/종료 이벤트 추가
+	  : XnsSdkDevice::OnRecirdingStatusChanged()
+      
+B. 문제점 수정
+    - Windows7의 일부 PC에서 영상 깜빡임 문제 및 듀얼모니터 출력 문제점 수정
+    - Net-i ware SearchDay() 오류 수정
+      : 첫번째 채널의 녹화 정보만을 가지고 오는 문제점 수정
+    - GetTickCout() oveflow 문제점 수정
+
+C. 변경
+    - 디바이스 드라이버 업데이트 (device_xxx.dll)
+      : 2013-04-01 Baseline
+    - SDK API 문서 업데이트
+
+
+v1.39.10 (2012-12-03)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - AVI 백업, AVI 로컬레코딩 기능 추가
+      : StopAviBackup(), StartAviLocalRecording(), StopAviLocalRecording()
+    - 비디오 fps, bps 정보 수신 이벤트 추가
+      : XnsSdkDevice::SetVideoFrameInfoReceived() 
+      : XnsSdkDevice::OnVideoFrameInfoReceived() 이벤트
+      : C# 이벤트 샘플 소스 참고
+    - Disconnect 에러코드 추가
+      
+B. 문제점 수정
+    - SaveSnapshot() 기능이 간헐적으로 실패하는 문제점 수정
+    - NVR 펌웨어 업데이트 오류 문제점 수정
+    - Talk 샘플 소스 오류 수정
+    - 네트워크 카메라 SD 카드 SearchDay() 오류 문제점 수정
+    - OpenMedia() 후 WindowControl::Start()를 호출하지 않았을 때, 메모리 누수 문제점 수정
+    - WindowControl 객체 생성 후, 삭제시, GDI Handle 리소스 누수 문제점 수정
+
+C. 변경
+    - 디바이스 클라이언트 드라이버 업데이트 (device_xxx.dll)
+      : 2012-12-03 Baseline
+    - SDK API 문서 업데이트
+
+
+v1.39.00 (2012-08-31)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - DVR, NVR 의 fan 상태변경 이벤트 추가
+      : OnFanStatusChanged() 이벤트
+    - SNB-7002 g726 오디오 지원
+      
+B. 문제점 수정
+    - Playback 수행시 play() 시작시간을 명시하도록 수정
+    - Mjpeg 디코딩시 메모리 leak 문제 수정
+    - CCTV2.ocx SNS-100 영상 안나오는 문제 수정
+      : SNS-100은 control id 2부터 미디어 채널 사용
+    - Net-i ware DeviceStatusChanged 이벤트 발생하지 않는 문제 수정
+      : Net-i ware 연결이 끊어진 경우 DeviceStatusChanged 이벤트 발생하지 않음
+    - VideoRawData 샘플 오류 수정
+    - XMedia3 오류 수정
+    - XnsSdkDevice::CreateFileReader() 호출시 Read mode로 파일 읽어오도록 수정
+    - XnsSdkWindow::SaveSnapShot() 수행시 실패하는 문제 수정
+
+C. 변경
+    - 디바이스 클라이언트 드라이버 업데이트 (device_xxx.dll)
+      : Net-i viewer 1.39 baseline
+      : 디바이스 최신 펌웨어 변경사항 지원
+    - BackupViewer 2.0 싱글채널로 업데이트
+      : Viewer.exe, makeSEC.dll, makeSEC.lib 수정
+    - OSD 출력시 통합모델명이 아니라, 제품모델명이 출력되도록 수정
+    - SEC 포맷으로 리모트백업, 로컬레코딩시 장비이름 저장하도록 수정
+    - XnsMediaInterface.h의 time_t 형 선언을 long으로 변경
+
+
+v1.38.00 (2012-06-01)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SRD-480D 지원
+    - CCTV2.ocx 정식 추가
+      : CCTV2Sample.html Javascript 샘플 추가
+    - IPInstallDhcp() 함수 추가
+      : DHCP 모드로 IP Install 수행할 수 있음 (네트워크 카메라 대상)
+    - OnDeviceDetected2() 이벤트 추가
+      : DHCP 모드로 설정되어 있는지 아닌지 확인 가능
+    - 이벤트 Email 전송 기능 Alpha 버전
+
+B. 문제점 수정
+    - 영상 출력 성능 향상
+    - 네트워크 카메라 SD 카드 검색기능 오류 수정
+    - 윈도우 핸들이 없는 어플리케이션도 이벤트를 정상적으로 받을 수 있도록 수정
+    - 샘플 오류 수정
+      : SingleLive C++ 
+      : SingleLiveStream C++
+    - XnsSdkDevice::CloseStream() 호출전 XnsSdkWindow::Stop() 호출시 블록되는 문제점 수정
+    - 프로그램 종료시 비정상 종료 오류 수정
+      : XnsSdkDevice::AutoScan() 수행 후 프로그램 종료시 비정상 종료함
+    - XnsSdkDevice::GetControlRemoteName() 파라미터 예외처리하도록 수정
+
+C. 변경
+    - 디바이스 클라이언트 드라이버 업데이트 (device_xxx.dll)
+      : Net-i viewer 1.38 baseline
+      : 디바이스 최신 펌웨어 변경사항 지원
+    - SDK 문서 업데이트
+    - BackupViewer 1.0.6.4로 업데이트
+    - makeSEC.dll 업데이트
+
+
+V1.37.01 (2012-04-24)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - Banamex 프로젝트 관련 커맨드 및 이벤트 추가
+      : Recording Failed 이벤트 추가
+      : Get/Set Bandwidth 커맨드 추가
+      : OnGetBandwidth 이벤트 추가
+    - 삼성중공업 CCTV2.ocx 정식버전 릴리즈
+    - XnsSdkDevice::OndeviceInstalled 이벤트 함수 추가
+      : IPInstall로 장비 아이피 변경시, 응답이 이벤트로 올라오는 기능 추가
+    - XnsSdkDevice::IPInstallDhcp 함수 추가
+      : DHCP 모드로 IP install을 수행할 수 있음.
+    - XnsSdkDevice::OnDeviceDetected2 이벤트 추가
+      : DHCP 모드로 설정되어 있는지 수동 설정되어 있는지 확인할 수 있는 옵션 추가
+    - SRD-480D 지원 모델 추가
+
+B. 문제점 수정
+    - Smile 프로젝트 관련 패치작업 진행
+      XnsSdkWindow::PushMedia() 성능 개선
+      : function내 critical session 제거
+      AcquireMediaAuthority(), ReleaseMediAuthority() 오류 수정
+      : IP Camera SD카드 서치 등의 경우, authority를 요청할 필요없음. (요청시 응답이 오지 않음)
+    - IPCAMERA SD카드 SearchDay 명령 동작하지 않는 문제점 수정
+      : IPCAMERA의 경우 REC_TYPE의 XOR 연산을 지원하지 않음.
+      : REC_TYPE_ALL인 경우 XNSE_RYPE_ALL로 전송하도록 수정함.
+    - SingleLive C++ 샘플 오류 수정
+    - 윈도우핸들이 없는 경우에도 이벤트를 정상적으로 받을 수 있도록 수정
+      : 콘솔 프로그램, 윈도우 서비스인 경우도 지원
+
+C. 변경
+    - XMedia, XnsManager 미디어 스트리밍 부분 성능 개선
+      : SmartViewer 변경사항 적용
+      : OSD 업데이트 주기를 1초마다 함으로써, 렌더링 성능 개선
+      : 렌더링시 defog 값 보지 않도록 수정
+      : mainconcept h264디코더 업데이트 (mc_dec_avc.dll 및 관련 헤더파일 업데이트)
+    - BackupViewer 1.0.6.4로 업데이트
+    - makeSEC.dll 업데이트
+    - 모델타입이 Samsung Network Camera/Encoder 인 경우 모델명에 해당 타입을 사용하도록 수정
+
+
+v1.37.00 (2012-03-09)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - UnSetVideoRawDataReceived() 함수 추가
+      : SetVideoRawDataReceived() 취소
+    - CCTV2.ocx alpha version 추가
+B. 문제점 수정
+    - SNP-3301, SNP-3301H 실행 오류 수정
+    - 일부 PC에서 OnVideoRawDataReceived() 이벤트 발생하지 않는 문제 수정
+    - MediaOpen.html, SingleLive.html 샘플 오류 수정
+    - VC++ PTZ 샘플 오류 수정
+C. 변경
+    - 디바이스 클라이언트 드라이버 업데이트 (device_xxx.dll)
+      : Net-i viewer 1.37 baseline
+      : 디바이스 최신 펌웨어 변경사항 지원
+    - SDK 문서 업데이트
+
+
+v1.35.10 (2012-02-24)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - MediaOpen.html Javascript 예제 추가
+B. 문제점 수정
+    - 64bit OS에서 VB.net, C# 샘플 실행되지 않는 오류 수정
+    - CreateDeviceEx() 호출 오류 수정
+    - SPE-100, SPE-400 Talk 기능 정상 동작하지 않는 오류 수정
+C. 변경
+    - N/A
+
+
+v1.35.00 (2012-01-13)
+-----------------------------------------------------------------------
+
+A. 신규 기능
+    - 네트워크 카메라 접속시 메모리 사용 최적화
+    - PTZ FUNCTION (PATTERN, AUTOPAN, SCAN, SWING, TOUR) 리스트를 얻어올 수 있는 기능 추가 
+      : GetHPtzList() 함수, OnGetHptzList() 이벤트
+    - Video Raw Data를 이벤트로 받아올 수 있는 기능 추가
+      : SetVideoRawDataReceived() 함수, OnVideoRawDataReceived() 이벤트
+B. 문제점 수정
+    - IE에서 컨트롤을 스크립트 사용에 안전한 것으로 인식하도록 수정
+    - xns.xml 로딩 오류 수정
+    - OpenSteam() 사용시 Start()를 나중에 호출해도 문제가 발생하지 않도록 수정
+    - SingleLiveStream, Event 샘플 보완
+    - StartBackup() 시 From-To 시간이 동일한 경우, 오류문제 수정
+C. 변경
+    - SdkTest 샘플에서 ControlID 설정 가능하도록 기능 추가
+    - 동일 장비에 중복 접속이 가능하도록 수정 (다른 device id 사용시)
+    - 동일 device id로 이미 접속되어 있는 디바이스에 다시 접속할 경우 에러 리턴하도록 수정,
+      (이전에는 기존 연결을 끊음.)
+
+
+  
+v1.34.01 (2011-11-10)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+B. 문제점 수정
+    - Samsung Network Camera/Encoder로 접속이 안되는 문제점 수정
+    - xns.xml 환경설정 로딩 문제점 수정
+C. 변경
+    - N/A
+
+
+v1.34.00 (2011-11-02)
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SNP-6200, SNP-3302H, SNO-7080R, SNB-1000, SDE, 5002V, SDE-5001V, SDE-4002V, SDE-4001V, SDE-3003, 
+      SDE-3001, SRD-840, SRD-1640, SVR-450, SVR-470, SVR-940, SVR-950E, SVR-1640A 신규 지원
+    - 모델명 통합 적용(Samsung DVR, Samsung Network Camera/Encoder, Samsung NVR)
+    - PTZ SPEED 조정이 가능한 장비에서 PTZ SPEED 제어 기능 추가
+      : GetPtzPosSpeed(), SetPtzPosSpeed(), OnGetPtzPosSpeed()
+    - 카메라 재기동 기능 추가
+      : PowerRestart()
+    - 중복 구간 적용으로 인해 함수 추가
+      : SearchOverLap(), OpenMediaOverLap(), OpenMediaExOverLap(), OpenStreamOverLap(), SearchDayOverLap()
+      : StartBackupOverLap(), PlayOverLap(), SeekOverLap(), FrameAdvanceOverLap()
+    - 중복 구간 검색 이벤트 추가
+      : OnSearchOverLap()
+    - POS 검색, POS 검색 취소 함수 추가
+      : SearchPos(), CancelPos()
+    - POS 검색 결과 이벤트 추가
+      : OnSearchPosList(), OnEndSearchPos()
+B. 문제점 수정
+    - 비디오메모리가 부족한 경우 영상이 XnsSdkWindow 컨트롤이 정상동작하지 않는 문제점 수정
+C. 변경
+    - N/A
+
+
+v1.33.02 (2011-10-14)    
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SNV-5080R 신규 지원
+B. 문제점 수정
+    - VideoRawData시 MPEG4 비디오 출력 문제 수정 (Mpeg4Decoder)
+C. 변경
+    - N/A
+
+
+v1.33.01 (2011-10-11)    
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SRN-47X, SRN-167X 신규 지원
+B. 문제점 수정
+    - N/A
+C. 변경
+    - N/A
+
+v1.33.00 (2011-09-30)    
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SNP-3302, SNP-3371, SNP-3371H, SNP-3371TH 신규 지원
+    - SingleLiveStream 샘플 추구
+B. 문제점 수정
+    - PushMedia() 오류 보완
+    - XnsWindow control 오류 보완
+C. 변경
+    - N/A
+
+
+v1.32.00 (2011-08-26)    XnsActivexSDK_v1.32.00_26thAUG2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SNB-5000A 신규 지원
+    - VC++, C#, Visual Basic, Java script 샘플 코드 추가
+    - SEC 백업 모듈 성능 개선
+B. 문제점 수정
+    - SNP-1000A Talk 연동 기능 보완
+    - WEB에서 인스턴스 중복 생성시 발생하는 문제 보완
+    - GetLastError() 리턴값 오류 문제 수정
+C. 변경
+    - N/A
+
+
+v1.30.09 (2011-08-01)    XnsActivexSDK_v1.30.09_01thAUG2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+B. 문제점 수정
+    - N/A
+C. 변경
+    - XnsSdkDevice 클래스와 XnsSdkWindow 클래스에서 IsInvokeAllowed() 함수를 overriding 처리함
+
+
+v1.30.08 (2011-07-11)    XnsActivexSDK_v1.30.08_11thJULY2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SetTalk, SendAudioData 기능 보완
+B. 문제점 수정
+    - MJPEG 라이브 재생 오류 보완 (SNP-1000A)
+C. 변경
+    - Device 최대개수 3000개에서 65535로 확장
+
+
+
+v1.30.07 (2011-06-29)    XnsActivexSDK_v1.30.07_29thJUNE2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+B. 문제점 수정
+    - xns.xml 로딩시 버그 수정 (모델명 중복 선언시 문제 발생)
+C. 변경
+    - N/A
+
+
+
+v1.30.06 (2011-06-21)    XnsActivexSDK_v1.30.06_21thJUNE2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - AreaZoom() 함수 추가
+    - OnIVEvent 이벤트 추가
+    - GetPtzPos() 함수 추가
+    - SetPtzPos() 함수 추가
+    - OnGetPtzPos 이벤트 추가
+B. 문제점 수정
+    - 메모리 누수 문제점 수정
+C. 변경
+    - N/A
+
+
+
+v1.30.03 (2011-06-03)     XnsActivexSDK_v1.30.03_3rdJUNE2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+B. 문제점 수정
+    - ReleaseDevice시 OnDeviceStatusChanged 호출하는 문제 해결
+    - ReleaseDevice시 비정상종료 문제 해결
+C. 변경
+    - N/A
+
+
+v1.30.02 (2011-05-25)    XnsActivexSDK_v1.30.02_25thMAY2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - DEP 설정 변경 방법 API 문서에 추가
+B. 문제점 수정
+    - 화면보호기 해지 후 Window 컨트롤 영상 안나오는 문제 해결
+C. 변경
+    - N/A
+
+
+v1.30.00 (2011-05-03)    XnsActivexSDK_v1.30.00_3rdMAY2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+B. 문제점 수정
+    - 네트워크 카메라 영상 수신 안되는 문제점 수정
+    - SDKWindow 마우스 이벤트 버그 수정 (MouseLeave, MouseMove)
+C. 변경
+    - 백업모듈 버전 업데이트
+
+
+v1.28.04 (2011-04-20)    XnsActivexSDK_v1.28.04_20thApr2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+B. 문제점 수정
+    - REC 백업파일 재생 완료 후 비정상종료 문제 해결
+C. 변경
+    - REC 백업파일 1시간마다 생성 (이전 버전 : 30초마다 생성)
+
+
+v1.28.03 (2011-04-14)    XnsActivexSDK_v1.28.03_14thApr2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SNB-7000, SNV-7080, SND-7080, SND-7080F, SNP-5200, SNP-5200H, SNZ-5200, SNO-5080R 신규 지원
+    - SPE-1600R 신규 지원
+    - SDE-4001, SDE-4002, SDE-5001, SDE-5002 신규 지원
+    - SHR-408X, SHR-416X 신규 지원
+B. 문제점 수정
+    - callback 모듈 버그 수정
+C. 변경
+    - N/A
+
+
+v1.28.01 (2011-04-11)     XnsActivexSDK_v1.28_11stApr2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SendAudioData() 함수 추가
+    - CPU 점유율 감소
+    - 영상 성능 개선
+    - 설치 패키지 간소화 (vcredist, WESP SDK, ActiveX SDK 자동 설치)
+B. 문제점 수정
+    - N/A
+C. 변경
+    - N/A
+
+
+v1.26.04 (2011-03-22)    XnsActivexSDK_setup_v1.26.04_22ndMar2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - N/A
+B. 문제점 수정
+    - OpenStream() 및 PushMedia() 버그 수정
+C. 변경
+    - N/A
+
+
+28thJan2011 (2011-01-28)    XnsActivexSDK_setup_28thJan2011.zip
+-----------------------------------------------------------------------
+A. 신규 기능
+    - SRN-6450, SRN-3250, SNR-6400, SNR-3200 신규 지원
+B. 문제점 수정
+    - N/A
+C. 변경
+    - N/A
+
+
+01stOct2010 (2010-10-01)    XnsActivexSDK_01stOct2010.zip
+-----------------------------------------------------------------------
+    - 최초 배포
+
+
+
+------------------------------------------------------------------------------
+Copyright ⓒ2012-2013 Hanwha techwin, Inc. All rights reserved.

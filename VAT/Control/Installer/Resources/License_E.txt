@@ -1,0 +1,68 @@
+﻿[ENGLISH]
+Software End User License
+Integrated contract
+ 
+
+Please read it carefully because it is important.
+This Software End User License Agreement (the "License Agreement") is a contract between the individual or a single company ("User") and "Company" for software products developed, sold and distributed by Halla Precision Engineering Co., Agreement.
+The software that corresponds to this "License Agreement" is the full version (except for the country version) of all the software provided by us and at our website (http://www.hanra.co.kr).
+Software ("Product") of this "Company" may include, but is not limited to computer software, materials, media, files, data, printed materials and "online" or electronic documentation .
+"User" is deemed to accept and use this "License Agreement" by installing, copying or executing this or any part of the Product on a computer or network.
+If you do not agree to the terms of this License Agreement, you may not use the Product.
+
+
+- Software product license -
+
+1. License
+
+1.1. You are permitted to use this software product in accordance with this Agreement in connection with your use of the software product.
+
+
+2. Copyright and Restricted Use
+
+2.1. All genuine copies and copies of the Product must display copyright information.
+2.2. Copyright and intellectual property rights in and to the "Product" and all attachments, accompanying printed materials and copies of the Software contained within the "Product" are owned by the "Company". This right is protected by the Copyright Act of Korea and the International Copyright Treaty.
+2.3. "User" must comply with Korean copyright laws, international copyright treaties, and other applicable laws in relation to the use of "Product" and shall not reverse-engineer, decompile, disassemble or modify the "Product" except as expressly permitted by applicable law You may not copy, modify or adapt any or all of the components of the Product, and you may not copy or distribute the Product and any related materials without the prior written consent of the Company.
+2.4. In the event that "User" is infringed by the infringement of the copyrights of the "Company" by the act of the preceding Paragraph, the "Company" may charge the final "User" for any damages caused by infringement of the copyright.
+
+
+3. Software Redistribution
+
+3.1. "Product" may not be redistributed.
+3.2. In the case of redistribution permitted by "Company", the permitted party may be liable for redistribution in any way other than for the purposes for which it is granted or for which it is granted.
+
+
+4. The question of liability for consequential damages
+
+4.1. The results of the use of the Product are solely the responsibility of the User and the User is responsible for the suitability and quality of the User's use of the Product.
+4.2. The Company shall not be liable for incidental or consequential damages, including but not limited to business damages such as loss of profits, interruption of business, loss of business information or financial loss caused by the inability to use this product, Even if we knew about the possibility in advance, we will not be liable to the maximum extent permitted by the relevant laws and regulations.
+4.3. The liability of Company to the purchaser of this Product shall not exceed the amount actually paid by the User to acquire a license for the Product unless the Company intentionally consents.
+4.4. Some jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental damages, so the above limitation may not apply to you.
+
+
+5. Recognition of contract
+
+"User" acknowledges and agrees to the terms and conditions of the Agreement by reading and understanding all of the terms and conditions contained in the "License Agreement".
+
+
+6. Termination and termination of contract
+
+6.1 If the "User" does not comply with the terms of this "License Agreement", the "Company" may terminate the Agreement without infringing any other rights.
+6.2 If "User" does not agree with the revised Terms, you may terminate this Agreement by deleting "Software".
+
+
+7. Governing Law and Judgment
+
+7.1 This License Agreement shall be governed by the laws of the Republic of Korea and shall be governed by and construed in accordance with the laws of the Republic of Korea and all legal matters, To the jurisdiction of the district court having jurisdiction over the jurisdiction. However, if the address or place of residence of the "user" at the time of filing is unclear, the competent court shall be governed by the Civil Procedure Act.
+7.2 In the case of a user who has an address or residence in a foreign country. Despite the foregoing, the Seoul Central District Court in the Republic of Korea shall have jurisdiction over the dispute between the Company and the User.
+
+
+8. Questions about the contract
+
+If you have any questions regarding the purchase of a license to use the "Product" and the "License Agreement", please refer to the contact details below.
+
+
+Halla Precision Engineering Co., Ltd.
+Incheon Metropolitan City No.41, Ebongro Road # 75 (Nonhyeon-dong, Namdong Industrial Complex 19B 10L)
+Homepage: http://www.hanra.co.kr
+Contact: 032-816-3637

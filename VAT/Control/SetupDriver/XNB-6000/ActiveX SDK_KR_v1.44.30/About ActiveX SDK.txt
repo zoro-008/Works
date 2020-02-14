@@ -1,0 +1,20 @@
+OVERVIEW of ActiveX SDK
+
+XNS ActiveX SDK 는 XNS 라이브러리를 기반으로 Microsoft의 ActiveX 기술을 채택하여 만든 라이브러리입니다. ActiveX 기술을 채택함으로써 XNS 라이브러리를 C#, C++, Visual Basic, Internet Explorer용 웹 페이지(Java script) 등 다양한 플랫폼과 언어에서 개발하는 것이 가능해졌습니다. 
+
+XNS ActiveX 라이브러리의 개발 목적은 개발자가 삼성의 네트워크 장비(예, 카메라, NVR, DVR)를 쉽게 통합할 수 있게 하기 위함입니다. 
+
+XNS ActiveX 라이브러리에서 제공하는 기능은 다음과 같습니다.
+- 실시간 영상 감시
+- 네트워크 장비에 저장된 영상 재생 및 정보 획득
+- 로컬 PC에 영상 저장 및 로컬 PC에 저장된 영상 재생
+- 네트워크 장비에 저장된 영상을 로컬 PC로 백업(back-up)
+- 네트워크 장비(카메라)의 PTZ 기능 제어
+- 네트워크 장비에서 발생한 이벤트 정보 획득
+
+[패키지 정보]
+XNS ActiveX SDK : Full 버전
+XNS ActiveX SDK (simple ver.) : Net-I ware, SVR-XXXX, SRD-480D DVR 제품군 지원하지 않음.
+XNS ActiveX SDK (CAB file) : 웹 어플리케이션 개발을 위한 CAB 버전
+XNS ActiveX SDK (CAB file - simple ver.) : 웹 어플리케이션 개발을 위한 CAB 버전 (NET-I ware, SVR-XXXX, SRD-480 DVR 제품군 지원하지 않음.)
+* simple version은 Net-I ware 연동을 지원하지 않지만, .Net 4.0에 대한 의존성을 가지지 않습니다. 

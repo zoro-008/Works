@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>ULDR_ZPckr</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>5</dUnitPerRev>
+  <dMaxPos>999</dMaxPos>
+  <dMinPos>-999</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>UpDown</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>1500</dAcceleration>
+  <dDeceleration>1500</dDeceleration>
+  <dRunSpeed>150</dRunSpeed>
+  <dSlowSpeed>50</dSlowSpeed>
+  <dManSpeed>80</dManSpeed>
+  <dHomeVelFirst>10</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>500</dHomeAccFirst>
+  <dJogSpeed>30</dJogSpeed>
+  <dFstPos>5</dFstPos>
+  <dScdPos>20</dScdPos>
+  <iRepeatDelay>500</iRepeatDelay>
+  <dRepeatSpeed>20</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>
