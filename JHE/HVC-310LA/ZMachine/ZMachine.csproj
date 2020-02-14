@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46104932-7A3F-4428-BACD-7434A53B8A55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Machine</RootNamespace>
+    <AssemblyName>HVC-310LA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HR image1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Array.cs" />
+    <Compile Include="EMCLSetter.cs" />
+    <Compile Include="EraeMotionApi.cs" />
+    <Compile Include="FormLotOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLotOpen.designer.cs">
+      <DependentUpon>FormLotOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookUpTable.cs" />
+    <Compile Include="SerialComUint.cs" />
+    <Compile Include="StagePartial_UnlockCycle.cs" />
+    <Compile Include="VisnComm.cs" />
+    <Compile Include="DataMan.cs" />
+    <Compile Include="EmbededExe.cs" />
+    <Compile Include="FormVision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVision.Designer.cs">
+      <DependentUpon>FormVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaster.Designer.cs">
+      <DependentUpon>FormMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOption.Designer.cs">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameMotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameMotr.Designer.cs">
+      <DependentUpon>FrameMotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameOutput.Designer.cs">
+      <DependentUpon>FrameOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartInterface.cs" />
+    <Compile Include="ManualMan.cs" />
+    <Compile Include="FormSPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSPC.Designer.cs">
+      <DependentUpon>FormSPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage.cs" />
+    <Compile Include="SPCUnit.cs" />
+    <Compile Include="LotUnit.cs" />
+    <Compile Include="OptionMan.cs" />
+    <Compile Include="PstnMan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormDeviceSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeviceSet.Designer.cs">
+      <DependentUpon>FormDeviceSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDevice.Designer.cs">
+      <DependentUpon>FormDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOperation.Designer.cs">
+      <DependentUpon>FormOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameCylOneBt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameCylOneBt.Designer.cs">
+      <DependentUpon>FrameCylOneBt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sequence.cs" />
+    <Compile Include="UtilDefine.cs" />
+    <EmbeddedResource Include="FormLotOpen.resx">
+      <DependentUpon>FormLotOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaster.resx">
+      <DependentUpon>FormMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVision.resx">
+      <DependentUpon>FormVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption.resx">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDevice.resx">
+      <DependentUpon>FormDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeviceSet.resx">
+      <DependentUpon>FormDeviceSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOperation.resx">
+      <DependentUpon>FormOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSPC.resx">
+      <DependentUpon>FormSPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameCylOneBt.resx">
+      <DependentUpon>FrameCylOneBt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameMotr.resx">
+      <DependentUpon>FrameMotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameOutput.resx">
+      <DependentUpon>FrameOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainTitle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oper.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Device.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Option.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPC.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Util.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{515f844e-994d-4c94-9e46-22f94026a3ff}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMDll2\SMDll2.csproj">
+      <Project>{1a820ae0-7242-4398-b295-0963557f1f7a}</Project>
+      <Name>SMDll2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1468764606_folder-system.ico" />
+    <Content Include="HR image1.ico" />
+    <Content Include="Resources\CCW.bmp" />
+    <Content Include="Resources\CW.bmp" />
+    <Content Include="Resources\DN.bmp" />
+    <Content Include="Resources\LEFT.bmp" />
+    <Content Include="Resources\MainTitleNoMark.jpg" />
+    <Content Include="Resources\RIGHT.bmp" />
+    <Content Include="Resources\Stop.png" />
+    <Content Include="Resources\UP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
