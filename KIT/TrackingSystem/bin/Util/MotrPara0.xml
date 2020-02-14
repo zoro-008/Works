@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>Tracking Lift Z</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>1</dUnitPerRev>
+  <dMaxPos>2100</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>UpDown</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>100</dAcceleration>
+  <dDeceleration>100</dDeceleration>
+  <dRunSpeed>40</dRunSpeed>
+  <dSlowSpeed>15</dSlowSpeed>
+  <dManSpeed>40</dManSpeed>
+  <dHomeVelFirst>40</dHomeVelFirst>
+  <dHomeVelLast>3</dHomeVelLast>
+  <dHomeAccFirst>100</dHomeAccFirst>
+  <dJogSpeed>40</dJogSpeed>
+  <dFstPos>0</dFstPos>
+  <dScdPos>2100</dScdPos>
+  <iRepeatDelay>1500</iRepeatDelay>
+  <dRepeatSpeed>40</dRepeatSpeed>
+  <iRepeatCount>1000</iRepeatCount>
+</CParaMotr>
