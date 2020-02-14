@@ -1,0 +1,3 @@
+2018 3/23.
+Main Form에서 Report 버튼이 Run이랑 상관없이 클릭 되도록 수정.
+Util Error 54번 Laser Communication 수정 됨.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>VISN_ZGrpr</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>5</dUnitPerRev>
+  <dMaxPos>700</dMaxPos>
+  <dMinPos>-7</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>UpDown</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>1500</dAcceleration>
+  <dDeceleration>1500</dDeceleration>
+  <dRunSpeed>150</dRunSpeed>
+  <dSlowSpeed>50</dSlowSpeed>
+  <dManSpeed>100</dManSpeed>
+  <dHomeVelFirst>20</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>300</dHomeAccFirst>
+  <dJogSpeed>80</dJogSpeed>
+  <dFstPos>200</dFstPos>
+  <dScdPos>600</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>500</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

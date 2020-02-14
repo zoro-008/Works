@@ -1,0 +1,182 @@
+안녕하세요~
+ 
+Process 클래스를 사용하여 중복 실행되는 것을 처리하는 코드를 소개합니다. (넘 간단해서 민망하네요.... -_-)
+ 
+Program.cs 파일에서 아래의 코드를 삽입합니다.
+ 
+[STAThread]
+static void Main()
+{
+    Application.EnableVisualStyles();
+    Application.SetCompatibleTextRenderingDefault(false);
+ 
+    if (Process.GetProcessesByName("Test").Length > 1)
+    {
+        MessageBox.Show("이미 실행 중입니다.");
+    }
+    else
+    {
+        Application.Run(new Form1());
+    }
+}
+ 
+넹 초간단.. 한 코드입니다. GetProcessesByName를 사용하여 현재 실행중인 프로세스를 이름으로 찾아
+ 
+겟수가 1개 이상일때 빠져나가는 코드입니당. ^^
+
+
+
+
+
+
+
+
+
+
+
+Dispose 는 무엇인가?
+관리되지 않는(unmanaged) 자원을 해제하기 위해서 사용 하는 함수이다.
+그러면 unmanaged 자원은 무엇인가?
+쉽게 생각해서 "메모리가 아닌 자원" 즉, 윈도우 핸들, 파일 핸들, 소켓 핸들 등 시스템 자원을 뜻한다. 반대로 managed 는.. new List<int>() 등, 메모리 처럼 쓰는 자원들이다.
+그러면 표준 Dispose 패턴은 무엇인가?
+Dispose를 IDisposable Interface로 구현한다.
+Dispose 내부에선 unmanaged 자원을 해제한다.
+사용자가 Dispose를 사용하지 않았을 경우를 대비하여, finalizer를 구현한다.
+finalizer 에서 unmanaged 자원을 해제한다.
+이 1 ~ 4 을 구현한 Dispose 를 표준 Dispose 패턴이라고 한다.
+finalizer 를 구현하면, 성능상에 나쁜 영향을 주는데, 왜 finalizer를 구현해야 하나?
+무제한 unmanaged 자원이 늘어나는게 더 나쁜 영향을 준다. 그래도 finalizer를 구현하지 않겠는가?
+왜 finalizer를 구현하면 성능에 나쁘나?
+finalizer를 구현하면, GC가 자신이 관리하는 finalizer 큐에 저장한다.
+
+GC에서 사용하는 특정 쓰레드가 finalizer 큐를 읽고, 해제해도 되는지 검사한다.
+검사 후 해제되도 된다면, 그때서야 해제한다.
+3번이 될때까지 아직도 해제하지 않고 있는 것과, 검사하는 것에 에너지를 사용하기 때문에 성능에 나쁘다.(얼마나 나쁠지는 모르겠다.)
+finalizer에선 어떤 일을 해야 하는가?
+사용자가 Dispose()를 사용하지 않았을 경우, unmanaged 자원을 해야 해야 한다.
+그러면, 어떻게 Dispose를 구현해야 하는가?
+반드시 다음과 같은 기능을 수행해야만 한다.
+unmanaged 자원 해제
+managed 자원의 해제
+Dispose() 한 후 다시 Dispose() 호출 후 이상이 없어야 한다.
+Dispose() 한 후 unmanaged 자원 사용 시, ObjectDisposed 예외를 발생 시켜야 한다.
+finalization 동작을 막아야 한다.
+다 좋은데, 상속 기반에서는 어떻게 하나? IDisposable Interface는 비가상 함수지 않는가?
+그렇다. 그래서 가상함수로 Dispose() 기능을 수행하는 함수를 만들어야 한다. 기왕 제 3의 함수 만드니까, finalizer 에서 사용 되는 부분도 줄이면 좋겠다.
+.. 그런데 managed 자원은 GC(가비지 켈렉터)가 해제해주는데 굳이 해제해 줄 필요가 있는가?
+맞는 말이다. 하지만 어차피 사용되지 않을꺼니까, 가비지 켈렉터가 잘 일할 수 있도록, 해제해 주는게 좋다.
+어떻게 managed 자원을 해제 하는가?
+.. null 로 만들면 된다. 예를 들어 _list.Clear(); _list = null; 이렇게 하면 된다.
+자, 이제 코드로 보여 줄 수 있는가?
+?
+Dispose Sample Code
+
+// http://www.ikpil.com
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+ 
+namespace console
+{
+    class ConsoleClass
+    {        
+        public static void Main()
+        {
+            using (DerivedDisposeSample t =  new DerivedDisposeSample())
+            {                
+            }
+ 
+        }
+    }
+ 
+    public class BaseDisposeSampleClass : IDisposable
+    {
+        // -- Dispose 두번 이상 
+        // -- 호출을 막기 위한것
+        private bool _isBaseDisposeSmapleClass = false;
+ 
+        // -- managed resource
+        private List<int> _ManagedResource = new List<int>();
+ 
+        // -- unmanaged resource
+        // -- 사실 FileStream은 finalizer 가 구현 되어 있으므로, unmanaged 라고 보긴 힘들다.
+        // -- 예제를 위해 한것이므로 그러려니 하자
+        private FileStream _UnManagedResource = new FileStream("hehe.txt", FileMode.OpenOrCreate);
+         
+        ~BaseDisposeSampleClass()
+        {
+            // finalizer 가 호출된 시점에선 이미 Dispose()가 호출 되지 않았으므로
+            // managed resource 는 지우지 않는다.
+            Dispose(false);
+        }
+ 
+        // Dispose 호출
+        public void Dispose()
+        {
+            // managed 까지 제거
+            Dispose(true);
+ 
+            // managed 까지 지웠으므로, 
+            // 이 객체는 finalizer 호출하지 말라고 등록한다.
+            GC.SuppressFinalize(this);           
+        }
+ 
+        protected virtual void Dispose(bool isDisposing)
+        {
+            Console.WriteLine("BaseDisposeSampleClass::Dispose(bool isDisposing) is called");
+ 
+            // is called?
+            if (true == _isBaseDisposeSmapleClass)
+                return;
+ 
+            // managed resource release
+            if (true == isDisposing)
+            {
+                _ManagedResource.Clear();
+                _ManagedResource = null;
+            }
+ 
+            // unmanaged resource release
+            _UnManagedResource.Dispose();
+ 
+            // flag on
+            _isBaseDisposeSmapleClass = true;            
+        }
+    }
+ 
+    public class DerivedDisposeSample : BaseDisposeSampleClass
+    {
+        private bool _isDerivedDisposeSample = false;
+ 
+        protected override void Dispose(bool isDisposing)
+        {
+            Console.WriteLine("DerivedDisposeSample::Dispose(bool isDisposing) is called");
+ 
+            if (true == isDisposing)
+            {
+                // managed resource release...
+            }
+ 
+            // unmanaged resource release...
+            // ...
+            // ..
+            // .            
+            base.Dispose(isDisposing);
+ 
+            // flag on
+            _isDerivedDisposeSample = true;            
+        }
+    }
+}
+
+주의 해야 할 점이 있는가?
+finalizer 와 Dispose 에서, 객체 생명주기를 바꾸는 행동을 하지 말아야 한다. 만약 객체 생명주기를 건들게 되면, 객체는 더 이상 사용하지 않는데도, managed 자원까지 사라지지 않는 일이 발생 한다. .... 어렵다면, 해제하는 작업만 해야 한다고 알아도 된다.
+결론
+남이 만든거 갔다가 쓰자. :P
+남이 만든게 없을 경우, unmanaged 자원이 있을 경우, 표준 Dispose 패턴으로 구현하자.
+여담
+역시 남이 만든거 갔다가 쓰는게 최고다. :P ... 예제를 만들어 보니, .. 손갈 때가 많더라..
+이 포스트 남기고, 내가 찾아와서 봐야할 판이다.
