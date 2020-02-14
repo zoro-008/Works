@@ -1,0 +1,20 @@
+// T는 Value 타입
+class MyClass<T> where T : struct 
+
+// T는 Reference 타입
+class MyClass<T> where T : class
+
+// T는 디폴트 생성자를 가져야 함
+class MyClass<T> where T : new() 
+
+// T는 MyBase의 파생클래스이어야 함
+class MyClass<T> where T : MyBase
+
+// T는 IComparable 인터페이스를 가져야 함
+class MyClass<T> where T : IComparable
+
+// 좀 더 복잡한 제약들
+class EmployeeList<T> where T : Employee,
+   IEmployee, IComparable<T>, new()
+{
+}

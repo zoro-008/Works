@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>BARZ_ZPckr</sMotrName>
+  <iPulsePerRev>32768</iPulsePerRev>
+  <dUnitPerRev>10</dUnitPerRev>
+  <dMaxPos>100</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>47</iBreakOffAdd>
+  <iDirType>UpDown</iDirType>
+  <bUseBreak>true</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>500</dAcceleration>
+  <dDeceleration>500</dDeceleration>
+  <dRunSpeed>80</dRunSpeed>
+  <dSlowSpeed>10</dSlowSpeed>
+  <dManSpeed>30</dManSpeed>
+  <dHomeVelFirst>10</dHomeVelFirst>
+  <dHomeVelLast>4</dHomeVelLast>
+  <dHomeAccFirst>500</dHomeAccFirst>
+  <dJogSpeed>10</dJogSpeed>
+  <dSpeedRatio>100</dSpeedRatio>
+  <dFstPos>5</dFstPos>
+  <dScdPos>80</dScdPos>
+  <iRepeatDelay>500</iRepeatDelay>
+  <dRepeatSpeed>30</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

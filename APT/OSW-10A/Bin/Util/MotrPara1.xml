@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sMotrName>TOOL_X_Reject</sMotrName>
+  <iPulsePerRev>32768</iPulsePerRev>
+  <dUnitPerRev>10</dUnitPerRev>
+  <dMaxPos>600</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>LeftRight</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>3000</dAcceleration>
+  <dDeceleration>3000</dDeceleration>
+  <dRunSpeed>350</dRunSpeed>
+  <dSlowSpeed>100</dSlowSpeed>
+  <dManSpeed>150</dManSpeed>
+  <dHomeVelFirst>30</dHomeVelFirst>
+  <dHomeVelLast>10</dHomeVelLast>
+  <dHomeAccFirst>300</dHomeAccFirst>
+  <dJogSpeed>100</dJogSpeed>
+  <dSpeedRatio>100</dSpeedRatio>
+  <dFstPos>0.5</dFstPos>
+  <dScdPos>0</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>200</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>
