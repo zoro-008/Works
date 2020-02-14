@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="metroTile9.Text" xml:space="preserve">
+    <value>자제 리스트</value>
+  </data>
+  <data name="btNew.Text" xml:space="preserve">
+    <value> 생성</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btNew.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAIxJREFUaEPt
+        1kEKhTAMhOFeUE8vrtWLaAItlOKyYYz8Hww83iYd3EwBAAA/tVj2Gv+dzmm5ay7/I5v2+JZ0KKBGATUK
+        qFFA7XMF2rYZHzY7Ydup3zbRCdlOh+XtWET81nT+WTfL28GZ8RurRW58WDoUUKOAGgXUKKCWvkC/nUK2
+        TbS2nT6zbQAAwFylPHxVx2Fp3S4lAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btSetting.Text" xml:space="preserve">
+    <value>데이터 셋팅창</value>
+  </data>
+  <data name="btSetting.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAATNJREFUaEPt
+        l00KwkAMRnsULyCey61bty7dejnxAJ5AN/7lAwNjSabTNhGF78GDMq3TTCYOaUcIIYQQQn6WlXgWH29x
+        jbG/YCHexWdPjOFeKBmZOor94NWTGEZWpm5if04V98LIypQ1nxq6gIxMHURrPhVJC8N6QelY9qI1j4qk
+        hP2JhzIFEVArO9GaA+rhsBRDGMpUKQIbwgt+I4ZTC/5ijMGt6IF71m9SgvcytRYVXFvPWAFhzHq2tuDJ
+        jNlmL7Byod4zLSU3mik16pXG1RhTU4L3AmnZZm/hlmNOrGbmBK+0nFgpwUfWqDVPaQhlV2m9BE6t0YyW
+        4wOvqyyds821pi+kt6m9AM6tUS9BYb1NbYthBOhj+h8+Yb1Neo1mk16j2aTX6DdIrVFCCCGEEBJJ170A
+        umJEH9i7S08AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btDownload.Text" xml:space="preserve">
+    <value> 다운로드</value>
+  </data>
+  <data name="btDownload.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAZtJREFUaEPt
+        2T1KxFAAxPHtrC0UbbQWT6Rex87SC6g38AM9g3gObVzBG+gMRAhhNm8mib4g+cMPZEkmL2jlrpb+aWfw
+        Ap+N5+az2bcFD/C1wT3wmtn2BOrgbbxmlp2COrByAn/SHvDXvgZ1kD53cNTgz+qaPnwmn80zDGob3kCN
+        Ow7hpwNQ1zh4hh2IuwI16Gq/AH9W17huIO4d1JiLfzbHjdvms6F4ljg1VFOcGqkpTo3UFKdGaopTIzXF
+        qZGa4tRITXFqpKY4NeIope5xxKkRRyl1jyNOjThKqXsccWrEUUrd44hTI45S6h5HnBpxlFL3OOLUiKOU
+        uscRp0YcpdQ9jjg10nYOU8Ut9Yy2ODXSdQFj44ba7opTI8qYl3APT3FqZJMhL5EcnuLUSJ/kJdLDU5wa
+        KXFe4hLUvSVxasTR9xJDD09xasTFg3Ybc3iKUyOJ9kuMPTzFqZEUvyt47Hw2VJwaqSlOjdQU9wpqqAae
+        JW7sv9endA1xuzDmC46p8Az8smVQ+8D/83+AGv9NfCafzTMsLS0tzbLV6hu4VW3VqSEUGgAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="btRename.Text" xml:space="preserve">
+    <value> 이름변경</value>
+  </data>
+  <data name="btRename.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAASpJREFUaEPt
+        2D9KA2EQhvEFxT6gmEJIEEFEvFcqK6+TEwQLSeNBRAQR/AeKggew0WcII8sy2W/DgjML88IPPrZ6pt0q
+        l8vlcuwEz/jBJXYwmB3hAxKvrrGN8JviDfV4dYXQR0j8C6x4JUdsIeRmsKKbFgh7xAWs6KY5QmyEs9Xz
+        b12O+Ib7JP4GXziVD7WVjljCdRqvQZsccY89uK0Zr7ocIfFjuG1dvGo74hGh45V1xDkOVk+fdY1X1hFu
+        28Um8SrEERJ/ByuwxP2AjPdaxnutT/wnBh1/DLftY9DxD7DiSjK+zzLea33i3zHo+EO47hZWXEmIeJkV
+        VxImXmYFtgkVL7Mi1wkXL7NCLSHjZVZs0ytCxsus4DqJnyDs2v4sPCF0fC6Xy/3HquoXMnKvZ6rNxNUA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="metroTile2.Text" xml:space="preserve">
+    <value>자제 선택</value>
+  </data>
+  <data name="btDelete.Text" xml:space="preserve">
+    <value> 삭제</value>
+  </data>
+  <data name="btDelete.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAASpJREFUaEPt
+        mM1qAjEUhWdt13Xnom9iBR+gG6lvo3t91Iq4sCJiPQe8EIakODPJcAPngw8kws05xL/YCCGEEEKMxwb+
+        wQOccyETnMWZnL3jQgmm8A65Cb3AHCU4g7NsLp3B7LDADYYbDS0RC3+CE1iENQxPgfYtEQvP2StYlG84
+        tEQsPE+Xs0eBG/V9OaXCf8FR4YZdS7gJb3Qp4S688UoJt+GN/0osn4/D51yFN1Ilrq01l+GNWIlQ1+GN
+        VIkqwpOqC6TCm65LxMLzTfzbWnNZIhWeH6NVfwcYbku8Et5wV6JLeMNNiap/Tld9oeF1r/SVktfWIrzB
+        Mww37BveSJ0E/0DIzgcMNxoa3miX4Cm8wyLsITf5gZ9cyMQCHiFnb7kghBBCCFGcpnkAzyL+7RTlumYA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btCopy.Text" xml:space="preserve">
+    <value> 복사</value>
+  </data>
+  <data name="btCopy.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAadJREFUaEPt
+        mEtKBEEQRPsKLhTd6Fo8jFdUb+B4F93726hn0EyYgiYIJ6KtmmrUevBgmMzIpFGqmZoGg8GPOA7vwvfw
+        c8/mjtyVO5twEL6GbNk+zZ2HYTVXIVvQw5uwmreQDe9h7q6GDe5pNWxoT6thQx034fnW/Mx6HKthQx3P
+        wsJpyHocJZfh/db8jLChjgjrcZQ8h6X5Kb8A5sOWiLAeR4kKYN0VYT2OEhXAuivCehwlKoB1V4T1OEpU
+        AOuuCOtxlKgA1ovlnK9FvSckKoD14vycr2XXe0KiAlgvtnyAnMV2pBIVwHox/+wXYS054zZkO1KJCmDd
+        FWE9jhIVwLorwnocJSqAdVeE9ThKVADrrgjrcZSoANZdEdbjKFEBrLsirMdRogJYd52/J3ad80qJCmDd
+        tbwn1DmvlKgA1nsrUQGs91aiAi8h9vQyd0swhKx5tXgdSjCEHIVrXe7mxbIEg4yTME+VjxD7W5s7clfu
+        tMABv44/9wAtf2l1AR+g1S+tbqx1zn93F7uYNc95dhe7mLXO+fQxbELPc774EDb5FxoM/g/T9AX9jk4h
+        joVL9gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="metroTile1.Text" xml:space="preserve">
+    <value>자제 편집</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>선택된 이름</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>선택된 RECIPE</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>현재 RECIPE</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>변경할 이름</value>
+  </data>
+</root>

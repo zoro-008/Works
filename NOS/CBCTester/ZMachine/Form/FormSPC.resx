@@ -1,0 +1,1353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="metroTabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;metroTile4.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;btErrFind.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btDataView.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 863</value>
+  </data>
+  <data name="&gt;&gt;pnLotBtm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chartTrend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 41</value>
+  </data>
+  <data name="&gt;&gt;btErrSave.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="dpSttTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 29</value>
+  </data>
+  <data name="pnFailure.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btFailDelete.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="btDataView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 7</value>
+  </data>
+  <data name="lvError.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 327</value>
+  </data>
+  <data name="btErrFind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 8</value>
+  </data>
+  <data name="&gt;&gt;btFailFind.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="btLotDelete.Text" xml:space="preserve">
+    <value>DELETE SELECTED ROW</value>
+  </data>
+  <data name="&gt;&gt;btErrDelete.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="tbFailFind.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>659, 10</value>
+  </data>
+  <data name="chartLot2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;btDataView.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;metroTile4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lvError.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 56</value>
+  </data>
+  <data name="pnUptime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="btLotDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;chartLot2.Name" xml:space="preserve">
+    <value>chartLot2</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pnLotBtm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 383</value>
+  </data>
+  <data name="metroTile2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btErrSave.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="chartLot1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btLotDelete.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="metroTabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lvLot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lvFailure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 706</value>
+  </data>
+  <data name="&gt;&gt;btLotFind.Name" xml:space="preserve">
+    <value>btLotFind</value>
+  </data>
+  <data name="&gt;&gt;btDataView.Name" xml:space="preserve">
+    <value>btDataView</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnFailure.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lvError.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt</value>
+  </data>
+  <data name="metroTile1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;lvFailure.Parent" xml:space="preserve">
+    <value>pnFailure</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btErrSave.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Lot</value>
+  </data>
+  <data name="&gt;&gt;tmUpdate.Name" xml:space="preserve">
+    <value>tmUpdate</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnLot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 762</value>
+  </data>
+  <data name="chartLot1.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnErr.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;metroTile4.Name" xml:space="preserve">
+    <value>metroTile4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tcData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lvError.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;chartTrend.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;btLotFind.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="chartLot1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage3.Parent" xml:space="preserve">
+    <value>tcData</value>
+  </data>
+  <data name="&gt;&gt;pnErr.Parent" xml:space="preserve">
+    <value>metroTabPage2</value>
+  </data>
+  <data name="&gt;&gt;tbFailFind.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnLotBtm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dpEndTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 29</value>
+  </data>
+  <data name="&gt;&gt;lvLot.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnUptime.Name" xml:space="preserve">
+    <value>pnUptime</value>
+  </data>
+  <data name="pnUptime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>666, 7</value>
+  </data>
+  <data name="&gt;&gt;dpEndTime.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="tbErrFind.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 38</value>
+  </data>
+  <data name="dpSttTime.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;btLotDelete.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;chartLot1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnErr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="&gt;&gt;lvError.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="metroTabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="pnErr.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lvLot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 327</value>
+  </data>
+  <data name="&gt;&gt;dpSttTime.Name" xml:space="preserve">
+    <value>dpSttTime</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="metroTile4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="chartErr2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnUptime.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btLotDelete.Name" xml:space="preserve">
+    <value>btLotDelete</value>
+  </data>
+  <data name="&gt;&gt;lvError.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcData.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btErrDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="tbErrFind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 10</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="metroTabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 763</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;tmUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvError.Name" xml:space="preserve">
+    <value>lvError</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="lvLot.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lvLot.Parent" xml:space="preserve">
+    <value>pnLot</value>
+  </data>
+  <data name="btErrSave.Text" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="metroTabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 763</value>
+  </data>
+  <data name="pnErrBtm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="&gt;&gt;tbFailFind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btLotFind.Text" xml:space="preserve">
+    <value>FIND</value>
+  </data>
+  <data name="metroTabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 763</value>
+  </data>
+  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 805</value>
+  </data>
+  <data name="btErrDelete.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btLotFind.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lvFailure.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnLotBtm.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnErrBtm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="btErrDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 8</value>
+  </data>
+  <data name="metroTabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 763</value>
+  </data>
+  <data name="metroTabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btFailFind.Text" xml:space="preserve">
+    <value>FIND</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnLot.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="&gt;&gt;btLotDelete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="button2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chartErr1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>pnLot</value>
+  </data>
+  <data name="tbErrFind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 31</value>
+  </data>
+  <data name="pnLotBtm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="pnErrBtm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 379</value>
+  </data>
+  <data name="button4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="pnUptime.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage2.Parent" xml:space="preserve">
+    <value>tcData</value>
+  </data>
+  <data name="&gt;&gt;btFailDelete.Name" xml:space="preserve">
+    <value>btFailDelete</value>
+  </data>
+  <data name="&gt;&gt;btFailFind.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>RESET</value>
+  </data>
+  <data name="chartLot1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 379</value>
+  </data>
+  <data name="pnUptime.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="btFailFind.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;chartTrend.Name" xml:space="preserve">
+    <value>chartTrend</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tcData.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 41</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage4.Name" xml:space="preserve">
+    <value>metroTabPage4</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="lvError.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="metroTabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 56</value>
+  </data>
+  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chartTrend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="btErrSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="chartTrend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 721</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcData.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabControl, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;btErrFind.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chartErr1.Name" xml:space="preserve">
+    <value>chartErr1</value>
+  </data>
+  <data name="&gt;&gt;tbLotFind.Name" xml:space="preserve">
+    <value>tbLotFind</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="metroTile2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, 8</value>
+  </data>
+  <data name="panel7.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btFailFind.Name" xml:space="preserve">
+    <value>btFailFind</value>
+  </data>
+  <data name="pnFailure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 762</value>
+  </data>
+  <data name="&gt;&gt;dpSttTime.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lvLot.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;tbFailFind.Name" xml:space="preserve">
+    <value>tbFailFind</value>
+  </data>
+  <data name="chartLot2.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="tbErrFind.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 13pt</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;sdCSV.Name" xml:space="preserve">
+    <value>sdCSV</value>
+  </data>
+  <data name="pnFailure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="btFailFind.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage2.Name" xml:space="preserve">
+    <value>metroTabPage2</value>
+  </data>
+  <data name="chartErr2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pnErr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 762</value>
+  </data>
+  <data name="chartErr2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btLotFind.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btDataView.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;btLotFind.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 762</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage4.Parent" xml:space="preserve">
+    <value>tcData</value>
+  </data>
+  <data name="&gt;&gt;chartErr2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnLot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="&gt;&gt;pnUptime.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="btFailFind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="pnErrBtm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 383</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pnUptime.Text" xml:space="preserve">
+    <value>UPTIME(%)=0.000%</value>
+  </data>
+  <data name="&gt;&gt;pnFailure.Parent" xml:space="preserve">
+    <value>metroTabPage3</value>
+  </data>
+  <data name="metroTabPage1.Text" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btLotFind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btErrFind.Name" xml:space="preserve">
+    <value>btErrFind</value>
+  </data>
+  <data name="&gt;&gt;btFailFind.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="pnLot.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="tbFailFind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 31</value>
+  </data>
+  <data name="metroTabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 0</value>
+  </data>
+  <data name="panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnLotBtm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 379</value>
+  </data>
+  <data name="chartErr1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 0</value>
+  </data>
+  <data name="&gt;&gt;sdCSV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcData.Name" xml:space="preserve">
+    <value>tcData</value>
+  </data>
+  <data name="&gt;&gt;pnLot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="chartErr2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 379</value>
+  </data>
+  <data name="pnErr.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btFailDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="&gt;&gt;pnErrBtm.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroTabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;lvLot.Name" xml:space="preserve">
+    <value>lvLot</value>
+  </data>
+  <data name="lvFailure.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 863</value>
+  </data>
+  <data name="&gt;&gt;btErrDelete.Name" xml:space="preserve">
+    <value>btErrDelete</value>
+  </data>
+  <data name="&gt;&gt;chartTrend.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chartErr1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="chartErr1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>747, 379</value>
+  </data>
+  <data name="&gt;&gt;chartLot2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dpSttTime.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;btDataView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="btFailDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 8</value>
+  </data>
+  <data name="tcData.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="btErrFind.Text" xml:space="preserve">
+    <value>FIND</value>
+  </data>
+  <data name="btErrDelete.Text" xml:space="preserve">
+    <value>DELETE SELECTED ROW</value>
+  </data>
+  <data name="&gt;&gt;chartErr1.Parent" xml:space="preserve">
+    <value>pnErrBtm</value>
+  </data>
+  <data name="&gt;&gt;pnErr.Name" xml:space="preserve">
+    <value>pnErr</value>
+  </data>
+  <data name="metroTabPage4.Text" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="btDataView.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btErrSave.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="dpSttTime.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="btFailDelete.Text" xml:space="preserve">
+    <value>DELETE SELECTED ROW</value>
+  </data>
+  <data name="&gt;&gt;btFailDelete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnFailure.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnErrBtm.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;tcData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="metroTabPage4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormSPC</value>
+  </data>
+  <data name="&gt;&gt;chartLot1.Parent" xml:space="preserve">
+    <value>pnLotBtm</value>
+  </data>
+  <data name="&gt;&gt;chartLot1.Name" xml:space="preserve">
+    <value>chartLot1</value>
+  </data>
+  <data name="&gt;&gt;lvError.Parent" xml:space="preserve">
+    <value>pnErr</value>
+  </data>
+  <data name="&gt;&gt;pnLot.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroTile1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Name" xml:space="preserve">
+    <value>metroTile1</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 56</value>
+  </data>
+  <data name="btFailFind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 8</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbFailFind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 10</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Err</value>
+  </data>
+  <data name="metroTile1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, 8</value>
+  </data>
+  <data name="lvFailure.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnUptime.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tcData.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>104, 34</value>
+  </data>
+  <data name="&gt;&gt;chartErr2.Name" xml:space="preserve">
+    <value>chartErr2</value>
+  </data>
+  <data name="&gt;&gt;btErrFind.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btErrDelete.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="metroTabPage2.Text" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="pnLotBtm.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dpEndTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 10</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="metroTile1.Text" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="tbLotFind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 10</value>
+  </data>
+  <data name="tbFailFind.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 13pt</value>
+  </data>
+  <data name="chartErr1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage1.Parent" xml:space="preserve">
+    <value>tcData</value>
+  </data>
+  <data name="&gt;&gt;dpEndTime.Name" xml:space="preserve">
+    <value>dpEndTime</value>
+  </data>
+  <data name="metroTabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chartErr2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 10</value>
+  </data>
+  <data name="dpEndTime.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="panel6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tbLotFind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 31</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dpSttTime.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="label6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;pnLot.Parent" xml:space="preserve">
+    <value>metroTabPage1</value>
+  </data>
+  <data name="metroTabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>TREND</value>
+  </data>
+  <data name="&gt;&gt;pnFailure.Name" xml:space="preserve">
+    <value>pnFailure</value>
+  </data>
+  <data name="tcData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 805</value>
+  </data>
+  <data name="metroTabPage3.Text" xml:space="preserve">
+    <value>Failure</value>
+  </data>
+  <data name="&gt;&gt;tbLotFind.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage3.Name" xml:space="preserve">
+    <value>metroTabPage3</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage3.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;chartErr2.Parent" xml:space="preserve">
+    <value>pnErrBtm</value>
+  </data>
+  <data name="chartLot1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>633, 0</value>
+  </data>
+  <data name="chartLot2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btErrDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="dpEndTime.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="&gt;&gt;tbErrFind.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="metroTile2.Text" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="btFailDelete.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btErrSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, 8</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>pnErr</value>
+  </data>
+  <data name="&gt;&gt;metroTile4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dpEndTime.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="btLotFind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 8</value>
+  </data>
+  <data name="btFailDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;tbErrFind.Name" xml:space="preserve">
+    <value>tbErrFind</value>
+  </data>
+  <data name="&gt;&gt;pnErrBtm.Name" xml:space="preserve">
+    <value>pnErrBtm</value>
+  </data>
+  <data name="&gt;&gt;chartLot2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="chartTrend.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1272, 56</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btLotDelete.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;pnFailure.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroTile1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="button3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;pnErr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>metroTabPage4</value>
+  </data>
+  <data name="lvLot.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt</value>
+  </data>
+  <data name="lvFailure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 56</value>
+  </data>
+  <data name="metroTile2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="btDataView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="&gt;&gt;sdXLS.Name" xml:space="preserve">
+    <value>sdXLS</value>
+  </data>
+  <data name="chartLot2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 379</value>
+  </data>
+  <data name="chartErr1.Text" xml:space="preserve">
+    <value>chartErr1</value>
+  </data>
+  <data name="&gt;&gt;pnLotBtm.Name" xml:space="preserve">
+    <value>pnLotBtm</value>
+  </data>
+  <data name="metroTile2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage4.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;sdXLS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbErrFind.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;tbErrFind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btErrSave.Name" xml:space="preserve">
+    <value>btErrSave</value>
+  </data>
+  <data name="btLotDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 8</value>
+  </data>
+  <data name="dpSttTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 10</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormSPC</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>pnFailure</value>
+  </data>
+  <data name="&gt;&gt;lvFailure.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="metroTabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="&gt;&gt;btErrSave.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chartErr1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="lvLot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 56</value>
+  </data>
+  <data name="chartTrend.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tbFailFind.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;pnErrBtm.Parent" xml:space="preserve">
+    <value>pnErr</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="&gt;&gt;chartLot2.Parent" xml:space="preserve">
+    <value>pnLotBtm</value>
+  </data>
+  <data name="&gt;&gt;pnUptime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;metroTabPage1.Name" xml:space="preserve">
+    <value>metroTabPage1</value>
+  </data>
+  <data name="chartLot2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btErrDelete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btDataView.Text" xml:space="preserve">
+    <value>DATA VIEW</value>
+  </data>
+  <data name="&gt;&gt;pnLotBtm.Parent" xml:space="preserve">
+    <value>pnLot</value>
+  </data>
+  <data name="metroTabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 0</value>
+  </data>
+  <data name="btLotFind.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 58</value>
+  </data>
+  <data name="&gt;&gt;dpEndTime.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chartErr2.Text" xml:space="preserve">
+    <value>chartErr2</value>
+  </data>
+  <data name="&gt;&gt;btFailDelete.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="tbLotFind.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 13pt</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;tbLotFind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 12</value>
+  </data>
+  <data name="btErrFind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="btErrFind.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="btLotDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 39</value>
+  </data>
+  <data name="&gt;&gt;lvFailure.Name" xml:space="preserve">
+    <value>lvFailure</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Name" xml:space="preserve">
+    <value>metroTile2</value>
+  </data>
+  <data name="chartTrend.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;pnLot.Name" xml:space="preserve">
+    <value>pnLot</value>
+  </data>
+  <data name="metroTile4.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 39</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="btErrFind.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;tbLotFind.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tbLotFind.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lvFailure.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt</value>
+  </data>
+  <data name="&gt;&gt;chartLot1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <metadata name="sdCSV.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ko</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tmUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>188, 17</value>
+  </metadata>
+  <metadata name="sdXLS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>50</value>
+  </metadata>
+</root>

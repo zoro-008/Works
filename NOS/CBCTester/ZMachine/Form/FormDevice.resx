@@ -1,0 +1,865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>410, 728</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 14pt</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="lvDevice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 12pt</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="metroTile2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btRename.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="btDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="tbFromName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 32</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>630, 861</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;tbToName.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btDownload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btCopy.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>SELECTED NAME</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 863</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="lvDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 47</value>
+  </data>
+  <data name="btRename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 126</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 14pt</value>
+  </data>
+  <data name="btRename.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAASpJREFUaEPt
+        2D9KA2EQhvEFxT6gmEJIEEFEvFcqK6+TEwQLSeNBRAQR/AeKggew0WcII8sy2W/DgjML88IPPrZ6pt0q
+        l8vlcuwEz/jBJXYwmB3hAxKvrrGN8JviDfV4dYXQR0j8C6x4JUdsIeRmsKKbFgh7xAWs6KY5QmyEs9Xz
+        b12O+Ib7JP4GXziVD7WVjljCdRqvQZsccY89uK0Zr7ocIfFjuG1dvGo74hGh45V1xDkOVk+fdY1X1hFu
+        28Um8SrEERJ/ByuwxP2AjPdaxnutT/wnBh1/DLftY9DxD7DiSjK+zzLea33i3zHo+EO47hZWXEmIeJkV
+        VxImXmYFtgkVL7Mi1wkXL7NCLSHjZVZs0ytCxsus4DqJnyDs2v4sPCF0fC6Xy/3HquoXMnKvZ6rNxNUA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tbFromName.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="metroTile1.Text" xml:space="preserve">
+    <value>DEVICE EDIT</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="metroTile9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btDelete.Text" xml:space="preserve">
+    <value>DELETE</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 9pt</value>
+  </data>
+  <data name="&gt;&gt;pbStatus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tmUpdate.Name" xml:space="preserve">
+    <value>tmUpdate</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormDevice</value>
+  </data>
+  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lbSelDevice.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 24</value>
+  </data>
+  <data name="&gt;&gt;tbToName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbSelDevice.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btDelete.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAASpJREFUaEPt
+        mM1qAjEUhWdt13Xnom9iBR+gG6lvo3t91Iq4sCJiPQe8EIakODPJcAPngw8kws05xL/YCCGEEEKMxwb+
+        wQOccyETnMWZnL3jQgmm8A65Cb3AHCU4g7NsLp3B7LDADYYbDS0RC3+CE1iENQxPgfYtEQvP2StYlG84
+        tEQsPE+Xs0eBG/V9OaXCf8FR4YZdS7gJb3Qp4S688UoJt+GN/0osn4/D51yFN1Ilrq01l+GNWIlQ1+GN
+        VIkqwpOqC6TCm65LxMLzTfzbWnNZIhWeH6NVfwcYbku8Et5wV6JLeMNNiap/Tld9oeF1r/SVktfWIrzB
+        Mww37BveSJ0E/0DIzgcMNxoa3miX4Cm8wyLsITf5gZ9cyMQCHiFnb7kghBBCCFGcpnkAzyL+7RTlumYA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;tbFromName.Name" xml:space="preserve">
+    <value>tbFromName</value>
+  </data>
+  <data name="btCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 160</value>
+  </data>
+  <data name="&gt;&gt;lbCrntDevice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btSetting.Text" xml:space="preserve">
+    <value>DEVICE SETTING</value>
+  </data>
+  <data name="metroTile9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>628, 46</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 24</value>
+  </data>
+  <data name="&gt;&gt;btRename.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btDownload.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 126</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;lbSelDevice.Name" xml:space="preserve">
+    <value>lbSelDevice</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>SELECTED RECIPE</value>
+  </data>
+  <data name="lbCrntDevice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 14pt</value>
+  </data>
+  <data name="btSetting.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAATNJREFUaEPt
+        l00KwkAMRnsULyCey61bty7dejnxAJ5AN/7lAwNjSabTNhGF78GDMq3TTCYOaUcIIYQQQn6WlXgWH29x
+        jbG/YCHexWdPjOFeKBmZOor94NWTGEZWpm5if04V98LIypQ1nxq6gIxMHURrPhVJC8N6QelY9qI1j4qk
+        hP2JhzIFEVArO9GaA+rhsBRDGMpUKQIbwgt+I4ZTC/5ijMGt6IF71m9SgvcytRYVXFvPWAFhzHq2tuDJ
+        jNlmL7Byod4zLSU3mik16pXG1RhTU4L3AmnZZm/hlmNOrGbmBK+0nFgpwUfWqDVPaQhlV2m9BE6t0YyW
+        4wOvqyyds821pi+kt6m9AM6tUS9BYb1NbYthBOhj+h8+Yb1Neo1mk16j2aTX6DdIrVFCCCGEEBJJ170A
+        umJEH9i7S08AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;lvDevice.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;metroTile9.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="lvDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>628, 813</value>
+  </data>
+  <data name="btSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 122</value>
+  </data>
+  <data name="tbToName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 14pt</value>
+  </data>
+  <data name="&gt;&gt;btCopy.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btRename.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btNew.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 494</value>
+  </data>
+  <data name="&gt;&gt;btSetting.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;metroTile9.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;pbStatus.Name" xml:space="preserve">
+    <value>pbStatus</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Name" xml:space="preserve">
+    <value>metroTile2</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 24</value>
+  </data>
+  <data name="&gt;&gt;btSetting.Name" xml:space="preserve">
+    <value>btSetting</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btNew.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>CURRENT RECIPE</value>
+  </data>
+  <data name="&gt;&gt;btNew.Name" xml:space="preserve">
+    <value>btNew</value>
+  </data>
+  <data name="&gt;&gt;pbStatus.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroProgressBar, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="btDownload.Text" xml:space="preserve">
+    <value>DOWN LOAD</value>
+  </data>
+  <data name="&gt;&gt;tbToName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormDevice</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btSetting.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;lbCrntDevice.Name" xml:space="preserve">
+    <value>lbCrntDevice</value>
+  </data>
+  <data name="metroTile1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>643, 46</value>
+  </data>
+  <data name="btCopy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;btRename.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pbStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 635</value>
+  </data>
+  <data name="btDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="btCopy.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btNew.Text" xml:space="preserve">
+    <value>NEW</value>
+  </data>
+  <data name="btSetting.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 861</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 14pt</value>
+  </data>
+  <data name="btRename.Text" xml:space="preserve">
+    <value>RENAME</value>
+  </data>
+  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="tbFromName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 65</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 576</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btCopy.Name" xml:space="preserve">
+    <value>btCopy</value>
+  </data>
+  <data name="&gt;&gt;tbFromName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btNew.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAIxJREFUaEPt
+        1kEKhTAMhOFeUE8vrtWLaAItlOKyYYz8Hww83iYd3EwBAAA/tVj2Gv+dzmm5ay7/I5v2+JZ0KKBGATUK
+        qFFA7XMF2rYZHzY7Ydup3zbRCdlOh+XtWET81nT+WTfL28GZ8RurRW58WDoUUKOAGgXUKKCWvkC/nUK2
+        TbS2nT6zbQAAwFylPHxVx2Fp3S4lAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 14pt</value>
+  </data>
+  <data name="metroTile2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="tbToName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 32</value>
+  </data>
+  <data name="&gt;&gt;btDownload.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="lbSelDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="metroTile9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 292</value>
+  </data>
+  <data name="lbSelDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 38</value>
+  </data>
+  <data name="panel4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="&gt;&gt;lbCrntDevice.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="btCopy.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAadJREFUaEPt
+        mEtKBEEQRPsKLhTd6Fo8jFdUb+B4F93726hn0EyYgiYIJ6KtmmrUevBgmMzIpFGqmZoGg8GPOA7vwvfw
+        c8/mjtyVO5twEL6GbNk+zZ2HYTVXIVvQw5uwmreQDe9h7q6GDe5pNWxoT6thQx034fnW/Mx6HKthQx3P
+        wsJpyHocJZfh/db8jLChjgjrcZQ8h6X5Kb8A5sOWiLAeR4kKYN0VYT2OEhXAuivCehwlKoB1V4T1OEpU
+        AOuuCOtxlKgA1ovlnK9FvSckKoD14vycr2XXe0KiAlgvtnyAnMV2pBIVwHox/+wXYS054zZkO1KJCmDd
+        FWE9jhIVwLorwnocJSqAdVeE9ThKVADrrgjrcZSoANZdEdbjKFEBrLsirMdRogJYd52/J3ad80qJCmDd
+        tbwn1DmvlKgA1nsrUQGs91aiAi8h9vQyd0swhKx5tXgdSjCEHIVrXe7mxbIEg4yTME+VjxD7W5s7clfu
+        tMABv44/9wAtf2l1AR+g1S+tbqx1zn93F7uYNc95dhe7mLXO+fQxbELPc774EDb5FxoM/g/T9AX9jk4h
+        joVL9gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btRename.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="lbSelDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 569</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btSetting.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;tbFromName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 515</value>
+  </data>
+  <data name="btDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 119</value>
+  </data>
+  <data name="panel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 9pt</value>
+  </data>
+  <data name="&gt;&gt;btDelete.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbCrntDevice.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;tmUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="metroTile2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>640, 46</value>
+  </data>
+  <data name="&gt;&gt;lvDevice.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="&gt;&gt;lbSelDevice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btDownload.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAZtJREFUaEPt
+        2T1KxFAAxPHtrC0UbbQWT6Rex87SC6g38AM9g3gObVzBG+gMRAhhNm8mib4g+cMPZEkmL2jlrpb+aWfw
+        Ap+N5+az2bcFD/C1wT3wmtn2BOrgbbxmlp2COrByAn/SHvDXvgZ1kD53cNTgz+qaPnwmn80zDGob3kCN
+        Ow7hpwNQ1zh4hh2IuwI16Gq/AH9W17huIO4d1JiLfzbHjdvms6F4ljg1VFOcGqkpTo3UFKdGaopTIzXF
+        qZGa4tRITXFqpKY4NeIope5xxKkRRyl1jyNOjThKqXsccWrEUUrd44hTI45S6h5HnBpxlFL3OOLUiKOU
+        uscRp0YcpdQ9jjg10nYOU8Ut9Yy2ODXSdQFj44ba7opTI8qYl3APT3FqZJMhL5EcnuLUSJ/kJdLDU5wa
+        KXFe4hLUvSVxasTR9xJDD09xasTFg3Ybc3iKUyOJ9kuMPTzFqZEUvyt47Hw2VJwaqSlOjdQU9wpqqAae
+        JW7sv9endA1xuzDmC46p8Az8smVQ+8D/83+AGv9NfCafzTMsLS0tzbLV6hu4VW3VqSEUGgAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btDownload.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btRename.Name" xml:space="preserve">
+    <value>btRename</value>
+  </data>
+  <data name="lbSelDevice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>맑은 고딕, 14pt</value>
+  </data>
+  <data name="metroTile2.Text" xml:space="preserve">
+    <value>DEVICE EDIT</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btDelete.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="btRename.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 292</value>
+  </data>
+  <data name="tbToName.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="metroTile1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lvDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btNew.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbFromName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 14pt</value>
+  </data>
+  <data name="&gt;&gt;btDownload.Name" xml:space="preserve">
+    <value>btDownload</value>
+  </data>
+  <data name="btDelete.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="metroTile9.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="btCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 126</value>
+  </data>
+  <data name="btCopy.Text" xml:space="preserve">
+    <value>COPY</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 2</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 105</value>
+  </data>
+  <data name="&gt;&gt;tbFromName.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Name" xml:space="preserve">
+    <value>metroTile1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="btNew.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btSetting.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;lvDevice.Name" xml:space="preserve">
+    <value>lvDevice</value>
+  </data>
+  <data name="lbSelDevice.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btNew.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;btDelete.Name" xml:space="preserve">
+    <value>btDelete</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="metroTile9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btDownload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pbStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="lbCrntDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 38</value>
+  </data>
+  <data name="metroTile2.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 24</value>
+  </data>
+  <data name="lbCrntDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 508</value>
+  </data>
+  <data name="btDelete.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lvDevice.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="metroTile1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="metroTile1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="lbCrntDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;btDelete.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="tbToName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 103</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 863</value>
+  </data>
+  <data name="metroTile1.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;metroTile9.Name" xml:space="preserve">
+    <value>metroTile9</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="metroTile1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btNew.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 160</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>TO NAME</value>
+  </data>
+  <data name="&gt;&gt;btNew.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="metroTile9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="metroTile2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 442</value>
+  </data>
+  <data name="pbStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 29</value>
+  </data>
+  <data name="&gt;&gt;lbCrntDevice.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btCopy.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;tbToName.Name" xml:space="preserve">
+    <value>tbToName</value>
+  </data>
+  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="metroTile9.Text" xml:space="preserve">
+    <value>DEVICE LIST</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;pbStatus.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="panel2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="btDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 126</value>
+  </data>
+  <data name="&gt;&gt;metroTile9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btRename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="panel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tbToName.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 68</value>
+  </data>
+  <data name="tbFromName.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lvDevice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ko</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>74</value>
+  </metadata>
+  <metadata name="tmUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
