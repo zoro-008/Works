@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>WRK_ZTabl</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>2</dUnitPerRev>
+  <dMaxPos>20</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>DownUp</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.01</dInposition>
+  <dAcceleration>1200</dAcceleration>
+  <dDeceleration>1200</dDeceleration>
+  <dRunSpeed>200</dRunSpeed>
+  <dSlowSpeed>10</dSlowSpeed>
+  <dManSpeed>10</dManSpeed>
+  <dHomeVelFirst>5</dHomeVelFirst>
+  <dHomeVelLast>2</dHomeVelLast>
+  <dHomeAccFirst>300</dHomeAccFirst>
+  <dJogSpeed>10</dJogSpeed>
+  <dFstPos>10</dFstPos>
+  <dScdPos>12</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>20</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

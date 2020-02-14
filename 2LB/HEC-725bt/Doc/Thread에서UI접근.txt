@@ -1,0 +1,6 @@
+
+
+//폼을 만들지 않은 쓰레드에서 폼에 접근 하는방법.
+http://msdn.microsoft.com/ko-kr/library/ms171728(v=vs.110).aspx
+
+http://www.csharpstudy.com//Threads/uithread.aspx

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>WRK_TSwit</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>360</dUnitPerRev>
+  <dMaxPos>25</dMaxPos>
+  <dMinPos>-35</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>CcwCw</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>1000</dAcceleration>
+  <dDeceleration>1000</dDeceleration>
+  <dRunSpeed>100</dRunSpeed>
+  <dSlowSpeed>50</dSlowSpeed>
+  <dManSpeed>50</dManSpeed>
+  <dHomeVelFirst>5</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>50</dHomeAccFirst>
+  <dJogSpeed>10</dJogSpeed>
+  <dFstPos>10.116</dFstPos>
+  <dScdPos>-5.796</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>100</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

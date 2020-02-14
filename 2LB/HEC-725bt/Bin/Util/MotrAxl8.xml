@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotorAxl xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <iPhysicalNo>8</iPhysicalNo>
+  <dSCurveAcPer>0</dSCurveAcPer>
+  <dSCurveDcPer>0</dSCurveDcPer>
+  <bUseInpos>true</bUseInpos>
+  <eEncInput>Plus_4_Multi</eEncInput>
+  <ePulseOutput>TwoCwCcwHigh</ePulseOutput>
+  <ePLimPhase>HighActive</ePLimPhase>
+  <eNLimPhase>HighActive</eNLimPhase>
+  <eAlarmPhase>RowActive</eAlarmPhase>
+  <eInposPhase>HighActive</eInposPhase>
+  <eHomePhase>HighActive</eHomePhase>
+  <eZphaPhase>RowActive</eZphaPhase>
+  <eServoPhase>RowActive</eServoPhase>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <bUseBreak>false</bUseBreak>
+  <bGantryEnable>false</bGantryEnable>
+  <iGantrySubAdd>0</iGantrySubAdd>
+  <eGantryMathod>NotUse</eGantryMathod>
+  <dGantryOffset>0</dGantryOffset>
+  <dGantryOfsRange>0</dGantryOfsRange>
+  <bHomeNegDir>true</bHomeNegDir>
+  <eHomeSignal>HomeSensor</eHomeSignal>
+  <eHomeZMethod>NotUse</eHomeZMethod>
+  <dHomeClrTime>1000</dHomeClrTime>
+  <dHomeOffset>5</dHomeOffset>
+</CParaMotorAxl>

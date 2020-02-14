@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotorEmcl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <iPhysicalNo>0</iPhysicalNo>
+  <eHomeMode>PLimit_NLimit_On</eHomeMode>
+</CParaMotorEmcl>

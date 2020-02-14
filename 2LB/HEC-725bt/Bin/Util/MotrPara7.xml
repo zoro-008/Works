@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>WRK_TBlad</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>360</dUnitPerRev>
+  <dMaxPos>90</dMaxPos>
+  <dMinPos>-90</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>CcwCw</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>4000</dAcceleration>
+  <dDeceleration>4000</dDeceleration>
+  <dRunSpeed>1000</dRunSpeed>
+  <dSlowSpeed>90</dSlowSpeed>
+  <dManSpeed>90</dManSpeed>
+  <dHomeVelFirst>45</dHomeVelFirst>
+  <dHomeVelLast>5</dHomeVelLast>
+  <dHomeAccFirst>450</dHomeAccFirst>
+  <dJogSpeed>90</dJogSpeed>
+  <dFstPos>5</dFstPos>
+  <dScdPos>95</dScdPos>
+  <iRepeatDelay>500</iRepeatDelay>
+  <dRepeatSpeed>360</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

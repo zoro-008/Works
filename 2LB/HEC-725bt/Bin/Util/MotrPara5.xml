@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>WRK_TFeed</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>62.832</dUnitPerRev>
+  <dMaxPos>99999</dMaxPos>
+  <dMinPos>-99999</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>CwCcw</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>1500</dAcceleration>
+  <dDeceleration>1500</dDeceleration>
+  <dRunSpeed>100</dRunSpeed>
+  <dSlowSpeed>80</dSlowSpeed>
+  <dManSpeed>20</dManSpeed>
+  <dHomeVelFirst>10</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>500</dHomeAccFirst>
+  <dJogSpeed>20</dJogSpeed>
+  <dFstPos>0</dFstPos>
+  <dScdPos>62.832</dScdPos>
+  <iRepeatDelay>500</iRepeatDelay>
+  <dRepeatSpeed>50</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

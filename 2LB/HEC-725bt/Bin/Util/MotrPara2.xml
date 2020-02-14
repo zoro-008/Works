@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>OUT_YGuid</sMotrName>
+  <iPulsePerRev>4000</iPulsePerRev>
+  <dUnitPerRev>81.273</dUnitPerRev>
+  <dMaxPos>70</dMaxPos>
+  <dMinPos>-45</dMinPos>
+  <bExistEnc>false</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>BwdFwd</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>10</dAcceleration>
+  <dDeceleration>10</dDeceleration>
+  <dRunSpeed>0.1</dRunSpeed>
+  <dSlowSpeed>1</dSlowSpeed>
+  <dManSpeed>1</dManSpeed>
+  <dHomeVelFirst>18</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>150</dHomeAccFirst>
+  <dJogSpeed>10</dJogSpeed>
+  <dFstPos>0</dFstPos>
+  <dScdPos>50</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>50</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>

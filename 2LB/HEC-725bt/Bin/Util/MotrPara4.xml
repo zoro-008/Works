@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CParaMotr xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sMotrName>WRK_YRott</sMotrName>
+  <iPulsePerRev>10000</iPulsePerRev>
+  <dUnitPerRev>2</dUnitPerRev>
+  <dMaxPos>20</dMaxPos>
+  <dMinPos>0</dMinPos>
+  <bExistEnc>true</bExistEnc>
+  <iBreakOffAdd>0</iBreakOffAdd>
+  <iDirType>BwdFwd</iDirType>
+  <bUseBreak>false</bUseBreak>
+  <dInposition>0.1</dInposition>
+  <dAcceleration>500</dAcceleration>
+  <dDeceleration>500</dDeceleration>
+  <dRunSpeed>50</dRunSpeed>
+  <dSlowSpeed>6</dSlowSpeed>
+  <dManSpeed>6</dManSpeed>
+  <dHomeVelFirst>5</dHomeVelFirst>
+  <dHomeVelLast>1</dHomeVelLast>
+  <dHomeAccFirst>60</dHomeAccFirst>
+  <dJogSpeed>6</dJogSpeed>
+  <dFstPos>2</dFstPos>
+  <dScdPos>4</dScdPos>
+  <iRepeatDelay>1000</iRepeatDelay>
+  <dRepeatSpeed>10</dRepeatSpeed>
+  <iRepeatCount>999</iRepeatCount>
+</CParaMotr>
