@@ -1,0 +1,46 @@
+TSC-10/DD Revised version history
+
+Ver 4.01.06R/1542 -> Ver 4.01.06R/1725 (June 30, 2010)
+Corrected: Corrected the problem that "If you install this driver to Windows7, it is not recognized normally even if you connect a USB device to the computer.".
+
+Ver 4.01.06R/1542 (April 28, 2010)
+Corrected: Corrected the problem that "The problem that all files in \ProgramData\Microsoft\Windows\Start Menu\Programs disappeared occurred when you uninstalled this driver.".
+Revision: The support OS is Windows 7 (32bit).
+
+Ver 4.01.06R/1389G (March 4, 2010)
+Revision: We excluded Windows 7 from the support OS because the following problem was found.
+"The problem that all files in \ProgramData\Microsoft\Windows\Start Menu\Programs disappeared occurred when you uninstalled this driver."
+
+Ver 4.01.06R/1389G (January 29, 2010)
+Revision: We added Windows7 as the support OS and excluded Windows 2000.
+
+Ver 4.01.06R/1340 -> 4.01.06R/1389G (November 13, 2009)
+Corrected: You install this software with tbupdd.ini from CD. Then, you cannot change setting on UPDD console.
+
+Ver 4.01.06R/1328 -> 4.01.06R/1340 (September 14, 2009)
+Corrected: The BSOD problem caused by tbupddsu.sys was corrected. 
+Corrected: When TSC-10/DD received the WM_DEVICECHANGE message which a device except the touch panel controller published, we corrected the problem that carried out initialization processing for a touch panel controller.
+
+Ver 4.01.06R -> 4.01.06R/1328 (August 6, 2009)
+Corrected: In Windows Vista which the Aero function is enabled, corrected the problem that became black display when you changed screen resolution.
+Corrected: Corrected the problem that a uninstaller is left as a read only file when you installed this software from a CD.
+Corrected: Corrected the problem that recognized as another device when you reconnected the USB controller to other ports.
+
+Ver 4.00.06P -> 4.01.06R (February 2, 2009)
+Revision: The support OS are Windows 2000, XP and Vista 32bit/64bit.
+Revision: Multi-touchscreen was supported.
+Revision: "Redetect PnP devices" was deleted in the UPDD console.
+Revision: File format made by "Dump settings" was changed from reg to ini.
+
+Ver 4.00.04P -> 4.00.06P (December 17, 2007)
+Revision: Add EEPROM calibration function.
+Revision: At USB controller, delete Sync errors.
+Revision: Disable "Reset error counts" item on console when no Sync errors.
+Corrected: Corrected the problem that was not applied when it changes the interactive touch speed by a click.
+Corrected: In test program, it corrected the problem that is stored as unknown file when it saves file.
+Corrected: Corrected the problem that the computer shuts down abnormally when it touchs during aninstalling.
+
+ver 4.00.04P (May 28, 2007)
+    An upgrade along with the complete code renewal.
+    ver4.x first release.
+    For only Windows Vista 32bit.
